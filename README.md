@@ -31,7 +31,7 @@ Stage One - 5%, present in week 8
 -#577F57
 -#B4CCB4
 -#707F70
-https://color.adobe.com/cloud/aHR0cHM6Ly9jYy1hcGktYXNzZXRzLmFkb2JlLmlv/library/a81b7e2e-7cb6-4f38-98ee-92a88625c9da/theme/113e5c79-9b09-48fd-b68e-aaa8e7212021/
+https://color.adobe.com/My-Color-Theme-color-theme-9432550/
 
 Stage Two - 95%, submit in week 13
 ----
