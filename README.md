@@ -25,6 +25,13 @@ Stage One - 5%, present in week 8
 - 2 Weeks Late (-2 Marks)
 - NB A demonstration that is more than 2 weeks late will receive 0 marks for this section	
 
+**Colour Scheme**
+#E1FFE1
+#8CFF8C
+#577F57
+#B4CCB4
+#707F70
+
 Stage Two - 95%, submit in week 13
 ----
 **Produce functional website**
