@@ -1,1 +1,49 @@
-//abc
+/*Start login popup*/
+.login-popup {
+	margin: 0; 
+	margin-left: 38%; 
+	margin-right: 38%;
+	margin-top: 50px; 
+	margin-bottom: 50px;
+	width: 24%;  
+	position: absolute; 
+	background: #E1FFE1; 
+	border: solid #000000 2px; 
+	z-index: 9; 
+	visibility: hidden; 
+	text-align: center;
+}
+
+.login-content {
+	padding: 10px;
+}
+
+h4.login-title {
+	background-color: #577F57;
+	color:white;
+	margin: auto;
+	padding: 0.5em;
+}
+/*End login popup*/
+
+/*Begin sample colors*/
+.color1 {
+	background-color: #E1FFE1;
+}
+
+.color2 {
+	background-color: #8CFF8C;
+}
+
+.color3 {
+	background-color: #577F57;
+}
+
+.color4 {
+	background-color: #B4CCB4;
+}
+
+.color5 {
+	background-color: #707F70;
+}
+/*End sample colors*/
