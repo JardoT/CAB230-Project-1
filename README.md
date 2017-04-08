@@ -36,11 +36,11 @@ Stage Two - 95%, submit in week 13
 |A.3 Sample Individual Item Page|	/1|
 |A.4 Sample User Registration Page|	/1|
 |A.5 Validation of different data types (Numeric, Alphabetic Input, Email, Dates)|	/1|
-|Marks can be deducted for the following:| |
-No CSS (-1 Mark)
-1 Week Late (-1 Marks)
-2 Weeks Late (-2 Marks)
-NB A demonstration that is more than 2 weeks late will receive 0 marks for this 
-section	
 |Total Section A: Sample Client Side Demonstration|	/5|
+
+**Marks can be deducted for the following:**
+- No CSS (-1 Mark)
+- 1 Week Late (-1 Marks)
+- 2 Weeks Late (-2 Marks)
+- NB A demonstration that is more than 2 weeks late will receive 0 marks for this section	
 
