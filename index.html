@@ -26,31 +26,44 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="search.html">Search</a></li>
-				<li><a href="#">Login</a></li> <!-- //going to add a popup for login -->
+				<li><a href="javascript:login('show');">Login</a></li> <!-- //going to add a popup for login -->
 			</ul>
 		</div>
 	</div>
 	<!-- End navbar -->
 
 	<div class="content-container">
-		<p>
-			Lorem ipsum dolor sit amet, eos no alii wisi dicant. Mel eu aliquip regione expetenda. Eu dolorem oporteat vix. Sed equidem meliore ut, est in facer alterum. At ridens appareat pertinacia qui. Illud recusabo no per, ne usu erant definitiones.
+		<p class="color1">
+			Lorem ipsum dolor sit amet, eos no alii wisi dicant. Mel eu aliquip regione expetenda. Eu dolorem oporteat vix. Sed equidem meliore ut, est in facer alterum. At ridens appareat pertinacia qui. Illud recusabo no per, ne usu erant definitiones. <b>Color: #E1FFE1</b>
 		</p>
-		<p>
-			Nam elit commodo deseruisse ad, his id vitae propriae salutatus. Partem aperiam in vix, in eam mutat iriure quaestio, maiorum honestatis sit ut. Enim inani inermis his ex, iuvaret eripuit cu nec, vocent tamquam torquatos ex quo. Nam neglegentur liberavisse necessitatibus eu. Appareat persecuti ex sed, ne partem pertinax sea.
+		<p class="color2">
+			Nam elit commodo deseruisse ad, his id vitae propriae salutatus. Partem aperiam in vix, in eam mutat iriure quaestio, maiorum honestatis sit ut. Enim inani inermis his ex, iuvaret eripuit cu nec, vocent tamquam torquatos ex quo. Nam neglegentur liberavisse necessitatibus eu. Appareat persecuti ex sed, ne partem pertinax sea. <b>Color: #8CFF8C</b>
 		</p>
-		<p>
-			Mea convenire laboramus forensibus ut, eam id nobis fuisset. Vim libris vidisse id, no vix fabulas molestie liberavisse. Eam ex diam dolorem, quod idque meliore nec at. Pro ad alia aliquid, illud veniam discere nec in, ut simul consequuntur pri. His id malis homero.
+		<p class="color3">
+			Mea convenire laboramus forensibus ut, eam id nobis fuisset. Vim libris vidisse id, no vix fabulas molestie liberavisse. Eam ex diam dolorem, quod idque meliore nec at. Pro ad alia aliquid, illud veniam discere nec in, ut simul consequuntur pri. His id malis homero. <b>Color: #577F57</b>
 		</p>
-		<p>
-			Vis an rebum suavitate consetetur, mei oportere conceptam in. Mutat viris integre ex quo, nec et diam sint, nullam tibique urbanitas cu mea. Est no dicat civibus euripidis, eum no viris zril periculis. Cu vim atqui oportere, illum interesset cu per.
+		<p class="color4">
+			Vis an rebum suavitate consetetur, mei oportere conceptam in. Mutat viris integre ex quo, nec et diam sint, nullam tibique urbanitas cu mea. Est no dicat civibus euripidis, eum no viris zril periculis. Cu vim atqui oportere, illum interesset cu per. <b>Color: #B4CCB4</b>
 		</p>
-		<p>
-			Tamquam evertitur eam te, an eos probo salutatus. Discere adolescens vis ad, antiopam prodesset scriptorem ne vel. Id vis harum postea, facete scripserit in quo, nam fabellas perfecto ex. Te lorem noluisse necessitatibus mea, velit erant gloriatur in sed. Sed regione praesent ad, ea eam inimicus evertitur reformidans.
+		<p class="color5">
+			Tamquam evertitur eam te, an eos probo salutatus. Discere adolescens vis ad, antiopam prodesset scriptorem ne vel. Id vis harum postea, facete scripserit in quo, nam fabellas perfecto ex. Te lorem noluisse necessitatibus mea, velit erant gloriatur in sed. Sed regione praesent ad, ea eam inimicus evertitur reformidans. <b>Color: #707F70</b>
 		</p>
 	</div>
 
-
+	<div id="login-popup" class="login-popup"> 
+		<h4 class="login-title">Login [PLACEHOLDER]</h4>
+		<div class="login-content">
+			<form name="login" action="" method="post">
+				Username:
+				<input name="username" size="14" /> <br /> <br />
+				Password:
+				<input name="password" type="password" size="14" /><br /> <br />
+				<input type="submit" name="submit" value="Login" />
+			</form>
+			Don't have an account? <a href="registration.html">Register Now</a><br /> <br />
+			<a href="javascript:login('hide');">close</a> 
+		</div>
+	</div> 
 
 
 
