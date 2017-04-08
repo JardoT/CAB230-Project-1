@@ -26,12 +26,12 @@ Stage One - 5%, present in week 8
 - NB A demonstration that is more than 2 weeks late will receive 0 marks for this section	
 
 **Colour Scheme:**
--#E1FFE1
--#8CFF8C
--#577F57
--#B4CCB4
--#707F70
--https://color.adobe.com/My-Color-Theme-color-theme-9432550/
+- #E1FFE1
+- #8CFF8C
+- #577F57
+- #B4CCB4
+- #707F70
+https://color.adobe.com/My-Color-Theme-color-theme-9432550/
 
 Stage Two - 95%, submit in week 13
 ----
