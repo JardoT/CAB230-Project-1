@@ -1,32 +1,7 @@
-/*Start login popup*/
-.login-popup {
-	margin: 0; 
-	margin-left: 38%; 
-	margin-right: 38%;
-	margin-top: 50px; 
-	margin-bottom: 50px;
-	width: 24%;  
-	position: absolute; 
-	background: #E1FFE1; 
-	border: solid #000000 2px; 
-	z-index: 9; 
-	visibility: hidden; 
-	text-align: center;
+html {
+	font-family: 'Martel Sans', sans-serif;
 }
 
-.login-content {
-	padding: 10px;
-}
-
-h4.login-title {
-	background-color: #577F57;
-	color:white;
-	margin: auto;
-	padding: 0.5em;
-}
-/*End login popup*/
-
-/*Begin sample colors*/
 .color1 {
 	background-color: #E1FFE1;
 }
@@ -47,3 +22,81 @@ h4.login-title {
 	background-color: #707F70;
 }
 /*End sample colors*/
+
+/*Begin Sign In Popup*/
+div#popup {
+	width:100%;
+	height:100%;
+	opacity:.95;
+	top:0;
+	left:0;
+	display:none;
+	position:fixed;
+	background-color:#313131;
+	overflow:auto
+	-webkit-transition: opacity 500ms linear;
+}
+
+form.login {
+	background-color: #FFFFFF;
+	min-width: 350px;
+	max-width: 300px;
+	border: 2px solid #577F57;
+	border-radius: 10px;
+}
+
+div.popup-login {
+	position:absolute;
+	left:50%;
+	top:17%;
+	margin-left:-202px;
+}
+
+img.close {
+	position:absolute;
+	right:-60px; /*temp*/
+	top:-14px;
+	cursor:pointer;
+	border: 2px solid red; /*temp*/
+	border-radius: 10px; /*temp*/
+}
+
+h2.login-title {
+	background-color: #B4CCB4;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom: 1px solid;
+	border-color: #577F57;
+	margin: auto;
+	text-align: center;
+	padding: 0.5em;
+}
+
+div.login-box {
+	padding:10px;
+	text-align:center;
+}
+
+input.login-input {
+	width: 80%;
+	padding: 10px;
+	margin-top: 30px;
+	border: 1px solid #ccc;
+}
+
+a.login-button {
+	display: block;
+	width: 80%;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	background-color: #81c381;
+}
+/*End Sign In Popup*/
+
+/*Start Registration*/
+.error-message {
+	color:red;
+	visibility:hidden;
+}
+/*End Registration*/
