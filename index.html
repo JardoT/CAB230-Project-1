@@ -9,6 +9,7 @@
   <meta name="author" content="Joshua Lowe and Jarod Taylor">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Martel+Sans" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -26,7 +27,8 @@
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="search.html">Search</a></li>
-				<li><a href="javascript:login('show');">Login</a></li> <!-- //going to add a popup for login -->
+				<li><a href="javascript:div_show();">Login</a></li>
+				<li><a href="jarod.html">Jarod</a></li> 
 			</ul>
 		</div>
 	</div>
@@ -50,24 +52,24 @@
 		</p>
 	</div>
 
-	<div id="login-popup" class="login-popup"> 
-		<h4 class="login-title">Login [PLACEHOLDER]</h4>
-		<div class="login-content">
-			<form name="login" action="" method="post">
-				Username:
-				<input name="username" size="14" /> <br /> <br />
-				Password:
-				<input name="password" type="password" size="14" /><br /> <br />
-				<input type="submit" name="submit" value="Login" />
+	<div id="popup">
+		<!-- Popup Div -->
+		<div id="popup-login" class="popup-login">
+			<!-- Login -->
+			<form action="#" id="form" method="post" name="form" class="login">
+				<img id="close" class="close" src="img/placeholder.png" onclick ="div_hide()" width="40px">
+				<h2 class="login-title">Welcome</h2>
+				<div class="login-box">
+					<input class="login-input" id="username" name="username" placeholder="Username" type="text"><br />
+					<input class="login-input" name="password" type="password" size="14" placeholder="Password" /><br /><br />
+					<center><a href="#" id="submit" class="login-button">Sign In</a></center><br />
+					Not registered? <a href="registration.html" id="submit">Create an account.</a>
+				</div>
 			</form>
-			Don't have an account? <a href="registration.html">Register Now</a><br /> <br />
-			<a href="javascript:login('hide');">close</a> 
+			<!-- End Login -->
 		</div>
-	</div> 
-
-
-
-
+		<!-- Popup Div End -->
+	</div>
 
 	<script src="js/scripts.js"></script>
 </body>

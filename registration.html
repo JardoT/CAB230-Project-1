@@ -36,6 +36,21 @@
 	FINISH INDEX TEMPLATE BEFORE CHANGING THIS<br />
 	WILL MAKE THINGS EASIER THAN CONSTANTLY UPDATING ALL OF THEM AT ONCE<br />
 
+	<div id="create-account">
+		<h2>Create a new account</h2>
+		<form onsubmit="return validate()">
+			Username: <input type="text" id="username"></input><span id="usernameMissing" class="error-message">Username is a required field</span><br />
+			Email address: <input type="text"></input><br />
+			Gender: 	<br />	<input type="radio" name="gender">Female<br />
+								<input type="radio" name="gender">Male<br />
+								<input type="radio" name="gender">Apache Attack Helicopter<br />
+			Password: <input type="text"></input><br />
+			Confirm Password: <input type="text"></input><br />
+			Subscribe to our annual newsletter? <input type="checkbox"></input><br />
+			<input type="submit" value="Sign Up"></input>
+		</form>
+	</div>
+
 	<script src="js/scripts.js"></script>
 </body>
 </html>
