@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Home</title>
+  <title>Placeholder</title>
   <meta name="description" content="Website home">
   <meta name="author" content="Joshua Lowe and Jarod Taylor">
 
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
 	<!-- 	Start navbar -->
 	<div class="nav-container">
 		<div class="title-logo">
@@ -34,6 +35,7 @@
 	</div>
 	<!-- End navbar -->
 
+	<!-- Start content -->
 	<div class="content-container">
 		<p class="color1">
 			Lorem ipsum dolor sit amet, eos no alii wisi dicant. Mel eu aliquip regione expetenda. Eu dolorem oporteat vix. Sed equidem meliore ut, est in facer alterum. At ridens appareat pertinacia qui. Illud recusabo no per, ne usu erant definitiones. <br /><b>Color: #E1FFE1</b>
@@ -51,25 +53,25 @@
 			Tamquam evertitur eam te, an eos probo salutatus. Discere adolescens vis ad, antiopam prodesset scriptorem ne vel. Id vis harum postea, facete scripserit in quo, nam fabellas perfecto ex. Te lorem noluisse necessitatibus mea, velit erant gloriatur in sed. Sed regione praesent ad, ea eam inimicus evertitur reformidans. <br /><b>Color: #707F70</b>
 		</p>
 	</div>
+	<!-- End content -->
 
-	<div id="popup">
-		<!-- Popup Div -->
-		<div id="popup-login" class="popup-login">
-			<!-- Login -->
-			<form action="#" id="form" method="post" name="form" class="login">
-				<img id="close" class="close" src="img/placeholder.png" onclick ="div_hide()" width="40px">
-				<h2 class="login-title">Welcome</h2>
-				<div class="login-box">
-					<input class="login-input" id="username" name="username" placeholder="Username" type="text"><br />
-					<input class="login-input" name="password" type="password" size="14" placeholder="Password" /><br /><br />
-					<center><a href="#" id="submit" class="login-button">Sign In</a></center><br />
-					Not registered? <a href="registration.html" id="submit">Create an account.</a>
-				</div>
-			</form>
-			<!-- End Login -->
-		</div>
-		<!-- Popup Div End -->
+	<!-- Start Popup -->
+	<div class="grayed-box" id="grayed-box"></div>
+	<div id="popup-login" class="popup-login">
+		<!-- Login form -->
+		<form action="#" id="form" method="post" name="form" class="login">
+			<img id="close" class="close" src="img/placeholder.png" onclick ="div_hide()" width="40px">
+			<h2 class="login-title">Welcome</h2>
+			<div class="login-box">
+				<input class="login-input" id="username" name="username" placeholder="Username" type="text"><br />
+				<input class="login-input" name="password" type="password" size="14" placeholder="Password" /><br /><br />
+				<center><a href="#" id="submit" class="login-button">Sign In</a></center><br />
+				Not registered? <a href="registration.html" id="submit">Create an account.</a>
+			</div>
+		</form>
+		<!-- End Login form -->
 	</div>
+	<!-- End Popup -->
 
 	<script src="js/scripts.js"></script>
 </body>
