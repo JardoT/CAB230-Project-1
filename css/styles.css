@@ -1,5 +1,18 @@
 html {
-	font-family: 'Martel Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10%;
+}
+
+.content-container {
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-right: 2%;
+	height: 768px;
+	margin: 0 auto;
+}
+
+.nav-container {
+	background-color: #E1FFE1;
 }
 
 .color1 {
@@ -101,3 +114,66 @@ a.login-button {
 	display: none;
 }
 /*End Registration*/
+
+/*Start Results Grid*/
+.result_box {
+	background-color: #E1FFE1;
+	margin-bottom: 15px;
+	margin-left: 2%;
+	float:left;
+	width: 98%;
+}	
+
+@media screen and (min-width: 500px) {
+	.content-container {
+		width: 500px;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	.result_box {
+		width: 48%; 
+	}
+	.content-container {
+		width: 750px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.result_box {
+		width: 48%; 
+	}
+	.content-container {
+		width: 1000px;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	.result_box {
+		width: 31.33333333%; 
+	}
+	.content-container {
+		width: 1200px;
+	}
+}
+
+
+@media screen and (min-width: 1500px) {
+	.result_box {
+		width: 23%; 
+	}
+	.content-container {
+		width: 1500px;
+	}
+}
+
+@media screen and (min-width: 1750px) {
+	.result_box {
+		width: 23%; 
+	}
+	.content-container {
+		width: 1750px;
+	}
+}
+
+/*End Results Grid*/
