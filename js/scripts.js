@@ -20,7 +20,11 @@ function searchData() {
       document.getElementById(i).style.display = "none";
     }
 
-    document.getElementById('sample-result').style.display = "block";
+    if (selectedSuburb.innerHTML == "All Suburbs") {
+      for (var i = 0; i < 367; i++) {
+        document.getElementById(i).style.display = "block";
+      }
+    }
 
     //Show selected data
     for (var i = 0; i < 192; i++) {
@@ -32,6 +36,136 @@ function searchData() {
 }
 //END SEARCH
 
+
+//START SHOW INDIVIDUAL ITEM
+function getItem(id) {
+  //set values derived from selected park
+  var parkName = document.getElementById('result-name' + id).innerHTML;
+  var parkSuburb = document.getElementById('result-suburb' + id).innerHTML;
+  var parkRating = document.getElementById(id + 'rating').innerHTML;
+  var meta = document.getElementById('meta' + id);
+  var parkCode = meta.getAttribute('park-code');
+  var parkStreet = meta.getAttribute('street');
+  var lat = meta.getAttribute('latitude');
+  var long = meta.getAttribute('longitude');
+
+  //store values
+  localStorage.setItem("parkName", parkName);
+  localStorage.setItem("parkSuburb", parkSuburb);
+  localStorage.setItem("parkRating", parkRating);
+  localStorage.setItem("parkCode", parkCode);
+  localStorage.setItem("parkStreet", parkStreet);
+  localStorage.setItem("lat", lat);
+  localStorage.setItem("long", long);
+  
+  //switch page
+  window.location = "individual_item.html";
+}
+
+function showInformation() {
+
+  //retrieve values
+  var parkName = localStorage.getItem("parkName");
+  var parkSuburb = localStorage.getItem("parkSuburb");
+  var parkStreet = localStorage.getItem("parkStreet");
+  var parkCode = localStorage.getItem("parkCode");
+  var parkRating = localStorage.getItem("parkRating");
+
+  if (parkName == '') { //shows error if no information is available
+    document.getElementById('no-load-error').style.display = "block";
+    document.getElementById('park-information').style.display = "none";
+  } else {
+    document.getElementById('no-load-error').style.display = "none";
+    document.getElementById('park-information').style.display = "block";
+  }
+
+  //print values  
+  document.getElementById('park-name').innerHTML = parkName;
+  document.getElementById('park-suburb').innerHTML = parkSuburb;
+  document.getElementById('park-street').innerHTML = parkStreet;
+  document.getElementById('park-code').innerHTML = parkCode;
+  document.getElementById('park-rating').innerHTML = "Average Rating: " + parkRating + "/5";
+
+  switch (parseInt(parkRating)) { //TEMPORARILY HARDCODED RATINGS
+    case 1:
+      rating1 = "this park is horrible- litter everywhere";
+      rating2 = "do not recommend";
+      rating3 = "save your time and go somewhere cleaner";
+      document.getElementById('rating-1-text').innerHTML = rating1;
+      document.getElementById('rating-2-text').innerHTML = rating2;
+      document.getElementById('rating-3-text').innerHTML = rating3;
+
+      document.getElementById('rating-1-rate').innerHTML = "1";
+      document.getElementById('rating-2-rate').innerHTML = "1";
+      document.getElementById('rating-3-rate').innerHTML = "1";
+      break;
+    case 2:
+      rating1 = "Pretty decent park, fresh air";
+      rating2 = "absolutely horrible park";
+      rating3 = "Dirty, but could be worse";
+      document.getElementById('rating-1-text').innerHTML = rating1;
+      document.getElementById('rating-2-text').innerHTML = rating2;
+      document.getElementById('rating-3-text').innerHTML = rating3;
+
+      document.getElementById('rating-1-rate').innerHTML = "3";
+      document.getElementById('rating-2-rate').innerHTML = "1";
+      document.getElementById('rating-3-rate').innerHTML = "2";
+      break;
+    case 3:
+      rating1 = "Great park!!";
+      rating2 = "pretty good park";
+      rating3 = "park is somewhat small, other then that, its alright";
+      document.getElementById('rating-1-text').innerHTML = rating1;
+      document.getElementById('rating-2-text').innerHTML = rating2;
+      document.getElementById('rating-3-text').innerHTML = rating3;
+
+      document.getElementById('rating-1-rate').innerHTML = "4";
+      document.getElementById('rating-2-rate').innerHTML = "3";
+      document.getElementById('rating-3-rate').innerHTML = "2";
+      break;
+    case 4:
+      rating1 = "Excellent park, lots of fun";
+      rating2 = "great park for the family";
+      rating3 = "very clean and well maintained";
+      document.getElementById('rating-1-text').innerHTML = rating1;
+      document.getElementById('rating-2-text').innerHTML = rating2;
+      document.getElementById('rating-3-text').innerHTML = rating3;
+
+      document.getElementById('rating-1-rate').innerHTML = "4";
+      document.getElementById('rating-2-rate').innerHTML = "4";
+      document.getElementById('rating-3-rate').innerHTML = "4";
+      break;
+    case 5:
+      rating1 = "Best park i've ever been to";
+      rating2 = "Absolutely fantastic park";
+      rating3 = "it's a very good park- would definitely recommend";
+      document.getElementById('rating-1-text').innerHTML = rating1;
+      document.getElementById('rating-2-text').innerHTML = rating2;
+      document.getElementById('rating-3-text').innerHTML = rating3;
+
+      document.getElementById('rating-1-rate').innerHTML = "5";
+      document.getElementById('rating-2-rate').innerHTML = "5";
+      document.getElementById('rating-3-rate').innerHTML = "5";
+      break;
+  }
+}
+
+function initMap() {
+
+  var lati = parseFloat(localStorage.getItem("lat"));
+  var long = parseFloat(localStorage.getItem("long"));
+
+  var park = {lat: lati, lng: long};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: park
+  });
+  var marker = new google.maps.Marker({
+    position: park,
+    map: map
+  });
+}
+//END SHOW INDIVIDUAL ITEM
 
 //START REGISTRATION VALIDATION
 function clearAllErrors() {
