@@ -1,11 +1,3 @@
-// function login(showhide) {
-// 	if(showhide == "show") {
-// 	    document.getElementById('popup-bg').style.visibility="visible";
-// 	} else if(showhide == "hide") {
-// 	    document.getElementById('popup-bg').style.visibility="hidden"; 
-// 	}
-// }
-
 //Function To Display Popup
 function div_show() {
 document.getElementById('grayed-box').style.display = "block";
@@ -17,48 +9,28 @@ document.getElementById('grayed-box').style.display = "none";
 document.getElementById('popup-login').style.visibility = "hidden";
 }
 
-// START JAROD IS A CUCK
-var canvas = document.getElementById('canvas');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-var ctx = canvas.getContext('2d');
-canvas.style.background = "black";
-var gradient = ctx.createLinearGradient(0, 0, 475, 0);
-gradient.addColorStop(0, "#175909");
-gradient.addColorStop(0.2, "#29701a");
-gradient.addColorStop(0.4, "#70ed57");
-gradient.addColorStop(0.6, "#0c3304");
-gradient.addColorStop(0.8, "#528947");
-gradient.addColorStop(1, "green");
-ctx.fillStyle = gradient;
 
-var code = [
-  'fuck you jarod', 'jarod is a cuck', 'ayy lmao', 'do the css', 'cucklord101', '[CYBER BULLYING]', 'this team...', 'xD', 'die', 'jk', 'dad?', 'jarod is gay', 'josh is the best', 'josh is so cool', 'i love josh', 'josh is good at cs', 'hurry up', 'do the style cunt', 'cunt', 'do it', 'CSS PLS', 'sorry', 'BARBWIRE[TM]', 'spicy', 'spicymemes.com', 'minecraft', 'roblox', 'PUSSY', 'sushi', 'FLIGHT CENTRE', 'neck', 'jarod watches kids', 'STYLE THE FUCKIN INDEX', 'MEME', 'SPICY MEME', 'Hello', 'spicymemes.org is a joke', '13123213', 'fuck hitler jk', 'I AM THE ONE', 'DONT WEIGH A TONNE', 'DONT NEED A GUN', 'TO GET RESPECT', 'UP ON THE STREET', 'JAROD SUCKS', 'CAB230', 'buying gf 40gp', 'fuck dads cummies', 'do the layout', 'just do that jarmad shit layout cunt', 'comic SANS', 'jardo more like loser', 'get cyber bullied kid', 'cyber bullying intensifies', 'let those telemarketers make the website', 'fag', 'frick off kiddo', 'squirt', 'buddy', 'champ', 'chap', 'kiddo', 'kid', 'XD', 'what the frick!!!!!', 'heck off hecker', 'frick you', 'madlad', 'shit', 'well', 'ttttt', 'aaaaaaaa', 'im out of ideas'
-];
-var tags = [];
-var count = 350;
+//START SEARCH
+function searchData() {
+  var suburb = document.getElementById('suburb');
+  selectedSuburb = suburb.options[suburb.selectedIndex];
+    
+    //Clear previously selected data
+    for (var i = 0; i < 367; i++) {
+      document.getElementById(i).style.display = "none";
+    }
 
-for (var i = 0; i < count; i++) {
-  var a = {};
- 
-  a.code = code[Math.round(Math.random() * code.length)];
-  a.x = Math.random() * canvas.width; 
-  a.y = Math.random() * canvas.width - canvas.width; 
-  a.speed = 7 + Math.random() * 15;
-  tags.push(a);
+    document.getElementById('sample-result').style.display = "block";
+
+    //Show selected data
+    for (var i = 0; i < 192; i++) {
+      var suburbCheck = document.getElementById('result-suburb' + i.toString());
+      if (selectedSuburb.innerHTML == suburbCheck.innerHTML) {
+        document.getElementById(i).style.display = "block";
+      }
+    }
 }
-
-setInterval(function() {
-	ctx.font = "20px Comic Sans MS";	
- 	ctx.clearRect(0, 0, canvas.width, canvas.height);
- 	for (var i = 0; i < count; i = i + 1) {
-    var a = tags[i];
-    ctx.fillText(a.code, a.x, a.y, 80);
-    a.y += a.speed; 
-    if (a.y > screen.height) a.y = -50; 
-  }
-}, 100);
-// END JAROD IS A CUCK
+//END SEARCH
 
 
 //START REGISTRATION VALIDATION
@@ -117,7 +89,7 @@ function validatePhone() {
 
 function validateDateOfBirth() {
   var dob = document.getElementById('dob');
-  var dobRegex = /^(0[1-9]|1[012])[-/](0[1-9]|[12][0-9]|3[01])[-/](18|19|20)\d\d[-/]$/g;
+  var dobRegex = /^(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}$/;
 
   if (!dobRegex.test(dob.value) && dob.value != '') {
     showError("dob-invalid");
