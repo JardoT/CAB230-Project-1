@@ -1,6 +1,7 @@
 html {
 	font-family: 'Montserrat', sans-serif;
-	margin-bottom: 10%;
+	margin-bottom: 15%;
+	min-width: 250px;
 }
 
 .content-container {
@@ -116,12 +117,13 @@ a.login-button {
 /*End Registration*/
 
 /*Start Results Grid*/
-.result_box {
+.result-box {
 	background-color: #E1FFE1;
 	margin-bottom: 15px;
 	margin-left: 2%;
 	float:left;
 	width: 98%;
+	display: none;
 }	
 
 @media screen and (min-width: 500px) {
@@ -131,7 +133,7 @@ a.login-button {
 }
 
 @media screen and (min-width: 750px) {
-	.result_box {
+	.result-box {
 		width: 48%; 
 	}
 	.content-container {
@@ -140,7 +142,7 @@ a.login-button {
 }
 
 @media screen and (min-width: 1000px) {
-	.result_box {
+	.result-box {
 		width: 48%; 
 	}
 	.content-container {
@@ -149,7 +151,7 @@ a.login-button {
 }
 
 @media screen and (min-width: 1250px) {
-	.result_box {
+	.result-box {
 		width: 31.33333333%; 
 	}
 	.content-container {
@@ -157,9 +159,8 @@ a.login-button {
 	}
 }
 
-
 @media screen and (min-width: 1500px) {
-	.result_box {
+	.result-box {
 		width: 23%; 
 	}
 	.content-container {
@@ -168,12 +169,11 @@ a.login-button {
 }
 
 @media screen and (min-width: 1750px) {
-	.result_box {
+	.result-box {
 		width: 23%; 
 	}
 	.content-container {
 		width: 1750px;
 	}
 }
-
 /*End Results Grid*/
