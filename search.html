@@ -32,9 +32,2420 @@
 	</div>
 	<!-- End navbar -->
 
-	TEMPORARY NAVBAR<br />
-	FINISH INDEX TEMPLATE BEFORE CHANGING THIS<br />
-	WILL MAKE THINGS EASIER THAN CONSTANTLY UPDATING ALL OF THEM AT ONCE<br />
+	<!-- 	A search page with a form that allows users to search for items based a suburb 
+	(selected from a drop-down list), a name (entered into a text box), a rating, or by 
+	automatically determining the user’s location using HTML5 Geolocation API. -->
+	
+	<form method="post">
+		Suburb
+		<select id="suburb" name="suburb">
+			<option value="Acacia Ridge">Acacia Ridge</option>
+			<option value="Albion">Albion</option>
+			<option value="Alderley">Alderley</option>
+			<option value="Algester">Algester</option>
+			<option value="Annerley">Annerley</option>
+			<option value="Anstead">Anstead</option>
+			<option value="Archerfield">Archerfield</option>
+			<option value="Ascot">Ascot</option>
+			<option value="Ashgrove">Ashgrove</option>
+			<option value="Aspley">Aspley</option>
+			<option value="Auchenflower">Auchenflower</option>
+			<option value="Bald Hills">Bald Hills</option>
+			<option value="Balmoral">Balmoral</option>
+			<option value="Banyo">Banyo</option>
+			<option value="Bardon">Bardon</option>
+			<option value="Bellbowrie">Bellbowrie</option>
+			<option value="Belmont">Belmont</option>
+			<option value="Boondall">Boondall</option>
+			<option value="Bowen Hills">Bowen Hills</option>
+			<option value="Bracken Ridge">Bracken Ridge</option>
+			<option value="Bridgeman Downs">Bridgeman Downs</option>
+			<option value="Brighton">Brighton</option>
+			<option value="Brisbane">Brisbane</option>
+			<option value="Brisbane City">Brisbane City</option>
+			<option value="Brookfield">Brookfield</option>
+			<option value="Bulimba">Bulimba</option>
+			<option value="Bulwer">Bulwer</option>
+			<option value="Burbank">Burbank</option>
+			<option value="Calamvale">Calamvale</option>
+			<option value="Camp Hill">Camp Hill</option>
+			<option value="Cannon Hill">Cannon Hill</option>
+			<option value="Capalaba West">Capalaba West</option>
+			<option value="Carina">Carina</option>
+			<option value="Carina Heights">Carina Heights</option>
+			<option value="Carindale">Carindale</option>
+			<option value="Carole Park">Carole Park</option>
+			<option value="Carseldine">Carseldine</option>
+			<option value="Chandler">Chandler</option>
+			<option value="Chapel Hill">Chapel Hill</option>
+			<option value="Chelmer">Chelmer</option>
+			<option value="Chermside">Chermside</option>
+			<option value="Chermside West">Chermside West</option>
+			<option value="Chuwar">Chuwar</option>
+			<option value="Clayfield">Clayfield</option>
+			<option value="Coopers Plains">Coopers Plains</option>
+			<option value="Coorparoo">Coorparoo</option>
+			<option value="Corinda">Corinda</option>
+			<option value="Cowan Cowan">Cowan Cowan</option>
+			<option value="Darra">Darra</option>
+			<option value="Deagon">Deagon</option>
+			<option value="Doolandella">Doolandella</option>
+			<option value="Drewvale">Drewvale</option>
+			<option value="Durack">Durack</option>
+			<option value="Dutton Park">Dutton Park</option>
+			<option value="Eagle Farm">Eagle Farm</option>
+			<option value="East Brisbane">East Brisbane</option>
+			<option value="Eight Mile Plns">Eight Mile Plns</option>
+			<option value="Ellen Grove">Ellen Grove</option>
+			<option value="Enoggera">Enoggera</option>
+			<option value="Enoggera Resvr">Enoggera Resvr</option>
+			<option value="Everton Park">Everton Park</option>
+			<option value="Fairfield">Fairfield</option>
+			<option value="Ferny Grove">Ferny Grove</option>
+			<option value="Fig Tree Pocket">Fig Tree Pocket</option>
+			<option value="Fitzgibbon">Fitzgibbon</option>
+			<option value="Forest Lake">Forest Lake</option>
+			<option value="Gaythorne">Gaythorne</option>
+			<option value="Geebung">Geebung</option>
+			<option value="Gordon Park">Gordon Park</option>
+			<option value="Graceville">Graceville</option>
+			<option value="Grange">Grange</option>
+			<option value="Greenslopes">Greenslopes</option>
+			<option value="Gumdale">Gumdale</option>
+			<option value="Hamilton">Hamilton</option>
+			<option value="Hawthorne">Hawthorne</option>
+			<option value="Heathwood">Heathwood</option>
+			<option value="Hemmant">Hemmant</option>
+			<option value="Hendra">Hendra</option>
+			<option value="Herston">Herston</option>
+			<option value="Highgate Hill">Highgate Hill</option>
+			<option value="Holland Park">Holland Park</option>
+			<option value="Holland Pk West">Holland Pk West</option>
+			<option value="Inala">Inala</option>
+			<option value="Indooroopilly">Indooroopilly</option>
+			<option value="Jamboree Hts">Jamboree Hts</option>
+			<option value="Jindalee">Jindalee</option>
+			<option value="Kangaroo Point">Kangaroo Point</option>
+			<option value="Karana Downs">Karana Downs</option>
+			<option value="Karawatha">Karawatha</option>
+			<option value="Kedron">Kedron</option>
+			<option value="Kelvin Grove">Kelvin Grove</option>
+			<option value="Kenmore">Kenmore</option>
+			<option value="Kenmore Hills">Kenmore Hills</option>
+			<option value="Keperra">Keperra</option>
+			<option value="Kholo">Kholo</option>
+			<option value="Kooringal">Kooringal</option>
+			<option value="Kuraby">Kuraby</option>
+			<option value="Lake Manchester">Lake Manchester</option>
+			<option value="Lota">Lota</option>
+			<option value="Lutwyche">Lutwyche</option>
+			<option value="Lytton">Lytton</option>
+			<option value="Macgregor">Macgregor</option>
+			<option value="Mackenzie">Mackenzie</option>
+			<option value="Manly">Manly</option>
+			<option value="Manly West">Manly West</option>
+			<option value="Mansfield">Mansfield</option>
+			<option value="Mcdowall">Mcdowall</option>
+			<option value="Middle Park">Middle Park</option>
+			<option value="Milton">Milton</option>
+			<option value="Mitchelton">Mitchelton</option>
+			<option value="Moggill">Moggill</option>
+			<option value="Moorooka">Moorooka</option>
+			<option value="Morningside">Morningside</option>
+			<option value="Mt Coot-Tha">Mt Coot-Tha</option>
+			<option value="Mt Crosby">Mt Crosby</option>
+			<option value="Mt Gravatt">Mt Gravatt</option>
+			<option value="Mt Gravatt East">Mt Gravatt East</option>
+			<option value="Mt Ommaney">Mt Ommaney</option>
+			<option value="Murarrie">Murarrie</option>
+			<option value="New Farm">New Farm</option>
+			<option value="Newmarket">Newmarket</option>
+			<option value="Newstead">Newstead</option>
+			<option value="Norman Park">Norman Park</option>
+			<option value="Northgate">Northgate</option>
+			<option value="Nudgee">Nudgee</option>
+			<option value="Nudgee Beach">Nudgee Beach</option>
+			<option value="Nundah">Nundah</option>
+			<option value="Oxley">Oxley</option>
+			<option value="Paddington">Paddington</option>
+			<option value="Pallara">Pallara</option>
+			<option value="Parkinson">Parkinson</option>
+			<option value="Pinjarra Hills">Pinjarra Hills</option>
+			<option value="Pinkenba">Pinkenba</option>
+			<option value="Pullenvale">Pullenvale</option>
+			<option value="Ransome">Ransome</option>
+			<option value="Red Hill">Red Hill</option>
+			<option value="Richlands">Richlands</option>
+			<option value="Riverhills">Riverhills</option>
+			<option value="Robertson">Robertson</option>
+			<option value="Rochedale">Rochedale</option>
+			<option value="Rocklea">Rocklea</option>
+			<option value="Runcorn">Runcorn</option>
+			<option value="Salisbury">Salisbury</option>
+			<option value="Sandgate">Sandgate</option>
+			<option value="Seven Hills">Seven Hills</option>
+			<option value="Sherwood">Sherwood</option>
+			<option value="Shorncliffe">Shorncliffe</option>
+			<option value="Sinnamon Park">Sinnamon Park</option>
+			<option value="South Brisbane">South Brisbane</option>
+			<option value="Spring Hill">Spring Hill</option>
+			<option value="St Lucia">St Lucia</option>
+			<option value="Stafford">Stafford</option>
+			<option value="Stafford Hts">Stafford Hts</option>
+			<option value="Stretton">Stretton</option>
+			<option value="Sumner">Sumner</option>
+			<option value="Sunnybank">Sunnybank</option>
+			<option value="Sunnybank Hills">Sunnybank Hills</option>
+			<option value="Svtn Mile Rocks">Svtn Mile Rocks</option>
+			<option value="Taigum">Taigum</option>
+			<option value="Taringa">Taringa</option>
+			<option value="Tarragindi">Tarragindi</option>
+			<option value="Tennyson">Tennyson</option>
+			<option value="The Gap">The Gap</option>
+			<option value="Tingalpa">Tingalpa</option>
+			<option value="Toowong">Toowong</option>
+			<option value="Upr Brookfield">Upr Brookfield</option>
+			<option value="Upr Kedron">Upr Kedron</option>
+			<option value="Upr Mt Gravatt">Upr Mt Gravatt</option>
+			<option value="Valley">Valley</option>
+			<option value="Virginia">Virginia</option>
+			<option value="Wacol">Wacol</option>
+			<option value="Wakerley">Wakerley</option>
+			<option value="Wavell Heights">Wavell Heights</option>
+			<option value="West End">West End</option>
+			<option value="Westlake">Westlake</option>
+			<option value="Willawong">Willawong</option>
+			<option value="Wilston">Wilston</option>
+			<option value="Windsor">Windsor</option>
+			<option value="Wishart">Wishart</option>
+			<option value="Woolloongabba">Woolloongabba</option>
+			<option value="Wooloowin">Wooloowin</option>
+			<option value="Wynnum">Wynnum</option>
+			<option value="Wynnum West">Wynnum West</option>
+			<option value="Yeerongpilly">Yeerongpilly</option>
+			<option value="Yeronga">Yeronga</option>
+			<option value="Zillmere">Zillmere</option>
+		</select>
+		<br /><button type="button" onclick="searchData()">Search</button></input>
+	</form>
+
+	<div class="content-container">
+		<!-- Temporarily hardcoded every 6th park in the data-sheet with a python script. note: ID does not match ID in data-sheet -->
+		<div class="result-box" id="sample-result">
+		        <span id="result-name-sample" class="result-name"><a href="individual_item.html">Sample Street Park</a></span><br />
+		        <span id="result-suburb-sample" class="result-suburb">Sample Suburb</span><br />
+		        <span id="result-rating-sample" class="result-rating">Average Rating: 8/10</span><br />
+		        <meta id="meta0" easting="508278.22" northing="6943211.2" park-code="SAMPLE" street="Sample St" latitude="-27.48972065" longitude="153.1558355"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="0">
+		        <span id="result-name0" class="result-name">Abbott Street Park</span><br />
+		        <span id="result-suburb0" class="result-suburb">Camp Hill</span><br />
+		        <span id="result-rating0" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta0" easting="508478.22" northing="6958211.2" park-code="D1009" street="Abbott St" latitude="-27.49972065" longitude="153.0858355"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="1">
+		        <span id="result-name1" class="result-name">Ada Street Park</span><br />
+		        <span id="result-suburb1" class="result-suburb">Toowong</span><br />
+		        <span id="result-rating1" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta1" easting="497824.78" northing="6961048.21" park-code="D2101" street="Ada St" latitude="-27.47413294" longitude="152.9779827"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="2">
+		        <span id="result-name2" class="result-name">Aitcheson Street Park (No.5-6)</span><br />
+		        <span id="result-suburb2" class="result-suburb">Moggill</span><br />
+		        <span id="result-rating2" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta2" easting="486748.52" northing="6948471.23" park-code="D0757" street="Aitcheson St" latitude="-27.58761357" longitude="152.8657321"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="3">
+		        <span id="result-name3" class="result-name">Albany Creek Road Park (No.150)</span><br />
+		        <span id="result-suburb3" class="result-suburb">Aspley</span><br />
+		        <span id="result-rating3" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta3" easting="500653.42" northing="6973293.06" park-code="D1719" street="Spencer St" latitude="-27.36358727" longitude="153.0066073"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="4">
+		        <span id="result-name4" class="result-name">Albert Edward Paddon Park</span><br />
+		        <span id="result-suburb4" class="result-suburb">Deagon</span><br />
+		        <span id="result-rating4" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta4" easting="506287.67" northing="6977051.49" park-code="D0295" street="Blackwood Rd" latitude="-27.32964131" longitude="153.0635604"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="5">
+		        <span id="result-name5" class="result-name">Alcheringa Place Park</span><br />
+		        <span id="result-suburb5" class="result-suburb">Robertson</span><br />
+		        <span id="result-rating5" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta5" easting="505488.85" northing="6951468.49" park-code="D1077" street="Alcheringa Pl" latitude="-27.56060851" longitude="153.055601"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="6">
+		        <span id="result-name6" class="result-name">Alexander Smith Place</span><br />
+		        <span id="result-suburb6" class="result-suburb">South Brisbane</span><br />
+		        <span id="result-rating6" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta6" easting="501698.44" northing="6961197.25" park-code="D1039" street="Grey St" latitude="-27.47278807" longitude="153.0171912"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="7">
+		        <span id="result-name7" class="result-name">Alice Street Park (Road Reserve)</span><br />
+		        <span id="result-suburb7" class="result-suburb">Kedron</span><br />
+		        <span id="result-rating7" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta7" easting="502931.02" northing="6969850.34" park-code="D1391" street="Alice St" latitude="-27.39466557" longitude="153.0296463"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="8">
+		        <span id="result-name8" class="result-name">Allira Crescent Park</span><br />
+		        <span id="result-suburb8" class="result-suburb">Carseldine</span><br />
+		        <span id="result-rating8" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta8" easting="502592.85" northing="6975505.9" park-code="D1129" street="Balcara Ave" latitude="-27.34360713" longitude="153.0262138"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="9">
+		        <span id="result-name9" class="result-name">Alter Street Park</span><br />
+		        <span id="result-suburb9" class="result-suburb">Wynnum West</span><br />
+		        <span id="result-rating9" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta9" easting="515597.18" northing="6962952.79" park-code="D0734" street="Plaza St" latitude="-27.45685065" longitude="153.1578484"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="10">
+		        <span id="result-name10" class="result-name">Amarina Avenue Park (Road Reserve)</span><br />
+		        <span id="result-suburb10" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating10" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta10" easting="499018.7" northing="6964592.1" park-code="D1303" street="Amarina Ave" latitude="-27.44214005" longitude="152.9900702"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="11">
+		        <span id="result-name11" class="result-name">Ancaster Road Park</span><br />
+		        <span id="result-suburb11" class="result-suburb">Ferny Grove</span><br />
+		        <span id="result-rating11" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta11" easting="491734.4" northing="6968775.65" park-code="D1469" street="Mcgregor Way" latitude="-27.40434605" longitude="152.916389"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="12">
+		        <span id="result-name12" class="result-name">Anstead Bushland Reserve</span><br />
+		        <span id="result-suburb12" class="result-suburb">Anstead</span><br />
+		        <span id="result-rating12" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta12" easting="485912.66" northing="6953184.21" park-code="D0709" street="Cantwell St" latitude="-27.54505718" longitude="152.857318"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="13">
+		        <span id="result-name13" class="result-name">Aphrodite Street Park</span><br />
+		        <span id="result-suburb13" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating13" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta13" easting="516234.78" northing="6962697.63" park-code="D0905" street="Aphrodite St" latitude="-27.45962143" longitude="153.1645474"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="14">
+		        <span id="result-name14" class="result-name">Archer Parade Park</span><br />
+		        <span id="result-suburb14" class="result-suburb">Corinda</span><br />
+		        <span id="result-rating14" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta14" easting="499378.45" northing="6952970.18" park-code="D0877" street="Cliveden Ave" latitude="-27.54706245" longitude="152.9937045"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="15">
+		        <span id="result-name15" class="result-name">Arnwood Street Park</span><br />
+		        <span id="result-suburb15" class="result-suburb">Tarragindi</span><br />
+		        <span id="result-rating15" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta15" easting="504071.46" northing="6956619.16" park-code="D0394" street="Sunshine Ave" latitude="-27.51411383" longitude="153.0412258"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="16">
+		        <span id="result-name16" class="result-name">Ashgrove Memorial Park</span><br />
+		        <span id="result-suburb16" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating16" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta16" easting="499086.88" northing="6964296.57" park-code="D0188" street="Kadanga St" latitude="-27.4448081" longitude="152.9907599"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="17">
+		        <span id="result-name17" class="result-name">Assembly Street Park</span><br />
+		        <span id="result-suburb17" class="result-suburb">Salisbury</span><br />
+		        <span id="result-rating17" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta17" easting="502393.87" northing="6952895.11" park-code="D1436" street="Assembly St" latitude="-27.54773823" longitude="153.0242466"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="18">
+		        <span id="result-name18" class="result-name">Austin Uhlmann Park</span><br />
+		        <span id="result-suburb18" class="result-suburb">Morningside</span><br />
+		        <span id="result-rating18" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta18" easting="507960.61" northing="6961179.88" park-code="D1149" street="Richmond Rd" latitude="-27.47292262" longitude="153.0805756"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="19">
+		        <span id="result-name19" class="result-name">Balfour Park</span><br />
+		        <span id="result-suburb19" class="result-suburb">Darra</span><br />
+		        <span id="result-rating19" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta19" easting="495627.34" northing="6950472.28" park-code="D0326" street="Winslow St" latitude="-27.56960622" longitude="152.9557021"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="20">
+		        <span id="result-name20" class="result-name">Bangalow Street Park (No.192)</span><br />
+		        <span id="result-suburb20" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating20" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta20" easting="500128.87" northing="6973119.53" park-code="D1277" street="Bangalow St" latitude="-27.36515414" longitude="153.0013031"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="21">
+		        <span id="result-name21" class="result-name">Banksia Park</span><br />
+		        <span id="result-suburb21" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating21" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta21" easting="500338.44" northing="6958309.41" park-code="D0410" street="Sixth Ave" latitude="-27.49886043" longitude="153.0034264"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="22">
+		        <span id="result-name22" class="result-name">Barbour Road Park</span><br />
+		        <span id="result-suburb22" class="result-suburb">Bracken Ridge</span><br />
+		        <span id="result-rating22" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta22" easting="501891.79" northing="6977751.41" park-code="D1293" street="Canterbury St" latitude="-27.32333551" longitude="153.0191226"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="23">
+		        <span id="result-name23" class="result-name">Barnard Street Park</span><br />
+		        <span id="result-suburb23" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating23" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta23" easting="510976.41" northing="6957526.89" park-code="D1517" street="Bridgnorth St" latitude="-27.50588059" longitude="153.1111339"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="24">
+		        <span id="result-name24" class="result-name">Barrack Road Park</span><br />
+		        <span id="result-suburb24" class="result-suburb">Cannon Hill</span><br />
+		        <span id="result-rating24" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta24" easting="508787.77" northing="6962547.64" park-code="D0032" street="Cedar St" latitude="-27.46056945" longitude="153.088938"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="25">
+		        <span id="result-name25" class="result-name">Barston Place Park</span><br />
+		        <span id="result-suburb25" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating25" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta25" easting="506283.41" northing="6957979.05" park-code="D0124" street="Norfolk St" latitude="-27.50182833" longitude="153.063616"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="26">
+		        <span id="result-name26" class="result-name">Baxter Crescent Park</span><br />
+		        <span id="result-suburb26" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating26" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta26" easting="496849.47" northing="6945586.11" park-code="D1352" street="Baxter Cres" latitude="-27.61372114" longitude="152.9680703"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="27">
+		        <span id="result-name27" class="result-name">Beaudesert Road Park</span><br />
+		        <span id="result-suburb27" class="result-suburb">Calamvale</span><br />
+		        <span id="result-rating27" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta27" easting="504507.23" northing="6944107.53" park-code="D1353" street="Beaudesert Rd" latitude="-27.62706564" longitude="153.0456849"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="28">
+		        <span id="result-name28" class="result-name">Beerwah Street Park</span><br />
+		        <span id="result-suburb28" class="result-suburb">Deagon</span><br />
+		        <span id="result-rating28" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta28" easting="505731.12" northing="6976546.28" park-code="D0294" street="Burralong St" latitude="-27.33420487" longitude="153.0579368"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="29">
+		        <span id="result-name29" class="result-name">Bellevue Terrace Park</span><br />
+		        <span id="result-suburb29" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating29" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta29" easting="499577.67" northing="6958912.61" park-code="D0414" street="Sir Fred Schonell Dr" latitude="-27.4934147" longitude="152.9957245"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="30">
+		        <span id="result-name30" class="result-name">Belmont Recreation Reserve</span><br />
+		        <span id="result-suburb30" class="result-suburb">Carina</span><br />
+		        <span id="result-rating30" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta30" easting="509809.88" northing="6958529.81" park-code="D0067" street="Old Cleveland Rd" latitude="-27.49683523" longitude="153.099315"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="31">
+		        <span id="result-name31" class="result-name">Beneke Street Park</span><br />
+		        <span id="result-suburb31" class="result-suburb">Chermside</span><br />
+		        <span id="result-rating31" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta31" easting="502426.29" northing="6971260.05" park-code="D0682" street="Hamilton Rd" latitude="-27.38193953" longitude="153.0245382"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="32">
+		        <span id="result-name32" class="result-name">Bergin Road Park</span><br />
+		        <span id="result-suburb32" class="result-suburb">Ferny Grove</span><br />
+		        <span id="result-rating32" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta32" easting="492396.46" northing="6969285.14" park-code="D1492" street="Bergin Rd" latitude="-27.39975014" longitude="152.9230893"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="33">
+		        <span id="result-name33" class="result-name">Beryl Mckenzie Park</span><br />
+		        <span id="result-suburb33" class="result-suburb">Holland Pk West</span><br />
+		        <span id="result-rating33" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta33" easting="506332.18" northing="6954444.28" park-code="D0888" street="Nursery Rd" latitude="-27.53373973" longitude="153.0641283"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="34">
+		        <span id="result-name34" class="result-name">Bill Cash Memorial Park</span><br />
+		        <span id="result-suburb34" class="result-suburb">Cannon Hill</span><br />
+		        <span id="result-rating34" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta34" easting="508538.08" northing="6961837.91" park-code="D0034" street="Wynnum Rd" latitude="-27.46697841" longitude="153.086416"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="35">
+		        <span id="result-name35" class="result-name">Billabong Place Park</span><br />
+		        <span id="result-suburb35" class="result-suburb">Parkinson</span><br />
+		        <span id="result-rating35" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta35" easting="503472.99" northing="6943670.61" park-code="D1195" street="Gragin Pl" latitude="-27.63101312" longitude="153.0352033"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="36">
+		        <span id="result-name36" class="result-name">Birdwood Road Park</span><br />
+		        <span id="result-suburb36" class="result-suburb">Holland Pk West</span><br />
+		        <span id="result-rating36" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta36" easting="505373.3" northing="6955950.04" park-code="D1526" street="Birdwood Rd" latitude="-27.52015002" longitude="153.0544106"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="37">
+		        <span id="result-name37" class="result-name">Blackbutt Place Park</span><br />
+		        <span id="result-suburb37" class="result-suburb">Brookfield</span><br />
+		        <span id="result-rating37" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta37" easting="492796.6" northing="6957681.5" park-code="D1424" street="Blackbutt Pl" latitude="-27.50451007" longitude="152.9270679"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="38">
+		        <span id="result-name38" class="result-name">Bliss Street Park (No.39)</span><br />
+		        <span id="result-suburb38" class="result-suburb">Gaythorne</span><br />
+		        <span id="result-rating38" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta38" easting="497863.03" northing="6966766.01" park-code="D1534" street="Bliss St" latitude="-27.42251261" longitude="152.9783799"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="39">
+		        <span id="result-name39" class="result-name">Boblynn Street Park (No 64)</span><br />
+		        <span id="result-suburb39" class="result-suburb">Chapel Hill</span><br />
+		        <span id="result-rating39" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta39" easting="494965.57" northing="6957733.41" park-code="D2872" street="Boblynne St" latitude="-27.50405123" longitude="152.9490282"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="40">
+		        <span id="result-name40" class="result-name">Bolton Street Park</span><br />
+		        <span id="result-suburb40" class="result-suburb">Eight Mile Plns</span><br />
+		        <span id="result-rating40" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta40" easting="509101.13" northing="6949489.2" park-code="D0578" street="Bolinda St" latitude="-27.57845783" longitude="153.0922077"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="41">
+		        <span id="result-name41" class="result-name">Booloumba Crescent Park</span><br />
+		        <span id="result-suburb41" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating41" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta41" easting="496648.41" northing="6943617.98" park-code="D2032" street="Booloumba Cres" latitude="-27.63148855" longitude="152.9660272"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="42">
+		        <span id="result-name42" class="result-name">Boondall Wetlands</span><br />
+		        <span id="result-suburb42" class="result-suburb">Nudgee Beach</span><br />
+		        <span id="result-rating42" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta42" easting="509335.22" northing="6974647.14" park-code="D1108" street="Nudgee Rd" latitude="-27.35133113" longitude="153.0943862"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="43">
+		        <span id="result-name43" class="result-name">Booroodabin Recreation Reserve</span><br />
+		        <span id="result-suburb43" class="result-suburb">Newstead</span><br />
+		        <span id="result-rating43" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta43" easting="504217.04" northing="6964313.99" park-code="D0086" street="Breakfast Creek Rd" latitude="-27.44464466" longitude="153.0426731"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="44">
+		        <span id="result-name44" class="result-name">Borthwick Avenue Park</span><br />
+		        <span id="result-suburb44" class="result-suburb">Murarrie</span><br />
+		        <span id="result-rating44" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta44" easting="509933.57" northing="6963717.06" park-code="D1926" street="Borthwick Ave" latitude="-27.45119004" longitude="153.10105"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="45">
+		        <span id="result-name45" class="result-name">Boundary Street Park (Nos148-188)</span><br />
+		        <span id="result-suburb45" class="result-suburb">Tingalpa</span><br />
+		        <span id="result-rating45" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta45" easting="511993.03" northing="6961847.5" park-code="D1443" street="Boundary St" latitude="-27.46686577" longitude="153.1213843"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="46">
+		        <span id="result-name46" class="result-name">Bowen Park</span><br />
+		        <span id="result-suburb46" class="result-suburb">Bowen Hills</span><br />
+		        <span id="result-rating46" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta46" easting="502944.98" northing="6963857.16" park-code="D0087" street="Bowen Bridge Rd" latitude="-27.44877229" longitude="153.029802"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="47">
+		        <span id="result-name47" class="result-name">Boyd Park</span><br />
+		        <span id="result-suburb47" class="result-suburb">Nundah</span><br />
+		        <span id="result-rating47" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta47" easting="505645.68" northing="6969147.83" park-code="D0449" street="Boyd Rd" latitude="-27.40099934" longitude="153.0571074"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="48">
+		        <span id="result-name48" class="result-name">Bradman Street Park</span><br />
+		        <span id="result-suburb48" class="result-suburb">Sunnybank Hills</span><br />
+		        <span id="result-rating48" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta48" easting="503853.17" northing="6948944.57" park-code="D1604" street="Morden Rd" latitude="-27.58339975" longitude="153.03904"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="49">
+		        <span id="result-name49" class="result-name">Bremen Street Park</span><br />
+		        <span id="result-suburb49" class="result-suburb">Hemmant</span><br />
+		        <span id="result-rating49" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta49" easting="513797.86" northing="6962736.43" park-code="D1546" street="Glenwood Pl" latitude="-27.45882338" longitude="153.1396411"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="50">
+		        <span id="result-name50" class="result-name">Bridgnorth Street Park (No.71)</span><br />
+		        <span id="result-suburb50" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating50" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta50" easting="510979.02" northing="6957436.59" park-code="D0862" street="Bridgnorth St" latitude="-27.50669584" longitude="153.1111612"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="51">
+		        <span id="result-name51" class="result-name">Bristol Park</span><br />
+		        <span id="result-suburb51" class="result-suburb">Wavell Heights</span><br />
+		        <span id="result-rating51" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta51" easting="503585.76" northing="6969829.07" park-code="D0232" street="Rode Rd" latitude="-27.39485599" longitude="153.0362688"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="52">
+		        <span id="result-name52" class="result-name">Brookfield Recreation Reserve</span><br />
+		        <span id="result-suburb52" class="result-suburb">Brookfield</span><br />
+		        <span id="result-rating52" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta52" easting="491390.86" northing="6959005.26" park-code="D0273" street="Boscombe Rd" latitude="-27.49255104" longitude="152.9128447"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="53">
+		        <span id="result-name53" class="result-name">Brownlee Street Park</span><br />
+		        <span id="result-suburb53" class="result-suburb">Pinkenba</span><br />
+		        <span id="result-rating53" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta53" easting="513442.8" northing="6969659.99" park-code="D1962" street="Bancroft Rd" latitude="-27.39694849" longitude="153.135629"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="54">
+		        <span id="result-name54" class="result-name">Brydon Street Park</span><br />
+		        <span id="result-suburb54" class="result-suburb">Highgate Hill</span><br />
+		        <span id="result-rating54" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta54" easting="501576.73" northing="6959425.85" park-code="D2103" street="Brydon St" latitude="-27.48878035" longitude="153.0159616"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="55">
+		        <span id="result-name55" class="result-name">Bulimba Riverside Park</span><br />
+		        <span id="result-suburb55" class="result-suburb">Bulimba</span><br />
+		        <span id="result-rating55" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta55" easting="505334.61" northing="6963280.52" park-code="D2672" street="Addison Ave" latitude="-27.45397086" longitude="153.0539866"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="56">
+		        <span id="result-name56" class="result-name">Bundara Park</span><br />
+		        <span id="result-suburb56" class="result-suburb">Keperra</span><br />
+		        <span id="result-rating56" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta56" easting="493985.67" northing="6967231.44" park-code="D1042" street="Balvenie St" latitude="-27.41829906" longitude="152.9391542"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="57">
+		        <span id="result-name57" class="result-name">Burwood Road Park</span><br />
+		        <span id="result-suburb57" class="result-suburb">Everton Park</span><br />
+		        <span id="result-rating57" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta57" easting="498667.69" northing="6968134.06" park-code="D1457" street="Brook St" latitude="-27.41016275" longitude="152.9865223"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="58">
+		        <span id="result-name58" class="result-name">C.J.Greenfield Complex Park</span><br />
+		        <span id="result-suburb58" class="result-suburb">Richlands</span><br />
+		        <span id="result-rating58" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta58" easting="496365.47" northing="6949502.29" park-code="D0564" street="Kimberley St" latitude="-27.57836534" longitude="152.9631769"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="59">
+		        <span id="result-name59" class="result-name">Cadogan Street Park</span><br />
+		        <span id="result-suburb59" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating59" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta59" easting="511609.19" northing="6958430.75" park-code="D0961" street="Meadowlands Rd" latitude="-27.49771538" longitude="153.1175321"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="60">
+		        <span id="result-name60" class="result-name">Camelot Crescent Park</span><br />
+		        <span id="result-suburb60" class="result-suburb">Middle Park</span><br />
+		        <span id="result-rating60" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta60" easting="492372.1" northing="6951700.99" park-code="D1226" street="Camelot Cres" latitude="-27.5584992" longitude="152.9227322"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="61">
+		        <span id="result-name61" class="result-name">Cannon Hill Bushland Reserve</span><br />
+		        <span id="result-suburb61" class="result-suburb">Cannon Hill</span><br />
+		        <span id="result-rating61" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta61" easting="509983.93" northing="6961144.23" park-code="D0593" street="Creek Rd" latitude="-27.4732311" longitude="153.1010555"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="62">
+		        <span id="result-name62" class="result-name">Captain Burke Park</span><br />
+		        <span id="result-suburb62" class="result-suburb">Kangaroo Point</span><br />
+		        <span id="result-rating62" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta62" easting="503453" northing="6962023.91" park-code="D0075" street="Holman St" latitude="-27.46532167" longitude="153.0349481"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="63">
+		        <span id="result-name63" class="result-name">Carew Street Park</span><br />
+		        <span id="result-suburb63" class="result-suburb">Nundah</span><br />
+		        <span id="result-rating63" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta63" easting="505056.43" northing="6968773.74" park-code="D0451" street="Carew St" latitude="-27.40437897" longitude="153.0511485"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="64">
+		        <span id="result-name64" class="result-name">Carr Street Park</span><br />
+		        <span id="result-suburb64" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating64" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta64" easting="500864.12" northing="6958930.58" park-code="D0406" street="Keith St" latitude="-27.49325225" longitude="153.0087481"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="65">
+		        <span id="result-name65" class="result-name">Catalina Circuit Park</span><br />
+		        <span id="result-suburb65" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating65" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta65" easting="496545.8" northing="6944131.34" park-code="D2119" street="Catalina Crct" latitude="-27.6268538" longitude="152.9649886"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="66">
+		        <span id="result-name66" class="result-name">Cecil Road Park</span><br />
+		        <span id="result-suburb66" class="result-suburb">Bardon</span><br />
+		        <span id="result-rating66" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta66" easting="498302.93" northing="6962984.75" park-code="D0179" street="Cecil Rd" latitude="-27.45665053" longitude="152.9828252"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="67">
+		        <span id="result-name67" class="result-name">Centennial Way Park (No.125)</span><br />
+		        <span id="result-suburb67" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating67" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta67" easting="496218.94" northing="6943912.12" park-code="D1803" street="Centennial Way" latitude="-27.62883199" longitude="152.9616748"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="68">
+		        <span id="result-name68" class="result-name">Chateau Street Park</span><br />
+		        <span id="result-suburb68" class="result-suburb">Carseldine</span><br />
+		        <span id="result-rating68" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta68" easting="500822.78" northing="6975185.31" park-code="D0741" street="Chateau St" latitude="-27.34650375" longitude="153.0083185"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="69">
+		        <span id="result-name69" class="result-name">Chelsea Road Park (No.498)</span><br />
+		        <span id="result-suburb69" class="result-suburb">Ransome</span><br />
+		        <span id="result-rating69" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta69" easting="517970.46" northing="6960704.1" park-code="D1872" street="Chelsea Rd" latitude="-27.47712244" longitude="153.1819"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="70">
+		        <span id="result-name70" class="result-name">Chesterfield Crescent Park</span><br />
+		        <span id="result-suburb70" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating70" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta70" easting="508788.21" northing="6946313.22" park-code="D1690" street="Chesterfield Cres" latitude="-27.60713208" longitude="153.0890605"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="71">
+		        <span id="result-name71" class="result-name">Cicada Park</span><br />
+		        <span id="result-suburb71" class="result-suburb">Chapel Hill</span><br />
+		        <span id="result-rating71" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta71" easting="494238.13" northing="6958673.64" park-code="D1078" street="Ironbark Rd" latitude="-27.49555997" longitude="152.9416677"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="72">
+		        <span id="result-name72" class="result-name">Clark Lane Park</span><br />
+		        <span id="result-suburb72" class="result-suburb">Brisbane</span><br />
+		        <span id="result-rating72" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta72" easting="503074.27" northing="6962228.34" park-code="D0101" street="Queen St" latitude="-27.46347698" longitude="153.0311145"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="73">
+		        <span id="result-name73" class="result-name">Clifton Street Park</span><br />
+		        <span id="result-suburb73" class="result-suburb">Moorooka</span><br />
+		        <span id="result-rating73" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta73" easting="502573.18" northing="6955583.95" park-code="D1136" street="Fleurs St" latitude="-27.52346325" longitude="153.0260571"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="74">
+		        <span id="result-name74" class="result-name">Cliveden Park</span><br />
+		        <span id="result-suburb74" class="result-suburb">Fig Tree Pocket</span><br />
+		        <span id="result-rating74" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta74" easting="495904.15" northing="6956305.5" park-code="D0255" street="Moorfields St" latitude="-27.51776007" longitude="152.9599199"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="75">
+		        <span id="result-name75" class="result-name">Collina Crescent Park</span><br />
+		        <span id="result-suburb75" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating75" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta75" easting="496795.04" northing="6945848.19" park-code="D1349" street="Collina Cres" latitude="-27.61135505" longitude="152.9675194"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="76">
+		        <span id="result-name76" class="result-name">Compton Road Park (No.376)</span><br />
+		        <span id="result-suburb76" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating76" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta76" easting="507655.16" northing="6945205.87" park-code="D1072" street="Compton Rd" latitude="-27.6171359" longitude="153.0775851"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="77">
+		        <span id="result-name77" class="result-name">Constellation Way Park</span><br />
+		        <span id="result-suburb77" class="result-suburb">Wynnum</span><br />
+		        <span id="result-rating77" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta77" easting="515602.28" northing="6966125.51" park-code="D1306" street="Constellation Way" latitude="-27.43190164" longitude="153.1555656"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="78">
+		        <span id="result-name78" class="result-name">Coonara Street Park</span><br />
+		        <span id="result-suburb78" class="result-suburb">Holland Park</span><br />
+		        <span id="result-rating78" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta78" easting="506698.32" northing="6956669.22" park-code="D0116" street="Coonara St" latitude="-27.51365145" longitude="153.0678239"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="79">
+		        <span id="result-name79" class="result-name">Corbyn Street Park</span><br />
+		        <span id="result-suburb79" class="result-suburb">Banyo</span><br />
+		        <span id="result-rating79" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta79" easting="508319.62" northing="6970819.32" park-code="D2185" street="Tufnell Rd" latitude="-27.38589531" longitude="153.0841434"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="80">
+		        <span id="result-name80" class="result-name">Corypha Crescent Park</span><br />
+		        <span id="result-suburb80" class="result-suburb">Calamvale</span><br />
+		        <span id="result-rating80" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta80" easting="505728.22" northing="6944553.52" park-code="D1438" street="Raincliffe Pl" latitude="-27.62303474" longitude="153.0580587"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="81">
+		        <span id="result-name81" class="result-name">Cracknell Road Park</span><br />
+		        <span id="result-suburb81" class="result-suburb">Tarragindi</span><br />
+		        <span id="result-rating81" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta81" easting="504095.79" northing="6955903.57" park-code="D0397" street="Shaftesbury St" latitude="-27.52057401" longitude="153.0414746"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="82">
+		        <span id="result-name82" class="result-name">Cribb Road Park</span><br />
+		        <span id="result-suburb82" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating82" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta82" easting="511876.36" northing="6955186.02" park-code="D1638" street="Cribb Rd" latitude="-27.52700617" longitude="153.1202687"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="83">
+		        <span id="result-name83" class="result-name">Cubberla Creek Reserve</span><br />
+		        <span id="result-suburb83" class="result-suburb">Chapel Hill</span><br />
+		        <span id="result-rating83" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta83" easting="495301.82" northing="6956544.85" park-code="D0253" street="Fig Tree Pocket Rd" latitude="-27.51478267" longitude="152.9524281"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="84">
+		        <span id="result-name84" class="result-name">Cyril Sims Park</span><br />
+		        <span id="result-suburb84" class="result-suburb">Calamvale</span><br />
+		        <span id="result-rating84" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta84" easting="505907.6" northing="6945582.08" park-code="D0782" street="Marsala St" latitude="-27.61374831" longitude="153.0598717"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="85">
+		        <span id="result-name85" class="result-name">Dairy Swamp Road Park</span><br />
+		        <span id="result-suburb85" class="result-suburb">Tingalpa</span><br />
+		        <span id="result-rating85" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta85" easting="513490.13" northing="6959644.77" park-code="D0763" street="Castlerea St" latitude="-27.483404" longitude="153.1366085"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="86">
+		        <span id="result-name86" class="result-name">Darien Street Park (No.29)</span><br />
+		        <span id="result-suburb86" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating86" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta86" easting="498936.1" northing="6973904.73" park-code="D1757" street="Darien St" latitude="-27.35806483" longitude="152.9892426"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="87">
+		        <span id="result-name87" class="result-name">David & Barbara Anderson Park</span><br />
+		        <span id="result-suburb87" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating87" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta87" easting="494576.19" northing="6965424.57" park-code="D1491" street="Davander Cl" latitude="-27.43461399" longitude="152.9451203"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="88">
+		        <span id="result-name88" class="result-name">Deagon Lands Park</span><br />
+		        <span id="result-suburb88" class="result-suburb">Deagon</span><br />
+		        <span id="result-rating88" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta88" easting="506369.06" northing="6976563.93" park-code="D0620" street="Hickson Rd" latitude="-27.33404272" longitude="153.0643857"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="89">
+		        <span id="result-name89" class="result-name">Decker Park</span><br />
+		        <span id="result-suburb89" class="result-suburb">Brighton</span><br />
+		        <span id="result-rating89" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta89" easting="506349.31" northing="6981908.45" park-code="D0275" street="Twenty-Fifth Ave" latitude="-27.28579147" longitude="153.0641583"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="90">
+		        <span id="result-name90" class="result-name">Delavan Street Park</span><br />
+		        <span id="result-suburb90" class="result-suburb">Wishart</span><br />
+		        <span id="result-rating90" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta90" easting="509635.68" northing="6951379.69" park-code="D0922" street="Delavan St" latitude="-27.56138704" longitude="153.0976083"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="91">
+		        <span id="result-name91" class="result-name">Denise Street Park (No.12)</span><br />
+		        <span id="result-suburb91" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating91" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta91" easting="515878.22" northing="6961348.91" park-code="D1327" street="Denise St" latitude="-27.47132716" longitude="153.1607136"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="92">
+		        <span id="result-name92" class="result-name">Derby Street Park</span><br />
+		        <span id="result-suburb92" class="result-suburb">Highgate Hill</span><br />
+		        <span id="result-rating92" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta92" easting="501661.14" northing="6959132.27" park-code="D1479" street="Derby St" latitude="-27.49143069" longitude="153.0168166"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="93">
+		        <span id="result-name93" class="result-name">Devlan Street Park</span><br />
+		        <span id="result-suburb93" class="result-suburb">Mansfield</span><br />
+		        <span id="result-rating93" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta93" easting="509797.85" northing="6955107.32" park-code="D1106" street="Secam St" latitude="-27.52773334" longitude="153.0992209"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="94">
+		        <span id="result-name94" class="result-name">Dianthus Street (South) Park</span><br />
+		        <span id="result-suburb94" class="result-suburb">Wakerley</span><br />
+		        <span id="result-rating94" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta94" easting="515060.31" northing="6959343.36" park-code="D2177" street="Dianthus St" latitude="-27.48944251" longitude="153.1524599"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="95">
+		        <span id="result-name95" class="result-name">Dickson Street Park</span><br />
+		        <span id="result-suburb95" class="result-suburb">Bald Hills</span><br />
+		        <span id="result-rating95" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta95" easting="501454.65" northing="6977145.21" park-code="D1600" street="Telegraph Rd" latitude="-27.32880887" longitude="153.0147046"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="96">
+		        <span id="result-name96" class="result-name">Diosma Street Park</span><br />
+		        <span id="result-suburb96" class="result-suburb">Bellbowrie</span><br />
+		        <span id="result-rating96" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta96" easting="488395.15" northing="6951629.99" park-code="D0675" street="Mazzard St" latitude="-27.55911196" longitude="152.8824466"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="97">
+		        <span id="result-name97" class="result-name">Donaldson Street Park</span><br />
+		        <span id="result-suburb97" class="result-suburb">Norman Park</span><br />
+		        <span id="result-rating97" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta97" easting="505505.87" northing="6960577.62" park-code="D0045" street="Donaldson St" latitude="-27.47837196" longitude="153.055732"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="98">
+		        <span id="result-name98" class="result-name">Dorrington Park</span><br />
+		        <span id="result-suburb98" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating98" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta98" easting="498593.27" northing="6964814.25" park-code="D0161" street="Mirrabooka Rd" latitude="-27.44013411" longitude="152.9857656"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="99">
+		        <span id="result-name99" class="result-name">Doyle Place Park (No.29)</span><br />
+		        <span id="result-suburb99" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating99" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta99" easting="493209.7" northing="6963068.77" park-code="D1907" street="Doyle Pl" latitude="-27.45587608" longitude="152.9312806"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="100">
+		        <span id="result-name100" class="result-name">Dunlop Park</span><br />
+		        <span id="result-suburb100" class="result-suburb">Corinda</span><br />
+		        <span id="result-rating100" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta100" easting="498277" northing="6952995.28" park-code="D0316" street="Turner St" latitude="-27.5468349" longitude="152.9825485"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="101">
+		        <span id="result-name101" class="result-name">Dyson Avenue Park (No.50)</span><br />
+		        <span id="result-suburb101" class="result-suburb">Sunnybank</span><br />
+		        <span id="result-rating101" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta101" easting="504500.37" northing="6949762.73" park-code="D1511" street="Dyson Ave" latitude="-27.57601155" longitude="153.0455942"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="102">
+		        <span id="result-name102" class="result-name">Eagle Farm Road Park</span><br />
+		        <span id="result-suburb102" class="result-suburb">Pinkenba</span><br />
+		        <span id="result-rating102" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta102" easting="512029.23" northing="6967191.1" park-code="D1902" street="Eagle Farm Rd" latitude="-27.41862341" longitude="153.1216976"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="103">
+		        <span id="result-name103" class="result-name">Ed Devenport Rotary Park</span><br />
+		        <span id="result-suburb103" class="result-suburb">Lota</span><br />
+		        <span id="result-rating103" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta103" easting="518745.75" northing="6961353" park-code="D0532" street="Beltana St" latitude="-27.47125376" longitude="153.1897374"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="104">
+		        <span id="result-name104" class="result-name">Eildon Hill Reserve</span><br />
+		        <span id="result-suburb104" class="result-suburb">Wilston</span><br />
+		        <span id="result-rating104" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta104" easting="502305.24" northing="6965848.77" park-code="D0495" street="Paling Ave" latitude="-27.43079317" longitude="153.0233243"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="105">
+		        <span id="result-name105" class="result-name">El Paso Street Park</span><br />
+		        <span id="result-suburb105" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating105" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta105" easting="496443.07" northing="6962990.36" park-code="D1126" street="Paten Rd" latitude="-27.45659625" longitude="152.9640029"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="106">
+		        <span id="result-name106" class="result-name">Ellen Grove District Sports Park</span><br />
+		        <span id="result-suburb106" class="result-suburb">Ellen Grove</span><br />
+		        <span id="result-rating106" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta106" easting="495748.79" northing="6945701.31" park-code="D2194" street="Coriander Pl" latitude="-27.61267817" longitude="152.9569157"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="107">
+		        <span id="result-name107" class="result-name">Emma Street Park</span><br />
+		        <span id="result-suburb107" class="result-suburb">Wooloowin</span><br />
+		        <span id="result-rating107" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta107" easting="504523.41" northing="6968384.27" park-code="D0634" street="Emma St" latitude="-27.40789698" longitude="153.0457581"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="108">
+		        <span id="result-name108" class="result-name">Englefield Road Park (Nos.35-47)</span><br />
+		        <span id="result-suburb108" class="result-suburb">Oxley</span><br />
+		        <span id="result-rating108" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta108" easting="497516.06" northing="6951843.93" park-code="D1484" street="Mabel St" latitude="-27.55722792" longitude="152.9748389"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="109">
+		        <span id="result-name109" class="result-name">Eric Shaw Park</span><br />
+		        <span id="result-suburb109" class="result-suburb">Wynnum</span><br />
+		        <span id="result-rating109" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta109" easting="516231.22" northing="6965170.22" park-code="D0521" street="Selina St" latitude="-27.43682436" longitude="153.1642353"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="110">
+		        <span id="result-name110" class="result-name">Esplanade Park</span><br />
+		        <span id="result-suburb110" class="result-suburb">Yeronga</span><br />
+		        <span id="result-rating110" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta110" easting="500249.67" northing="6956505.3" park-code="D0984" street="Esplanade" latitude="-27.5147497" longitude="153.0021643"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="111">
+		        <span id="result-name111" class="result-name">Eugenia Street Park</span><br />
+		        <span id="result-suburb111" class="result-suburb">Richlands</span><br />
+		        <span id="result-rating111" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta111" easting="496515.16" northing="6948705.57" park-code="D1249" street="Eugenia St" latitude="-27.58555839" longitude="152.9646912"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="112">
+		        <span id="result-name112" class="result-name">Eyre Place Park</span><br />
+		        <span id="result-suburb112" class="result-suburb">Drewvale</span><br />
+		        <span id="result-rating112" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta112" easting="505981.03" northing="6941058.34" park-code="D1822" street="Leichhardt Pl" latitude="-27.65458723" longitude="153.0606385"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="113">
+		        <span id="result-name113" class="result-name">Fairview Street Park</span><br />
+		        <span id="result-suburb113" class="result-suburb">Annerley</span><br />
+		        <span id="result-rating113" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta113" easting="502587.61" northing="6957400.77" park-code="D0377" street="Victoria Tce" latitude="-27.50706114" longitude="153.0261993"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="114">
+		        <span id="result-name114" class="result-name">Faulkner Park</span><br />
+		        <span id="result-suburb114" class="result-suburb">Graceville</span><br />
+		        <span id="result-rating114" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta114" easting="498426.21" northing="6956201.82" park-code="D0010" street="Leybourne St" latitude="-27.51788675" longitude="152.984064"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="115">
+		        <span id="result-name115" class="result-name">Felspar Street Park</span><br />
+		        <span id="result-suburb115" class="result-suburb">Eight Mile Plns</span><br />
+		        <span id="result-rating115" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta115" easting="508377.39" northing="6949531.59" park-code="D0829" street="Felspar St" latitude="-27.57807981" longitude="153.0848749"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="116">
+		        <span id="result-name116" class="result-name">Fernwood Place Park</span><br />
+		        <span id="result-suburb116" class="result-suburb">Taigum</span><br />
+		        <span id="result-rating116" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta116" easting="504256.41" northing="6974929.74" park-code="D2115" street="Fernwood Pl" latitude="-27.34880466" longitude="153.0430343"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="117">
+		        <span id="result-name117" class="result-name">Fig Tree Common Park</span><br />
+		        <span id="result-suburb117" class="result-suburb">Fig Tree Pocket</span><br />
+		        <span id="result-rating117" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta117" easting="495504.36" northing="6955422.66" park-code="D1018" street="Errogie Pl" latitude="-27.52491441" longitude="152.9544747"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="118">
+		        <span id="result-name118" class="result-name">Fihelly Street Park</span><br />
+		        <span id="result-suburb118" class="result-suburb">Keperra</span><br />
+		        <span id="result-rating118" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta118" easting="496081.21" northing="6968556.64" park-code="D0158" street="Fihelly St" latitude="-27.40634274" longitude="152.9603586"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="119">
+		        <span id="result-name119" class="result-name">Flametree Street Park</span><br />
+		        <span id="result-suburb119" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating119" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta119" easting="500171.77" northing="6974908.21" park-code="D0750" street="Flametree St" latitude="-27.34900566" longitude="153.0017367"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="120">
+		        <span id="result-name120" class="result-name">Flockton Street Park</span><br />
+		        <span id="result-suburb120" class="result-suburb">Stafford Hts</span><br />
+		        <span id="result-rating120" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta120" easting="500155.9" northing="6969724.17" park-code="D0684" street="Lanchester St" latitude="-27.39580773" longitude="153.0015768"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="121">
+		        <span id="result-name121" class="result-name">Ford Road Park</span><br />
+		        <span id="result-suburb121" class="result-suburb">Burbank</span><br />
+		        <span id="result-rating121" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta121" easting="515186.46" northing="6948176.96" park-code="D0843" street="Ford Rd" latitude="-27.59024988" longitude="153.1538773"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="122">
+		        <span id="result-name122" class="result-name">Formosa Road Park</span><br />
+		        <span id="result-suburb122" class="result-suburb">Gumdale</span><br />
+		        <span id="result-rating122" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta122" easting="514858.34" northing="6958691.15" park-code="D1853" street="Formosa Rd" latitude="-27.49533281" longitude="153.1504233"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="123">
+		        <span id="result-name123" class="result-name">Foxton Street Park (No.41A)</span><br />
+		        <span id="result-suburb123" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating123" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta123" easting="497237.97" northing="6957768.56" park-code="D0426" street="Foxton St" latitude="-27.50374039" longitude="152.9720355"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="124">
+		        <span id="result-name124" class="result-name">Franquin Crescent Park</span><br />
+		        <span id="result-suburb124" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating124" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta124" easting="509757.3" northing="6947570.51" park-code="D1100" street="Westpark Pl" latitude="-27.59577487" longitude="153.0988712"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="125">
+		        <span id="result-name125" class="result-name">Fremont Street Park</span><br />
+		        <span id="result-suburb125" class="result-suburb">Svtn Mile Rocks</span><br />
+		        <span id="result-rating125" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta125" easting="495975.43" northing="6952928.16" park-code="D1202" street="Delapine Pl" latitude="-27.54743594" longitude="152.9592367"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="126">
+		        <span id="result-name126" class="result-name">Gaddes Park</span><br />
+		        <span id="result-suburb126" class="result-suburb">Coopers Plains</span><br />
+		        <span id="result-rating126" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta126" easting="504100.95" northing="6949811.69" park-code="D1509" street="Evenwood St" latitude="-27.57557078" longitude="153.0415475"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="127">
+		        <span id="result-name127" class="result-name">Garden Road Park</span><br />
+		        <span id="result-suburb127" class="result-suburb">Richlands</span><br />
+		        <span id="result-rating127" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta127" easting="494876.23" northing="6947539.98" park-code="D2129" street="Progress Rd" latitude="-27.59607596" longitude="152.9480804"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="128">
+		        <span id="result-name128" class="result-name">Garth Webb Park</span><br />
+		        <span id="result-suburb128" class="result-suburb">Camp Hill</span><br />
+		        <span id="result-rating128" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta128" easting="508494.77" northing="6959459" park-code="D0055" street="Stanley Rd" latitude="-27.48845543" longitude="153.0859943"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="129">
+		        <span id="result-name129" class="result-name">George Scarlett Park</span><br />
+		        <span id="result-suburb129" class="result-suburb">Corinda</span><br />
+		        <span id="result-rating129" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta129" easting="498470.82" northing="6952770.69" park-code="D0011" street="Pratten St" latitude="-27.54886271" longitude="152.9845113"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="130">
+		        <span id="result-name130" class="result-name">Gibson Place Park (No 18)</span><br />
+		        <span id="result-suburb130" class="result-suburb">Brookfield</span><br />
+		        <span id="result-rating130" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta130" easting="491833.94" northing="6957041.75" park-code="D1684" street="Gibson Pl" latitude="-27.51028023" longitude="152.917317"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="131">
+		        <span id="result-name131" class="result-name">Giraween Park</span><br />
+		        <span id="result-suburb131" class="result-suburb">Graceville</span><br />
+		        <span id="result-rating131" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta131" easting="498852.96" northing="6955798.39" park-code="D0009" street="Verney Rd East" latitude="-27.52152929" longitude="152.9883848"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="132">
+		        <span id="result-name132" class="result-name">Glen Parade Park (No.6)</span><br />
+		        <span id="result-suburb132" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating132" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta132" easting="498377.14" northing="6963782.83" park-code="D2011" street="Glen Pde" latitude="-27.44944553" longitude="152.9835772"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="133">
+		        <span id="result-name133" class="result-name">Glenefer Street Park</span><br />
+		        <span id="result-suburb133" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating133" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta133" easting="506852.19" northing="6947148.69" park-code="D1208" street="Glenefer St" latitude="-27.59960076" longitude="153.069436"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="134">
+		        <span id="result-name134" class="result-name">Glindemann Drive Park</span><br />
+		        <span id="result-suburb134" class="result-suburb">Holland Park</span><br />
+		        <span id="result-rating134" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta134" easting="506542.41" northing="6955962.54" park-code="D0057" street="Holland Rd" latitude="-27.52003202" longitude="153.0662491"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="135">
+		        <span id="result-name135" class="result-name">Golden Oak Crescent Park</span><br />
+		        <span id="result-suburb135" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating135" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta135" easting="511449.14" northing="6955319.74" park-code="D1417" street="Cowell St" latitude="-27.52580265" longitude="153.1159412"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="136">
+		        <span id="result-name136" class="result-name">Googie Crescent Park</span><br />
+		        <span id="result-suburb136" class="result-suburb">Eight Mile Plns</span><br />
+		        <span id="result-rating136" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta136" easting="509297.68" northing="6948904.87" park-code="D1147" street="Bordeaux St" latitude="-27.58373172" longitude="153.0942035"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="137">
+		        <span id="result-name137" class="result-name">Gorman Crinnen Park</span><br />
+		        <span id="result-suburb137" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating137" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta137" easting="506601.19" northing="6946238.87" park-code="D0839" street="Condamine St" latitude="-27.60781572" longitude="153.0668975"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="138">
+		        <span id="result-name138" class="result-name">Graceville Riverside Parklands</span><br />
+		        <span id="result-suburb138" class="result-suburb">Graceville</span><br />
+		        <span id="result-rating138" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta138" easting="499165.97" northing="6955717.32" park-code="D0824" street="Nadine St" latitude="-27.52226139" longitude="152.9915545"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="139">
+		        <span id="result-name139" class="result-name">Grange Forest Park</span><br />
+		        <span id="result-suburb139" class="result-suburb">Grange</span><br />
+		        <span id="result-rating139" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta139" easting="501106.75" northing="6966936.48" park-code="D0499" street="Raymont Rd" latitude="-27.42097476" longitude="153.011197"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="140">
+		        <span id="result-name140" class="result-name">Greenhills Park</span><br />
+		        <span id="result-suburb140" class="result-suburb">Alderley</span><br />
+		        <span id="result-rating140" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta140" easting="499974.92" northing="6966026.11" park-code="D1389" street="Graham St" latitude="-27.42919408" longitude="152.9997463"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="141">
+		        <span id="result-name141" class="result-name">Grenier Park</span><br />
+		        <span id="result-suburb141" class="result-suburb">Acacia Ridge</span><br />
+		        <span id="result-rating141" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta141" easting="501928.1" northing="6949390.76" park-code="D0568" street="Oxley St" latitude="-27.57937577" longitude="153.0195346"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="142">
+		        <span id="result-name142" class="result-name">Grove Park</span><br />
+		        <span id="result-suburb142" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating142" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta142" easting="507750.06" northing="6947107.11" park-code="D0802" street="Pinetree Pl" latitude="-27.59997129" longitude="153.0785347"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="143">
+		        <span id="result-name143" class="result-name">Gumnut Street Park</span><br />
+		        <span id="result-suburb143" class="result-suburb">Taigum</span><br />
+		        <span id="result-rating143" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta143" easting="504691.49" northing="6975787.42" park-code="D1716" street="Roghan Rd" latitude="-27.34105999" longitude="153.0474299"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="144">
+		        <span id="result-name144" class="result-name">Habitat Place Park</span><br />
+		        <span id="result-suburb144" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating144" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta144" easting="499078.85" northing="6972368.96" park-code="D1329" street="Habitat Pl" latitude="-27.37193005" longitude="152.9906848"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="145">
+		        <span id="result-name145" class="result-name">Halifax Street Park</span><br />
+		        <span id="result-suburb145" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating145" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta145" easting="497573.86" northing="6945462.01" park-code="D1648" street="Mulgrave Cres" latitude="-27.61484296" longitude="152.9754115"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="146">
+		        <span id="result-name146" class="result-name">Hancock Park - Pine Village Park</span><br />
+		        <span id="result-suburb146" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating146" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta146" easting="496111.24" northing="6945480.1" park-code="D1214" street="Huon Pl" latitude="-27.61533399" longitude="152.9606321"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="147">
+		        <span id="result-name147" class="result-name">Hargreaves Road Park</span><br />
+		        <span id="result-suburb147" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating147" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta147" easting="515345.69" northing="6961052.16" park-code="D2061" street="Burnett St" latitude="-27.47401237" longitude="153.1553272"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="148">
+		        <span id="result-name148" class="result-name">Harry Kirby Park</span><br />
+		        <span id="result-suburb148" class="result-suburb">Aspley</span><br />
+		        <span id="result-rating148" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta148" easting="502610.78" northing="6973634.45" park-code="D0223" street="Kirby Rd" latitude="-27.36050289" longitude="153.026399"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="149">
+		        <span id="result-name149" class="result-name">Hawkesbury Road Park (No.222A)</span><br />
+		        <span id="result-suburb149" class="result-suburb">Moggill</span><br />
+		        <span id="result-rating149" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta149" easting="485424.31" northing="6950318.76" park-code="D1993" street="Hawkesbury Rd" latitude="-27.57092079" longitude="152.8523372"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="150">
+		        <span id="result-name150" class="result-name">Hazel Street Park</span><br />
+		        <span id="result-suburb150" class="result-suburb">Heathwood</span><br />
+		        <span id="result-rating150" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta150" easting="498885.71" northing="6943296.79" park-code="D2635" street="Hazel St" latitude="-27.63439189" longitude="152.9887049"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="151">
+		        <span id="result-name151" class="result-name">Helmsley Court Park</span><br />
+		        <span id="result-suburb151" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating151" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta151" easting="509757.84" northing="6956799.63" park-code="D0777" street="Helmsley Ct" latitude="-27.51245558" longitude="153.098802"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="152">
+		        <span id="result-name152" class="result-name">Henry Street Park</span><br />
+		        <span id="result-suburb152" class="result-suburb">Wooloowin</span><br />
+		        <span id="result-rating152" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta152" easting="504732.5" northing="6968490.9" park-code="D0513" street="Shaw Rd" latitude="-27.40693362" longitude="153.0478729"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="153">
+		        <span id="result-name153" class="result-name">Heritage Park</span><br />
+		        <span id="result-suburb153" class="result-suburb">Karana Downs</span><br />
+		        <span id="result-rating153" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta153" easting="483419.05" northing="6953321.8" park-code="D1888" street="College Rd" latitude="-27.54378674" longitude="152.8320637"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="154">
+		        <span id="result-name154" class="result-name">Highgate Hill Park</span><br />
+		        <span id="result-suburb154" class="result-suburb">Highgate Hill</span><br />
+		        <span id="result-rating154" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta154" easting="501644.76" northing="6959659.94" park-code="D0354" street="Bellevue St" latitude="-27.48666693" longitude="153.01665"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="155">
+		        <span id="result-name155" class="result-name">Hinchinbrook Circuit Park</span><br />
+		        <span id="result-suburb155" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating155" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta155" easting="498074.04" northing="6942903.89" park-code="D2141" street="Hinchinbrook Crct" latitude="-27.6354254" longitude="152.9789164"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="156">
+		        <span id="result-name156" class="result-name">Hoffman Street Park</span><br />
+		        <span id="result-suburb156" class="result-suburb">Mcdowall</span><br />
+		        <span id="result-rating156" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta156" easting="499693.57" northing="6971178.55" park-code="D1240" street="De Mille St" latitude="-27.38267748" longitude="152.9969009"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="157">
+		        <span id="result-name157" class="result-name">Home Street Park (No.104)</span><br />
+		        <span id="result-suburb157" class="result-suburb">Fairfield</span><br />
+		        <span id="result-rating157" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta157" easting="502452.74" northing="6957659.53" park-code="D1706" street="Home St" latitude="-27.50472532" longitude="153.0248332"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="158">
+		        <span id="result-name158" class="result-name">Horizon Drive Park</span><br />
+		        <span id="result-suburb158" class="result-suburb">Middle Park</span><br />
+		        <span id="result-rating158" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta158" easting="492199.65" northing="6952514.77" park-code="D1016" street="Horizon Dr" latitude="-27.55115157" longitude="152.9209907"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="159">
+		        <span id="result-name159" class="result-name">Hutchison Park</span><br />
+		        <span id="result-suburb159" class="result-suburb">Shorncliffe</span><br />
+		        <span id="result-rating159" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta159" easting="507981.65" northing="6977412.69" park-code="D0289" street="Friday St" latitude="-27.32637156" longitude="153.080682"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="160">
+		        <span id="result-name160" class="result-name">Illaweena Street Park (No.517)</span><br />
+		        <span id="result-suburb160" class="result-suburb">Drewvale</span><br />
+		        <span id="result-rating160" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta160" easting="506666.41" northing="6941755.14" park-code="D1873" street="Illaweena St" latitude="-27.64829353" longitude="153.0675833"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="161">
+		        <span id="result-name161" class="result-name">Indooroopilly Ferry Reserve</span><br />
+		        <span id="result-suburb161" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating161" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta161" easting="497381.07" northing="6957660.48" park-code="D0427" street="Radnor St" latitude="-27.50471645" longitude="152.9734842"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="162">
+		        <span id="result-name162" class="result-name">Ipswich Road Park (No. 2114)</span><br />
+		        <span id="result-suburb162" class="result-suburb">Oxley</span><br />
+		        <span id="result-rating162" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta162" easting="498353.47" northing="6950857.75" park-code="D1665" street="Factory Rd" latitude="-27.56613239" longitude="152.9833201"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="163">
+		        <span id="result-name163" class="result-name">Ironwood Street Park</span><br />
+		        <span id="result-suburb163" class="result-suburb">Aspley</span><br />
+		        <span id="result-rating163" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta163" easting="501200.74" northing="6972245.24" park-code="D0795" street="Ironwood St" latitude="-27.37304675" longitude="153.0121427"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="164">
+		        <span id="result-name164" class="result-name">J.C.Trotter Memorial Park</span><br />
+		        <span id="result-suburb164" class="result-suburb">Burbank</span><br />
+		        <span id="result-rating164" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta164" easting="516939.88" northing="6952361.52" park-code="D0805" street="Mt Cotton Rd" latitude="-27.55245163" longitude="153.171585"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="165">
+		        <span id="result-name165" class="result-name">Jack Kerr Court Park</span><br />
+		        <span id="result-suburb165" class="result-suburb">Mt Crosby</span><br />
+		        <span id="result-rating165" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta165" easting="482536.93" northing="6956618.92" park-code="D2142" street="Jack Kerr Ct" latitude="-27.51400967" longitude="152.823177"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="166">
+		        <span id="result-name166" class="result-name">Jagera Park</span><br />
+		        <span id="result-suburb166" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating166" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta166" easting="508647.56" northing="6947862.37" park-code="D0840" street="Jandowae St" latitude="-27.59314752" longitude="153.087624"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="167">
+		        <span id="result-name167" class="result-name">James Warner Park</span><br />
+		        <span id="result-suburb167" class="result-suburb">Kangaroo Point</span><br />
+		        <span id="result-rating167" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta167" easting="503372.41" northing="6961868.56" park-code="D0088" street="Annie St" latitude="-27.46672433" longitude="153.0341329"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="168">
+		        <span id="result-name168" class="result-name">Jesmond Road Park (No.467B)</span><br />
+		        <span id="result-suburb168" class="result-suburb">Fig Tree Pocket</span><br />
+		        <span id="result-rating168" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta168" easting="496643.06" northing="6955630.87" park-code="D0618" street="Jesmond Rd" latitude="-27.52303801" longitude="152.9660063"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="169">
+		        <span id="result-name169" class="result-name">Jindalee Mun Golf Links Park</span><br />
+		        <span id="result-suburb169" class="result-suburb">Jindalee</span><br />
+		        <span id="result-rating169" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta169" easting="494570.79" northing="6954265.12" park-code="D0332" street="Sinnamon Rd" latitude="-27.53536113" longitude="152.9450157"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="170">
+		        <span id="result-name170" class="result-name">Joe Foster Park</span><br />
+		        <span id="result-suburb170" class="result-suburb">Camp Hill</span><br />
+		        <span id="result-rating170" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta170" easting="506851.91" northing="6958919" park-code="D0968" street="Carranya St" latitude="-27.49333979" longitude="153.0693664"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="171">
+		        <span id="result-name171" class="result-name">John French Memorial Park</span><br />
+		        <span id="result-suburb171" class="result-suburb">Gaythorne</span><br />
+		        <span id="result-rating171" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta171" easting="497415.85" northing="6966804.76" park-code="D2027" street="Nambour St" latitude="-27.42216193" longitude="152.9738557"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="172">
+		        <span id="result-name172" class="result-name">John Tucker Park</span><br />
+		        <span id="result-suburb172" class="result-suburb">Everton Park</span><br />
+		        <span id="result-rating172" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta172" easting="497872.09" northing="6969979.67" park-code="D0837" street="Banek Pl" latitude="-27.39349944" longitude="152.9784772"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="173">
+		        <span id="result-name173" class="result-name">Joseph Lee Park</span><br />
+		        <span id="result-suburb173" class="result-suburb">Zillmere</span><br />
+		        <span id="result-rating173" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta173" easting="504715.47" northing="6974486.99" park-code="D0242" street="Tedman St" latitude="-27.35280039" longitude="153.0476774"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="174">
+		        <span id="result-name174" class="result-name">Judith Court Park</span><br />
+		        <span id="result-suburb174" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating174" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta174" easting="507825.24" northing="6947858.57" park-code="D0921" street="Judith Ct" latitude="-27.59318685" longitude="153.0792917"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="175">
+		        <span id="result-name175" class="result-name">Kalinga Park</span><br />
+		        <span id="result-suburb175" class="result-suburb">Clayfield</span><br />
+		        <span id="result-rating175" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta175" easting="505237.23" northing="6968399.25" park-code="D0463" street="Kalinga St" latitude="-27.4077592" longitude="153.052979"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="176">
+		        <span id="result-name176" class="result-name">Kangaroo Gully (202) Park</span><br />
+		        <span id="result-suburb176" class="result-suburb">Bellbowrie</span><br />
+		        <span id="result-rating176" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta176" easting="487677.3" northing="6951472.21" park-code="D2133" street="Kangaroo Gully Rd" latitude="-27.56052999" longitude="152.8751735"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="177">
+		        <span id="result-name177" class="result-name">Karawatha Forest Park</span><br />
+		        <span id="result-suburb177" class="result-suburb">Karawatha</span><br />
+		        <span id="result-rating177" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta177" easting="506795.96" northing="6942411.06" park-code="D1247" street="Acacia Rd" latitude="-27.64237136" longitude="153.0688929"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="178">
+		        <span id="result-name178" class="result-name">Kathleen Street Park</span><br />
+		        <span id="result-suburb178" class="result-suburb">Richlands</span><br />
+		        <span id="result-rating178" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta178" easting="495746.64" northing="6947722.15" park-code="D3117" street="Kathleen St" latitude="-27.59443434" longitude="152.956901"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="179">
+		        <span id="result-name179" class="result-name">Kedron Bridge Reserve</span><br />
+		        <span id="result-suburb179" class="result-suburb">Lutwyche</span><br />
+		        <span id="result-rating179" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta179" easting="503495.93" northing="6967607.63" park-code="D0511" street="Perry St" latitude="-27.4149116" longitude="153.0353666"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="180">
+		        <span id="result-name180" class="result-name">Kelvin Close Park</span><br />
+		        <span id="result-suburb180" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating180" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta180" easting="495949.34" northing="6946585.12" park-code="D1215" street="Cressbrook St" latitude="-27.60557706" longitude="152.9594617"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="181">
+		        <span id="result-name181" class="result-name">Kenmore Reserve</span><br />
+		        <span id="result-suburb181" class="result-suburb">Kenmore</span><br />
+		        <span id="result-rating181" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta181" easting="494131.76" northing="6957240.28" park-code="D0251" street="Moggill Rd" latitude="-27.50849976" longitude="152.9405839"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="182">
+		        <span id="result-name182" class="result-name">Kensington Place Park</span><br />
+		        <span id="result-suburb182" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating182" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta182" easting="500262.78" northing="6974068.73" park-code="D1802" street="Chelsea Cres" latitude="-27.35658457" longitude="153.0026571"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="183">
+		        <span id="result-name183" class="result-name">Keralgerie Park</span><br />
+		        <span id="result-suburb183" class="result-suburb">Morningside</span><br />
+		        <span id="result-rating183" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta183" easting="507821.98" northing="6961113.34" park-code="D1858" street="Richmond Rd" latitude="-27.47352414" longitude="153.0791728"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="184">
+		        <span id="result-name184" class="result-name">Kholo Bushland Reserve</span><br />
+		        <span id="result-suburb184" class="result-suburb">Kholo</span><br />
+		        <span id="result-rating184" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta184" easting="481274.17" northing="6958297.54" park-code="D1896" street="Lake Manchester Rd" latitude="-27.49883845" longitude="152.8104169"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="185">
+		        <span id="result-name185" class="result-name">Kilkivan Avenue Park South</span><br />
+		        <span id="result-suburb185" class="result-suburb">Kenmore</span><br />
+		        <span id="result-rating185" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta185" easting="492794.66" northing="6956549.51" park-code="D0264" street="Kilkivan Ave" latitude="-27.51472958" longitude="152.9270415"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="186">
+		        <span id="result-name186" class="result-name">King Street Park</span><br />
+		        <span id="result-suburb186" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating186" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta186" easting="510082.67" northing="6946696.15" park-code="D1523" street="King St" latitude="-27.60366603" longitude="153.1021755"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="187">
+		        <span id="result-name187" class="result-name">Kinta Street Park</span><br />
+		        <span id="result-suburb187" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating187" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta187" easting="510169.84" northing="6947626.99" park-code="D1979" street="Franquin Cres" latitude="-27.59526187" longitude="153.1030509"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="188">
+		        <span id="result-name188" class="result-name">Kookaburra Park</span><br />
+		        <span id="result-suburb188" class="result-suburb">Rocklea</span><br />
+		        <span id="result-rating188" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta188" easting="501863.64" northing="6952478.57" park-code="D0547" street="Beaudesert Rd" latitude="-27.55149952" longitude="153.0188768"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="189">
+		        <span id="result-name189" class="result-name">Korea Park</span><br />
+		        <span id="result-suburb189" class="result-suburb">Enoggera</span><br />
+		        <span id="result-rating189" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta189" easting="499261.84" northing="6967223.8" park-code="D0130" street="Pickering St" latitude="-27.41838109" longitude="152.9925322"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="190">
+		        <span id="result-name190" class="result-name">Kyoomba Street Park</span><br />
+		        <span id="result-suburb190" class="result-suburb">Murarrie</span><br />
+		        <span id="result-rating190" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta190" easting="510206.13" northing="6962598.02" park-code="D1664" street="Marie St" latitude="-27.46010465" longitude="153.1032923"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="191">
+		        <span id="result-name191" class="result-name">Lake Manchester Road (384-386B)</span><br />
+		        <span id="result-suburb191" class="result-suburb">Kholo</span><br />
+		        <span id="result-rating191" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta191" easting="479496.29" northing="6956868.74" park-code="D2099" street="Lake Manchester Rd" latitude="-27.5117119" longitude="152.7923931"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="192">
+		        <span id="result-name192" class="result-name">Lancewood Place Park</span><br />
+		        <span id="result-suburb192" class="result-suburb">Moggill</span><br />
+		        <span id="result-rating192" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta192" easting="486970.67" northing="6950809.83" park-code="D3055" street="Lancewood Pl" latitude="-27.56650324" longitude="152.8680082"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="193">
+		        <span id="result-name193" class="result-name">Lanham Park</span><br />
+		        <span id="result-suburb193" class="result-suburb">Grange</span><br />
+		        <span id="result-rating193" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta193" easting="501757.61" northing="6966487.17" park-code="D0498" street="Sellheim St" latitude="-27.42503053" longitude="153.0177824"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="194">
+		        <span id="result-name194" class="result-name">Laurence St Pocket Park (Road Reserve)</span><br />
+		        <span id="result-suburb194" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating194" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta194" easting="500297.6" northing="6959000.19" park-code="D2191" street="Laurence Street St Lucia" latitude="-27.49262407" longitude="153.0030128"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="195">
+		        <span id="result-name195" class="result-name">Leacroft Road Park</span><br />
+		        <span id="result-suburb195" class="result-suburb">Burbank</span><br />
+		        <span id="result-rating195" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta195" easting="517065.54" northing="6950364.11" park-code="D0989" street="Leacroft Rd" latitude="-27.57048237" longitude="153.1728863"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="196">
+		        <span id="result-name196" class="result-name">Leonard Street Park</span><br />
+		        <span id="result-suburb196" class="result-suburb">Woolloongabba</span><br />
+		        <span id="result-rating196" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta196" easting="504606.71" northing="6958818.18" park-code="D1104" street="Annie St" latitude="-27.4942595" longitude="153.0466371"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="197">
+		        <span id="result-name197" class="result-name">Leworthy Street Park</span><br />
+		        <span id="result-suburb197" class="result-suburb">Bardon</span><br />
+		        <span id="result-rating197" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta197" easting="497717.85" northing="6962371.62" park-code="D1407" street="Leworthy St" latitude="-27.46218498" longitude="152.9769028"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="198">
+		        <span id="result-name198" class="result-name">Lions Nature Trail Park</span><br />
+		        <span id="result-suburb198" class="result-suburb">Karana Downs</span><br />
+		        <span id="result-rating198" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta198" easting="482239.84" northing="6953961.99" park-code="D1887" street="Candowie Cres" latitude="-27.53658779" longitude="152.8196339"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="199">
+		        <span id="result-name199" class="result-name">Logan Road Park (No.2588)</span><br />
+		        <span id="result-suburb199" class="result-suburb">Eight Mile Plns</span><br />
+		        <span id="result-rating199" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta199" easting="509875.25" northing="6949251.17" park-code="D1903" street="Logan Rd" latitude="-27.58091966" longitude="153.1001559"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="200">
+		        <span id="result-name200" class="result-name">Lorikeet Park</span><br />
+		        <span id="result-suburb200" class="result-suburb">Algester</span><br />
+		        <span id="result-rating200" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta200" easting="504107.01" northing="6946667.09" park-code="D0848" street="Woodland St" latitude="-27.60395967" longitude="153.0416197"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="201">
+		        <span id="result-name201" class="result-name">Lota Point Park (Road Reserve)</span><br />
+		        <span id="result-suburb201" class="result-suburb">Lota</span><br />
+		        <span id="result-rating201" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta201" easting="519074.14" northing="6961094.68" park-code="D1398" street="Esplanade" latitude="-27.47358127" longitude="153.1930653"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="202">
+		        <span id="result-name202" class="result-name">Luxworth Place (Road Reserve)</span><br />
+		        <span id="result-suburb202" class="result-suburb">Moorooka</span><br />
+		        <span id="result-rating202" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta202" easting="502358.75" northing="6954643.73" park-code="D1790" street="Beaudesert Rd" latitude="-27.5319519" longitude="153.0238875"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="203">
+		        <span id="result-name203" class="result-name">M. Z. Holland Memorial Park</span><br />
+		        <span id="result-suburb203" class="result-suburb">Wacol</span><br />
+		        <span id="result-rating203" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta203" easting="492249.05" northing="6947917.38" park-code="D0339" street="Monterey St" latitude="-27.59265637" longitude="152.9214615"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="204">
+		        <span id="result-name204" class="result-name">Macquarie Way Park (No.123)</span><br />
+		        <span id="result-suburb204" class="result-suburb">Drewvale</span><br />
+		        <span id="result-rating204" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta204" easting="505629.58" northing="6941240.94" park-code="D2009" street="Macquarie Way" latitude="-27.6529403" longitude="153.0570744"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="205">
+		        <span id="result-name205" class="result-name">Main Avenue Park</span><br />
+		        <span id="result-suburb205" class="result-suburb">Wavell Heights</span><br />
+		        <span id="result-rating205" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta205" easting="504997.04" northing="6971011.32" park-code="D1098" street="Warr St" latitude="-27.38417813" longitude="153.0505385"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="206">
+		        <span id="result-name206" class="result-name">Majestic Park</span><br />
+		        <span id="result-suburb206" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating206" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta206" easting="506646.5" northing="6957256.67" park-code="D0118" street="Park St" latitude="-27.50834826" longitude="153.0672959"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="207">
+		        <span id="result-name207" class="result-name">Mango Street Park</span><br />
+		        <span id="result-suburb207" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating207" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta207" easting="508003.07" northing="6947616.74" park-code="D0703" street="Mango St" latitude="-27.595369" longitude="153.0810952"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="208">
+		        <span id="result-name208" class="result-name">Marchant Park</span><br />
+		        <span id="result-suburb208" class="result-suburb">Aspley</span><br />
+		        <span id="result-rating208" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta208" easting="502950.86" northing="6971978.5" park-code="D0227" street="Gympie Rd" latitude="-27.37545222" longitude="153.0298418"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="209">
+		        <span id="result-name209" class="result-name">Marnham Street Park</span><br />
+		        <span id="result-suburb209" class="result-suburb">Acacia Ridge</span><br />
+		        <span id="result-rating209" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta209" easting="502506.77" northing="6947656.77" park-code="D0579" street="Marnham St" latitude="-27.595029" longitude="153.0254011"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="210">
+		        <span id="result-name210" class="result-name">Marty Street Park</span><br />
+		        <span id="result-suburb210" class="result-suburb">Wynnum West</span><br />
+		        <span id="result-rating210" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta210" easting="514509.38" northing="6963690.12" park-code="D1540" street="Macadamia St" latitude="-27.45020611" longitude="153.1468307"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="211">
+		        <span id="result-name211" class="result-name">Matthews Way Park (No.83)</span><br />
+		        <span id="result-suburb211" class="result-suburb">Wakerley</span><br />
+		        <span id="result-rating211" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta211" easting="514428.01" northing="6959337.6" park-code="D1782" street="Matthews Way" latitude="-27.48950134" longitude="153.1460591"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="212">
+		        <span id="result-name212" class="result-name">Mcalroy Road Park</span><br />
+		        <span id="result-suburb212" class="result-suburb">Ferny Grove</span><br />
+		        <span id="result-rating212" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta212" easting="492592.41" northing="6968433.17" park-code="D1305" street="Mcalroy Rd" latitude="-27.40744288" longitude="152.9250662"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="213">
+		        <span id="result-name213" class="result-name">Mccormack Avenue Park (Road Reserve)</span><br />
+		        <span id="result-suburb213" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating213" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta213" easting="499254.93" northing="6965382.86" park-code="D1403" street="Mccormack Ave" latitude="-27.43500117" longitude="152.9924611"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="214">
+		        <span id="result-name214" class="result-name">Mckinnon Court Park</span><br />
+		        <span id="result-suburb214" class="result-suburb">Upr Kedron</span><br />
+		        <span id="result-rating214" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta214" easting="491851.58" northing="6967721.02" park-code="D2017" street="Mckinnon Ct" latitude="-27.41386797" longitude="152.9175673"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="215">
+		        <span id="result-name215" class="result-name">Meadowbank Street Park</span><br />
+		        <span id="result-suburb215" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating215" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta215" easting="510527.86" northing="6957266.61" park-code="D0879" street="Meadowbank St" latitude="-27.50823393" longitude="153.1065947"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="216">
+		        <span id="result-name216" class="result-name">Meiers Road Park (Road Reserve)</span><br />
+		        <span id="result-suburb216" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating216" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta216" easting="500095.05" northing="6956310.29" park-code="D1682" street="Meiers Rd" latitude="-27.51602988" longitude="153.0000225"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="217">
+		        <span id="result-name217" class="result-name">Mensforth Bushland</span><br />
+		        <span id="result-suburb217" class="result-suburb">Bracken Ridge</span><br />
+		        <span id="result-rating217" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta217" easting="504869.29" northing="6977461.51" park-code="D1954" street="Childs St" latitude="-27.32594536" longitude="153.0492208"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="218">
+		        <span id="result-name218" class="result-name">Merrick Street Park</span><br />
+		        <span id="result-suburb218" class="result-suburb">Wishart</span><br />
+		        <span id="result-rating218" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta218" easting="509838.78" northing="6951938.39" park-code="D1037" street="Merrick St" latitude="-27.55634172" longitude="153.0996612"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="219">
+		        <span id="result-name219" class="result-name">Merthyr Road Park (No.2)</span><br />
+		        <span id="result-suburb219" class="result-suburb">New Farm</span><br />
+		        <span id="result-rating219" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta219" easting="504071.49" northing="6961361.04" park-code="D1974" street="Merthyr Rd" latitude="-27.47130435" longitude="153.0412102"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="220">
+		        <span id="result-name220" class="result-name">Miles Platting Road (246 - 258) Park</span><br />
+		        <span id="result-suburb220" class="result-suburb">Rochedale</span><br />
+		        <span id="result-rating220" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta220" easting="510519.57" northing="6950164.63" park-code="D2122" street="Miles Platting Rd" latitude="-27.57234985" longitude="153.1065727"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="221">
+		        <span id="result-name221" class="result-name">Mindona Rotary Park</span><br />
+		        <span id="result-suburb221" class="result-suburb">Wishart</span><br />
+		        <span id="result-rating221" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta221" easting="510254.31" northing="6951978.27" park-code="D1123" street="Mindona St" latitude="-27.55597861" longitude="153.1038699"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="222">
+		        <span id="result-name222" class="result-name">Mitchelton Park</span><br />
+		        <span id="result-suburb222" class="result-suburb">Mitchelton</span><br />
+		        <span id="result-rating222" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta222" easting="497921.89" northing="6967658.76" park-code="D0128" street="Osborne Rd" latitude="-27.41445286" longitude="152.9789769"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="223">
+		        <span id="result-name223" class="result-name">Moggill Road Park (No.3777)</span><br />
+		        <span id="result-suburb223" class="result-suburb">Moggill</span><br />
+		        <span id="result-rating223" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta223" easting="486199.83" northing="6948518.19" park-code="D0719" street="Moggill Rd" latitude="-27.58718413" longitude="152.8601732"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="224">
+		        <span id="result-name224" class="result-name">Monier Road Park (Nos.44-84)</span><br />
+		        <span id="result-suburb224" class="result-suburb">Darra</span><br />
+		        <span id="result-rating224" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta224" easting="495888.66" northing="6951752.77" park-code="D0329" street="Monier Rd" latitude="-27.55804701" longitude="152.9583539"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="225">
+		        <span id="result-name225" class="result-name">Montrose Street Park</span><br />
+		        <span id="result-suburb225" class="result-suburb">Gordon Park</span><br />
+		        <span id="result-rating225" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta225" easting="502366.16" northing="6966862.57" park-code="D1642" street="Montrose St" latitude="-27.42164045" longitude="153.0239387"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="226">
+		        <span id="result-name226" class="result-name">Moordale Street Park</span><br />
+		        <span id="result-suburb226" class="result-suburb">Chapel Hill</span><br />
+		        <span id="result-rating226" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta226" easting="495858.64" northing="6957762.81" park-code="D1154" street="Moordale St" latitude="-27.50378882" longitude="152.9580704"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="227">
+		        <span id="result-name227" class="result-name">Moorooka Lions Bicent. Picnic Grnd Park</span><br />
+		        <span id="result-suburb227" class="result-suburb">Yeerongpilly</span><br />
+		        <span id="result-rating227" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta227" easting="502102.39" northing="6955354.65" park-code="D0383" street="Albemarle St" latitude="-27.52553422" longitude="153.0212901"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="228">
+		        <span id="result-name228" class="result-name">Morse St Park</span><br />
+		        <span id="result-suburb228" class="result-suburb">Newstead</span><br />
+		        <span id="result-rating228" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta228" easting="504007.71" northing="6963153.81" park-code="D2192" street="Morse St" latitude="-27.45511936" longitude="153.0405587"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="229">
+		        <span id="result-name229" class="result-name">Mowbray Park</span><br />
+		        <span id="result-suburb229" class="result-suburb">East Brisbane</span><br />
+		        <span id="result-rating229" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta229" easting="504362.55" northing="6960562.02" park-code="D0366" street="Lytton Rd" latitude="-27.47851698" longitude="153.044159"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="230">
+		        <span id="result-name230" class="result-name">Mt Gravatt Outlook Reserve</span><br />
+		        <span id="result-suburb230" class="result-suburb">Mt Gravatt</span><br />
+		        <span id="result-rating230" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta230" easting="507216.52" northing="6953377.29" park-code="D0546" street="Mt Gravatt Rd" latitude="-27.54336806" longitude="153.0730906"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="231">
+		        <span id="result-name231" class="result-name">Muirfield Crescent Park</span><br />
+		        <span id="result-suburb231" class="result-suburb">Oxley</span><br />
+		        <span id="result-rating231" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta231" easting="498390.97" northing="6949917.25" park-code="D1837" street="Pinehurst Pl" latitude="-27.57462311" longitude="152.9836987"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="232">
+		        <span id="result-name232" class="result-name">Munro Park</span><br />
+		        <span id="result-suburb232" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating232" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta232" easting="499617.46" northing="6958654.86" park-code="D0413" street="Armadale St" latitude="-27.49574168" longitude="152.9961272"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="233">
+		        <span id="result-name233" class="result-name">Murarrie Road Park (Nos.315-327)</span><br />
+		        <span id="result-suburb233" class="result-suburb">Tingalpa</span><br />
+		        <span id="result-rating233" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta233" easting="511213.93" northing="6961394.53" park-code="D1441" street="Murarrie Rd" latitude="-27.47096185" longitude="153.113503"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="234">
+		        <span id="result-name234" class="result-name">Murton Avenue Park (Road Reserve)</span><br />
+		        <span id="result-suburb234" class="result-suburb">Holland Park</span><br />
+		        <span id="result-rating234" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta234" easting="506796.68" northing="6956161.33" park-code="D0925" street="Murton Ave" latitude="-27.51823617" longitude="153.0688227"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="235">
+		        <span id="result-name235" class="result-name">Myrtle Crescent Park</span><br />
+		        <span id="result-suburb235" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating235" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta235" easting="500047.87" northing="6973381.37" park-code="D1257" street="Bangalow St" latitude="-27.36279018" longitude="153.0004841"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="236">
+		        <span id="result-name236" class="result-name">Nathan Road Park</span><br />
+		        <span id="result-suburb236" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating236" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta236" easting="506808.01" northing="6948629.03" park-code="D0607" street="Nathan Rd" latitude="-27.58623681" longitude="153.0689799"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="237">
+		        <span id="result-name237" class="result-name">Neath Street Park</span><br />
+		        <span id="result-suburb237" class="result-suburb">Sunnybank Hills</span><br />
+		        <span id="result-rating237" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta237" easting="504233.32" northing="6949073.65" park-code="D1166" street="Goman St" latitude="-27.58223328" longitude="153.0428912"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="238">
+		        <span id="result-name238" class="result-name">New Farm Park</span><br />
+		        <span id="result-suburb238" class="result-suburb">New Farm</span><br />
+		        <span id="result-rating238" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta238" easting="505060.73" northing="6961595.37" park-code="D0095" street="Brunswick St" latitude="-27.4691855" longitude="153.0512219"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="239">
+		        <span id="result-name239" class="result-name">Nicholas Park</span><br />
+		        <span id="result-suburb239" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating239" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta239" easting="494920.01" northing="6963934.45" park-code="D0005" street="Tandara St" latitude="-27.44806822" longitude="152.948593"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="240">
+		        <span id="result-name240" class="result-name">Norman Avenue Park</span><br />
+		        <span id="result-suburb240" class="result-suburb">Lutwyche</span><br />
+		        <span id="result-rating240" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta240" easting="503186.34" northing="6967271.45" park-code="D0510" street="Norman Ave" latitude="-27.41794738" longitude="153.0322354"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="241">
+		        <span id="result-name241" class="result-name">Northey Street Park</span><br />
+		        <span id="result-suburb241" class="result-suburb">Windsor</span><br />
+		        <span id="result-rating241" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta241" easting="502604.41" northing="6964422.42" park-code="D1137" street="Edgar St" latitude="-27.44366974" longitude="153.0263544"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="242">
+		        <span id="result-name242" class="result-name">Northview Outlook Park</span><br />
+		        <span id="result-suburb242" class="result-suburb">Moorooka</span><br />
+		        <span id="result-rating242" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta242" easting="503176.43" northing="6955284.62" park-code="D1267" street="Northview Otlk" latitude="-27.5261643" longitude="153.0321666"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="243">
+		        <span id="result-name243" class="result-name">Nudgee Road Park (No.695)</span><br />
+		        <span id="result-suburb243" class="result-suburb">Northgate</span><br />
+		        <span id="result-rating243" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta243" easting="507432.09" northing="6969130.88" park-code="D0972" street="Nudgee Rd" latitude="-27.40114379" longitude="153.0751773"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="244">
+		        <span id="result-name244" class="result-name">Oakman Park</span><br />
+		        <span id="result-suburb244" class="result-suburb">Taringa</span><br />
+		        <span id="result-rating244" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta244" easting="498566.4" northing="6959385.95" park-code="D0481" street="Moggill Rd" latitude="-27.48914073" longitude="152.9854873"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="245">
+		        <span id="result-name245" class="result-name">Observatory Park</span><br />
+		        <span id="result-suburb245" class="result-suburb">Spring Hill</span><br />
+		        <span id="result-rating245" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta245" easting="502282.92" northing="6961945.19" park-code="D0073" street="Wickham Tce" latitude="-27.46603479" longitude="153.0231058"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="246">
+		        <span id="result-name246" class="result-name">Oldfield Road Park (No.109)</span><br />
+		        <span id="result-suburb246" class="result-suburb">Sinnamon Park</span><br />
+		        <span id="result-rating246" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta246" easting="495159.28" northing="6953703.81" park-code="D1311" street="Oldfield Rd" latitude="-27.54175103" longitude="152.9514806"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="247">
+		        <span id="result-name247" class="result-name">Oriel Park</span><br />
+		        <span id="result-suburb247" class="result-suburb">Ascot</span><br />
+		        <span id="result-rating247" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta247" easting="505700.82" northing="6966014.48" park-code="D0172" street="Reeve St" latitude="-27.42928717" longitude="153.0576798"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="248">
+		        <span id="result-name248" class="result-name">Orsova Road Pocket Park (Road Reserve)</span><br />
+		        <span id="result-suburb248" class="result-suburb">Yeronga</span><br />
+		        <span id="result-rating248" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta248" easting="500527.59" northing="6957495.26" park-code="D2162" street="Brisbane Corso" latitude="-27.50621041" longitude="153.0053417"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="249">
+		        <span id="result-name249" class="result-name">Overend Street Park</span><br />
+		        <span id="result-suburb249" class="result-suburb">Norman Park</span><br />
+		        <span id="result-rating249" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta249" easting="505791.02" northing="6960977.36" park-code="D0047" street="Overend St" latitude="-27.47476193" longitude="153.0586164"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="250">
+		        <span id="result-name250" class="result-name">Oxford Road Park</span><br />
+		        <span id="result-suburb250" class="result-suburb">Toowong</span><br />
+		        <span id="result-rating250" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta250" easting="497272.44" northing="6959824.5" park-code="D0965" street="Maraket St" latitude="-27.48517949" longitude="152.9723891"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="251">
+		        <span id="result-name251" class="result-name">Padstow Road (No 28) Park</span><br />
+		        <span id="result-suburb251" class="result-suburb">Eight Mile Plns</span><br />
+		        <span id="result-rating251" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta251" easting="507619.42" northing="6950085.75" park-code="D0768" street="Padstow Rd" latitude="-27.57308139" longitude="153.077192"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="252">
+		        <span id="result-name252" class="result-name">Paluna Place Park</span><br />
+		        <span id="result-suburb252" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating252" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta252" easting="495000.8" northing="6946551.55" park-code="D1371" street="Cardwell St" latitude="-27.60499981" longitude="152.9493386"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="253">
+		        <span id="result-name253" class="result-name">Paradise Road Park</span><br />
+		        <span id="result-suburb253" class="result-suburb">Pallara</span><br />
+		        <span id="result-rating253" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta253" easting="502354.83" northing="6945673.57" park-code="D1656" street="Brookbent Rd" latitude="-27.61293318" longitude="153.0238653"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="254">
+		        <span id="result-name254" class="result-name">Park Avenue Park</span><br />
+		        <span id="result-suburb254" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating254" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta254" easting="500173.63" northing="6964626.63" park-code="D1913" street="Park Ave" latitude="-27.44182868" longitude="153.0017569"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="255">
+		        <span id="result-name255" class="result-name">Parkway Place Park</span><br />
+		        <span id="result-suburb255" class="result-suburb">Kenmore</span><br />
+		        <span id="result-rating255" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta255" easting="493176.64" northing="6955763.38" park-code="D1578" street="Evergreen Cl" latitude="-27.5218287" longitude="152.9309049"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="256">
+		        <span id="result-name256" class="result-name">Paterson Park</span><br />
+		        <span id="result-suburb256" class="result-suburb">Sunnybank Hills</span><br />
+		        <span id="result-rating256" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta256" easting="505167.48" northing="6946761.65" park-code="D0822" street="Lynelle St" latitude="-27.60310238" longitude="153.0523658"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="257">
+		        <span id="result-name257" class="result-name">Payne Road Park (No.507)</span><br />
+		        <span id="result-suburb257" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating257" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta257" easting="493227.38" northing="6963760.75" park-code="D1640" street="Payne Rd" latitude="-27.44962896" longitude="152.9314634"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="258">
+		        <span id="result-name258" class="result-name">Percival Park</span><br />
+		        <span id="result-suburb258" class="result-suburb">Eagle Farm</span><br />
+		        <span id="result-rating258" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta258" easting="509455.06" northing="6965355.98" park-code="D0983" street="Curtin Ave East" latitude="-27.43521125" longitude="153.0956695"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="259">
+		        <span id="result-name259" class="result-name">Perrott Street Park</span><br />
+		        <span id="result-suburb259" class="result-suburb">Paddington</span><br />
+		        <span id="result-rating259" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta259" easting="499112.92" northing="6962816.21" park-code="D1030" street="Tooth Ave" latitude="-27.45817288" longitude="152.9910224"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="260">
+		        <span id="result-name260" class="result-name">Pfingst Road Park</span><br />
+		        <span id="result-suburb260" class="result-suburb">Wavell Heights</span><br />
+		        <span id="result-rating260" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta260" easting="504201.21" northing="6969485.54" park-code="D1029" street="Pfingst Rd" latitude="-27.39818318" longitude="153.0426645"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="261">
+		        <span id="result-name261" class="result-name">Picot Street Park</span><br />
+		        <span id="result-suburb261" class="result-suburb">Kelvin Grove</span><br />
+		        <span id="result-rating261" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta261" easting="501163.42" northing="6964548.32" park-code="D0198" street="Picot St" latitude="-27.44253513" longitude="153.0117727"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="262">
+		        <span id="result-name262" class="result-name">Pine Tree Close Park</span><br />
+		        <span id="result-suburb262" class="result-suburb">Fitzgibbon</span><br />
+		        <span id="result-rating262" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta262" easting="503859.54" northing="6975515.04" park-code="D1244" street="Pine Tree Cl" latitude="-27.34280393" longitude="153.0394321"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="263">
+		        <span id="result-name263" class="result-name">Pinnibar Street Park</span><br />
+		        <span id="result-suburb263" class="result-suburb">Hemmant</span><br />
+		        <span id="result-rating263" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta263" easting="512714.48" northing="6962886.11" park-code="D1752" street="Tawonga St" latitude="-27.45748262" longitude="153.1286753"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="264">
+		        <span id="result-name264" class="result-name">Poinciana Park</span><br />
+		        <span id="result-suburb264" class="result-suburb">Moorooka</span><br />
+		        <span id="result-rating264" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta264" easting="502373.87" northing="6955452.54" park-code="D0385" street="Longueval St" latitude="-27.52464999" longitude="153.024039"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="265">
+		        <span id="result-name265" class="result-name">Portadown Park</span><br />
+		        <span id="result-suburb265" class="result-suburb">Sinnamon Park</span><br />
+		        <span id="result-rating265" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta265" easting="494545.3" northing="6952910.42" park-code="D0793" street="Radcliffe St" latitude="-27.54759108" longitude="152.9447514"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="266">
+		        <span id="result-name266" class="result-name">Praed Street Park</span><br />
+		        <span id="result-suburb266" class="result-suburb">Red Hill</span><br />
+		        <span id="result-rating266" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta266" easting="500367.55" northing="6964201.95" park-code="D0196" street="Murray St" latitude="-27.44566265" longitude="153.0037193"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="267">
+		        <span id="result-name267" class="result-name">Preston Street Park</span><br />
+		        <span id="result-suburb267" class="result-suburb">Woolloongabba</span><br />
+		        <span id="result-rating267" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta267" easting="504711.68" northing="6958760.4" park-code="D0358" street="Preston St" latitude="-27.49478077" longitude="153.0477001"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="268">
+		        <span id="result-name268" class="result-name">Princess Street Park (Nos.5-21)</span><br />
+		        <span id="result-suburb268" class="result-suburb">Fairfield</span><br />
+		        <span id="result-rating268" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta268" easting="502307.38" northing="6958083.41" park-code="D0371" street="Brisbane Cso" latitude="-27.50089877" longitude="153.0233607"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="269">
+		        <span id="result-name269" class="result-name">Priors Pocket Road Park (No.530)</span><br />
+		        <span id="result-suburb269" class="result-suburb">Moggill</span><br />
+		        <span id="result-rating269" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta269" easting="490523.63" northing="6946989.44" park-code="D1959" street="Priors Pocket Rd" latitude="-27.59774997" longitude="152.9042743"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="270">
+		        <span id="result-name270" class="result-name">Procyon Street Park</span><br />
+		        <span id="result-suburb270" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating270" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta270" easting="506844.07" northing="6957693.39" park-code="D1000" street="Procyon St" latitude="-27.50440457" longitude="153.069294"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="271">
+		        <span id="result-name271" class="result-name">Pullen Road Park</span><br />
+		        <span id="result-suburb271" class="result-suburb">Everton Park</span><br />
+		        <span id="result-rating271" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta271" easting="497886.3" northing="6968893.32" park-code="D0209" street="Osborne Rd" latitude="-27.40330715" longitude="152.9786189"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="272">
+		        <span id="result-name272" class="result-name">Queens Parade Park (No.93)</span><br />
+		        <span id="result-suburb272" class="result-suburb">Brighton</span><br />
+		        <span id="result-rating272" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta272" easting="505793.92" northing="6980281.95" park-code="D1991" street="Queens Pde" latitude="-27.30047831" longitude="153.058554"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="273">
+		        <span id="result-name273" class="result-name">Quinn'S Street Park</span><br />
+		        <span id="result-suburb273" class="result-suburb">Balmoral</span><br />
+		        <span id="result-rating273" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta273" easting="507030.22" northing="6962784.69" park-code="D0027" street="Thynne Rd" latitude="-27.45843958" longitude="153.0711491"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="274">
+		        <span id="result-name274" class="result-name">Railway Street Park</span><br />
+		        <span id="result-suburb274" class="result-suburb">Nudgee</span><br />
+		        <span id="result-rating274" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta274" easting="508258.73" northing="6972837.39" park-code="D0442" street="St Achs St" latitude="-27.36767631" longitude="153.0835139"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="275">
+		        <span id="result-name275" class="result-name">Ransome Road Park</span><br />
+		        <span id="result-suburb275" class="result-suburb">Ransome</span><br />
+		        <span id="result-rating275" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta275" easting="518779.88" northing="6960518.73" park-code="D1429" street="Ransome Rd" latitude="-27.47878506" longitude="153.1900958"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="276">
+		        <span id="result-name276" class="result-name">Raymond Park</span><br />
+		        <span id="result-suburb276" class="result-suburb">Kangaroo Point</span><br />
+		        <span id="result-rating276" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta276" easting="503832.61" northing="6960313.19" park-code="D0097" street="Wellington Rd" latitude="-27.48076499" longitude="153.0387956"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="277">
+		        <span id="result-name277" class="result-name">Redway Street Park</span><br />
+		        <span id="result-suburb277" class="result-suburb">Nudgee</span><br />
+		        <span id="result-rating277" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta277" easting="508556.43" northing="6972217.19" park-code="D2150" street="Redway St" latitude="-27.37327369" longitude="153.0865287"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="278">
+		        <span id="result-name278" class="result-name">Regents Circuit Park</span><br />
+		        <span id="result-suburb278" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating278" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta278" easting="495920.58" northing="6943848.51" park-code="D1759" street="Centennial Way" latitude="-27.62914344" longitude="152.9583704"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="279">
+		        <span id="result-name279" class="result-name">Richard Russell Park</span><br />
+		        <span id="result-suburb279" class="result-suburb">Manly</span><br />
+		        <span id="result-rating279" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta279" easting="518061.59" northing="6963109.9" park-code="D0525" street="Carlton Tce" latitude="-27.4554018" longitude="153.1827865"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="280">
+		        <span id="result-name280" class="result-name">Rilatt Park</span><br />
+		        <span id="result-suburb280" class="result-suburb">Wavell Heights</span><br />
+		        <span id="result-rating280" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta280" easting="504715.75" northing="6970197.24" park-code="D0016" street="Rilatt St" latitude="-27.39152867" longitude="153.0476969"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="281">
+		        <span id="result-name281" class="result-name">Robertson Park</span><br />
+		        <span id="result-suburb281" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating281" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta281" easting="498887.88" northing="6957898.87" park-code="D0416" street="Indooroopilly Rd" latitude="-27.50256634" longitude="152.9887403"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="282">
+		        <span id="result-name282" class="result-name">Roghan Road Park (No.2105)</span><br />
+		        <span id="result-suburb282" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating282" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta282" easting="499462.07" northing="6976610.71" park-code="D0713" street="Roghan Rd" latitude="-27.3336351" longitude="152.994562"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="283">
+		        <span id="result-name283" class="result-name">Rome Street Park (Nos.20-22)</span><br />
+		        <span id="result-suburb283" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating283" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta283" easting="505663.52" northing="6960063.86" park-code="D1703" street="Rome St North" latitude="-27.48300953" longitude="153.0573301"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="284">
+		        <span id="result-name284" class="result-name">Rosebank Square</span><br />
+		        <span id="result-suburb284" class="result-suburb">Salisbury</span><br />
+		        <span id="result-rating284" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta284" easting="504257.17" northing="6952033.27" park-code="D0554" street="Rosebank Sq" latitude="-27.5555142" longitude="153.0431224"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="285">
+		        <span id="result-name285" class="result-name">Roseneath Drive Park</span><br />
+		        <span id="result-suburb285" class="result-suburb">Parkinson</span><br />
+		        <span id="result-rating285" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta285" easting="502661.92" northing="6942902.11" park-code="D1906" street="Greenways Esp" latitude="-27.63795278" longitude="153.0269837"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="286">
+		        <span id="result-name286" class="result-name">Rowlinson Park</span><br />
+		        <span id="result-suburb286" class="result-suburb">Yeronga</span><br />
+		        <span id="result-rating286" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta286" easting="501383.01" northing="6955978.51" park-code="D0382" street="Nelson St" latitude="-27.51990297" longitude="153.0140045"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="287">
+		        <span id="result-name287" class="result-name">Rqys Port Centre Park</span><br />
+		        <span id="result-suburb287" class="result-suburb">Manly</span><br />
+		        <span id="result-rating287" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta287" easting="518965.02" northing="6962525.82" park-code="D1553" street="Royal Esp" latitude="-27.46082788" longitude="153.1915628"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="288">
+		        <span id="result-name288" class="result-name">Sabot Court Park</span><br />
+		        <span id="result-suburb288" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating288" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta288" easting="516027.19" northing="6961666.59" park-code="D1339" street="Sabot Ct" latitude="-27.46845747" longitude="153.1622172"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="289">
+		        <span id="result-name289" class="result-name">Sanctuary Place Park</span><br />
+		        <span id="result-suburb289" class="result-suburb">Fig Tree Pocket</span><br />
+		        <span id="result-rating289" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta289" easting="496729.66" northing="6955079.49" park-code="D2088" street="Sanctuary Pl" latitude="-27.52801596" longitude="152.9668818"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="290">
+		        <span id="result-name290" class="result-name">Sandgate Second Lagoon Reserve</span><br />
+		        <span id="result-suburb290" class="result-suburb">Sandgate</span><br />
+		        <span id="result-rating290" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta290" easting="506290.14" northing="6978224.73" park-code="D0284" street="Brighton Tce" latitude="-27.31904914" longitude="153.0635794"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="291">
+		        <span id="result-name291" class="result-name">Sandmere Road Park</span><br />
+		        <span id="result-suburb291" class="result-suburb">Pinkenba</span><br />
+		        <span id="result-rating291" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta291" easting="514843.08" northing="6971051.55" park-code="D2081" street="Sandmere Rd" latitude="-27.38374336" longitude="153.1501177"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="292">
+		        <span id="result-name292" class="result-name">Saul Street Park</span><br />
+		        <span id="result-suburb292" class="result-suburb">Brighton</span><br />
+		        <span id="result-rating292" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta292" easting="505713.41" northing="6979396.03" park-code="D1115" street="Saul St" latitude="-27.30847692" longitude="153.0577444"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="293">
+		        <span id="result-name293" class="result-name">School Road Park</span><br />
+		        <span id="result-suburb293" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating293" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta293" easting="494100" northing="6964423.6" park-code="D0142" street="Waterworks Rd" latitude="-27.44364878" longitude="152.9402972"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="294">
+		        <span id="result-name294" class="result-name">Secam Street Park</span><br />
+		        <span id="result-suburb294" class="result-suburb">Mansfield</span><br />
+		        <span id="result-rating294" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta294" easting="509721.99" northing="6954694.66" park-code="D1105" street="Secam St" latitude="-27.53145927" longitude="153.098456"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="295">
+		        <span id="result-name295" class="result-name">Senden Crescent Park</span><br />
+		        <span id="result-suburb295" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating295" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta295" easting="514816.49" northing="6961171.82" park-code="D1949" street="Senden Cres" latitude="-27.47293791" longitude="153.1499693"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="296">
+		        <span id="result-name296" class="result-name">Seven Hills Bushland Reserve</span><br />
+		        <span id="result-suburb296" class="result-suburb">Carina</span><br />
+		        <span id="result-rating296" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta296" easting="508304.19" northing="6960523.24" park-code="D1157" street="Dalrello St" latitude="-27.47884867" longitude="153.0840577"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="297">
+		        <span id="result-name297" class="result-name">Shand Street Park (No.131)</span><br />
+		        <span id="result-suburb297" class="result-suburb">Enoggera</span><br />
+		        <span id="result-rating297" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta297" easting="499776.85" northing="6967855.12" park-code="D0613" street="Picnic St" latitude="-27.4126817" longitude="152.9977426"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="298">
+		        <span id="result-name298" class="result-name">Sheffield Place Park</span><br />
+		        <span id="result-suburb298" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating298" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta298" easting="508919.58" northing="6946078.04" park-code="D1453" street="Aberdeen Cres" latitude="-27.60925438" longitude="153.0903936"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="299">
+		        <span id="result-name299" class="result-name">Shepherd Street Park (No.2)</span><br />
+		        <span id="result-suburb299" class="result-suburb">Brighton</span><br />
+		        <span id="result-rating299" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta299" easting="506062.45" northing="6980625.56" park-code="D1987" street="Shepherd St" latitude="-27.29737501" longitude="153.061266"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="300">
+		        <span id="result-name300" class="result-name">Shingai Park</span><br />
+		        <span id="result-suburb300" class="result-suburb">Upr Mt Gravatt</span><br />
+		        <span id="result-rating300" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta300" easting="508407.86" northing="6951838.29" park-code="D1193" street="Norton St" latitude="-27.55735415" longitude="153.0851837"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="301">
+		        <span id="result-name301" class="result-name">Silkyoak Circuit Park</span><br />
+		        <span id="result-suburb301" class="result-suburb">Fitzgibbon</span><br />
+		        <span id="result-rating301" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta301" easting="503069.05" northing="6975243.17" park-code="D1334" street="Silkyoak Crct" latitude="-27.34597811" longitude="153.0310288"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="302">
+		        <span id="result-name302" class="result-name">Sir John Chandler Park</span><br />
+		        <span id="result-suburb302" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating302" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta302" easting="499335.72" northing="6956361.08" park-code="D0420" street="Meiers Rd" latitude="-27.51644975" longitude="152.993274"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="303">
+		        <span id="result-name303" class="result-name">Sleaford Street Park</span><br />
+		        <span id="result-suburb303" class="result-suburb">Chapel Hill</span><br />
+		        <span id="result-rating303" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta303" easting="494291.98" northing="6959505.67" park-code="D0794" street="Sleaford St" latitude="-27.48804866" longitude="152.9422168"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="304">
+		        <span id="result-name304" class="result-name">Sorrento Close Park</span><br />
+		        <span id="result-suburb304" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating304" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta304" easting="511666.47" northing="6958050.14" park-code="D1433" street="Sirocco Pl" latitude="-27.50115099" longitude="153.1181156"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="305">
+		        <span id="result-name305" class="result-name">Spencer Park</span><br />
+		        <span id="result-suburb305" class="result-suburb">Newmarket</span><br />
+		        <span id="result-rating305" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta305" easting="501051.46" northing="6964924.69" park-code="D0488" street="Edmondstone St" latitude="-27.43913736" longitude="153.0106394"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="306">
+		        <span id="result-name306" class="result-name">Springfield Street Park</span><br />
+		        <span id="result-suburb306" class="result-suburb">Macgregor</span><br />
+		        <span id="result-rating306" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta306" easting="507271.34" northing="6951088.95" park-code="D0557" street="Springfield St" latitude="-27.5635143" longitude="153.073725"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="307">
+		        <span id="result-name307" class="result-name">St Andrews Avenue Park</span><br />
+		        <span id="result-suburb307" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating307" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta307" easting="497006.76" northing="6943773.21" park-code="D1953" street="St Andrews Ave" latitude="-27.630088" longitude="152.9696599"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="308">
+		        <span id="result-name308" class="result-name">St Lucia Playground Park</span><br />
+		        <span id="result-suburb308" class="result-suburb">St Lucia</span><br />
+		        <span id="result-rating308" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta308" easting="499885.38" northing="6958456.52" park-code="D0411" street="Carmody Rd" latitude="-27.4975323" longitude="152.9988395"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="309">
+		        <span id="result-name309" class="result-name">Stanley Richardson Place Park (Road Reserve)</span><br />
+		        <span id="result-suburb309" class="result-suburb">Northgate</span><br />
+		        <span id="result-rating309" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta309" easting="507305" northing="6970057.89" park-code="D1408" street="Day Rd" latitude="-27.39277538" longitude="153.0738862"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="310">
+		        <span id="result-name310" class="result-name">Stanley Street East Park (No.1110)</span><br />
+		        <span id="result-suburb310" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating310" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta310" easting="505305.78" northing="6959595.18" park-code="D0120" street="Stanley St East" latitude="-27.48724224" longitude="153.0537109"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="311">
+		        <span id="result-name311" class="result-name">Stevenson Street Park</span><br />
+		        <span id="result-suburb311" class="result-suburb">Calamvale</span><br />
+		        <span id="result-rating311" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta311" easting="504562.41" northing="6945350.83" park-code="D1613" street="Stevenson St" latitude="-27.61584121" longitude="153.0462396"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="312">
+		        <span id="result-name312" class="result-name">Stonycroft Street Park</span><br />
+		        <span id="result-suburb312" class="result-suburb">Aspley</span><br />
+		        <span id="result-rating312" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta312" easting="500893.59" northing="6972560.19" park-code="D0774" street="Stonycroft St" latitude="-27.3702036" longitude="153.0090364"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="313">
+		        <span id="result-name313" class="result-name">Stretton Community Park</span><br />
+		        <span id="result-suburb313" class="result-suburb">Stretton</span><br />
+		        <span id="result-rating313" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta313" easting="506808.95" northing="6945183.43" park-code="D1120" street="Cleveland Pl" latitude="-27.61734301" longitude="153.069009"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="314">
+		        <span id="result-name314" class="result-name">Stuart Street Park</span><br />
+		        <span id="result-suburb314" class="result-suburb">Bulimba</span><br />
+		        <span id="result-rating314" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta314" easting="505668.31" northing="6963220.68" park-code="D2155" street="Stuart St" latitude="-27.45450981" longitude="153.0573639"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="315">
+		        <span id="result-name315" class="result-name">Summit Street Park</span><br />
+		        <span id="result-suburb315" class="result-suburb">Belmont</span><br />
+		        <span id="result-rating315" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta315" easting="512841.96" northing="6959304.39" park-code="D1865" street="Summit St" latitude="-27.48981706" longitude="153.1300033"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="316">
+		        <span id="result-name316" class="result-name">Sunset Road Park</span><br />
+		        <span id="result-suburb316" class="result-suburb">Kenmore</span><br />
+		        <span id="result-rating316" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta316" easting="494003.54" northing="6955378.01" park-code="D1416" street="Sunset Rd" latitude="-27.52531166" longitude="152.9392763"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="317">
+		        <span id="result-name317" class="result-name">Svoboda Park</span><br />
+		        <span id="result-suburb317" class="result-suburb">Kuraby</span><br />
+		        <span id="result-rating317" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta317" easting="509673.92" northing="6946492.26" park-code="D1551" street="Beenleigh Rd" latitude="-27.60550965" longitude="153.0980349"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="318">
+		        <span id="result-name318" class="result-name">Symons Road Park</span><br />
+		        <span id="result-suburb318" class="result-suburb">Sunnybank Hills</span><br />
+		        <span id="result-rating318" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta318" easting="505647.07" northing="6947570.34" park-code="D1032" street="Normandy St" latitude="-27.59579981" longitude="153.0572221"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="319">
+		        <span id="result-name319" class="result-name">Tallowwood Place Park</span><br />
+		        <span id="result-suburb319" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating319" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta319" easting="499542.71" northing="6972647.12" park-code="D1328" street="Tallowwood Pl" latitude="-27.36839214" longitude="152.9961743"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="320">
+		        <span id="result-name320" class="result-name">Tantani Street Park</span><br />
+		        <span id="result-suburb320" class="result-suburb">Manly West</span><br />
+		        <span id="result-rating320" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta320" easting="516004.81" northing="6961868.87" park-code="D0722" street="Tantani St" latitude="-27.46663155" longitude="153.161988"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="321">
+		        <span id="result-name321" class="result-name">Tarragon Place Park</span><br />
+		        <span id="result-suburb321" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating321" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta321" easting="495697.23" northing="6945922.3" park-code="D1221" street="Thyme Cl" latitude="-27.61068292" longitude="152.9563939"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="322">
+		        <span id="result-name322" class="result-name">Teal Place Park</span><br />
+		        <span id="result-suburb322" class="result-suburb">Taigum</span><br />
+		        <span id="result-rating322" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta322" easting="504630.29" northing="6975617.66" park-code="D3119" street="Teal Pl" latitude="-27.34259276" longitude="153.0468119"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="323">
+		        <span id="result-name323" class="result-name">Tennis Avenue Park</span><br />
+		        <span id="result-suburb323" class="result-suburb">Ashgrove</span><br />
+		        <span id="result-rating323" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta323" easting="500206.23" northing="6964526.1" park-code="D0193" street="Tennis Ave" latitude="-27.44273625" longitude="153.0020869"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="324">
+		        <span id="result-name324" class="result-name">The Beirne Park</span><br />
+		        <span id="result-suburb324" class="result-suburb">Hendra</span><br />
+		        <span id="result-rating324" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta324" easting="506814.57" northing="6967131.73" park-code="D0019" street="Gerler Rd" latitude="-27.41919548" longitude="153.0689422"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="325">
+		        <span id="result-name325" class="result-name">The Johnson Flora Reserve</span><br />
+		        <span id="result-suburb325" class="result-suburb">Robertson</span><br />
+		        <span id="result-rating325" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta325" easting="504961.24" northing="6950970.6" park-code="D1053" street="Lindfield Crct" latitude="-27.56510545" longitude="153.0502585"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="326">
+		        <span id="result-name326" class="result-name">The Village Avenue Park</span><br />
+		        <span id="result-suburb326" class="result-suburb">Coopers Plains</span><br />
+		        <span id="result-rating326" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta326" easting="504212.67" northing="6950526.21" park-code="D1472" street="Appleyard Cres" latitude="-27.56911987" longitude="153.0426769"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="327">
+		        <span id="result-name327" class="result-name">Thomas Macleod Avenue Park</span><br />
+		        <span id="result-suburb327" class="result-suburb">Sinnamon Park</span><br />
+		        <span id="result-rating327" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta327" easting="495200.99" northing="6954414.47" park-code="D1824" street="Goggs Rd" latitude="-27.53401523" longitude="152.9513986"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="328">
+		        <span id="result-name328" class="result-name">Thornycroft Street Park</span><br />
+		        <span id="result-suburb328" class="result-suburb">Tarragindi</span><br />
+		        <span id="result-rating328" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta328" easting="504291.07" northing="6954562.05" park-code="D0402" street="Toohey Rd" latitude="-27.53268452" longitude="153.0434568"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="329">
+		        <span id="result-name329" class="result-name">Tillack Park</span><br />
+		        <span id="result-suburb329" class="result-suburb">Mansfield</span><br />
+		        <span id="result-rating329" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta329" easting="510126.29" northing="6955671.06" park-code="D0661" street="Blackberry St" latitude="-27.52264155" longitude="153.1025421"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="330">
+		        <span id="result-name330" class="result-name">Timaru Close Park</span><br />
+		        <span id="result-suburb330" class="result-suburb">Westlake</span><br />
+		        <span id="result-rating330" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta330" easting="492153.08" northing="6953363.31" park-code="D0652" street="Timaru Cl" latitude="-27.54333061" longitude="152.9205751"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="331">
+		        <span id="result-name331" class="result-name">Tingalpa Creek Reserve</span><br />
+		        <span id="result-suburb331" class="result-suburb">Capalaba West</span><br />
+		        <span id="result-rating331" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta331" easting="518287.6" northing="6957428" park-code="D0065" street="Toronto Rd" latitude="-27.50669457" longitude="153.1851597"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="332">
+		        <span id="result-name332" class="result-name">Toohey Forest Park</span><br />
+		        <span id="result-suburb332" class="result-suburb">Salisbury</span><br />
+		        <span id="result-rating332" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta332" easting="503689.8" northing="6954071.2" park-code="D0545" street="Toohey Rd" latitude="-27.53711776" longitude="153.037369"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="333">
+		        <span id="result-name333" class="result-name">Toombul Terrace Park</span><br />
+		        <span id="result-suburb333" class="result-suburb">Nundah</span><br />
+		        <span id="result-rating333" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta333" easting="505416.1" northing="6968448.44" park-code="D0461" street="Toombul Tce" latitude="-27.40731438" longitude="153.0547882"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="334">
+		        <span id="result-name334" class="result-name">Torrens Crescent Park</span><br />
+		        <span id="result-suburb334" class="result-suburb">Wakerley</span><br />
+		        <span id="result-rating334" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta334" easting="515839.28" northing="6960234.82" park-code="D2634" street="Torrens Cres" latitude="-27.4813856" longitude="153.160334"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="335">
+		        <span id="result-name335" class="result-name">Travorten Drive Park</span><br />
+		        <span id="result-suburb335" class="result-suburb">Bridgeman Downs</span><br />
+		        <span id="result-rating335" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta335" easting="500537.93" northing="6976617.06" park-code="D2030" street="Travorten Dr" latitude="-27.33357779" longitude="153.005438"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="336">
+		        <span id="result-name336" class="result-name">Tristania Drive Park</span><br />
+		        <span id="result-suburb336" class="result-suburb">Bardon</span><br />
+		        <span id="result-rating336" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta336" easting="497742.19" northing="6961903.03" park-code="D0952" street="Tristania Dr" latitude="-27.46641542" longitude="152.9771483"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="337">
+		        <span id="result-name337" class="result-name">Tuberose Place Park</span><br />
+		        <span id="result-suburb337" class="result-suburb">Calamvale</span><br />
+		        <span id="result-rating337" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta337" easting="505594.21" northing="6943173.83" park-code="D1522" street="Calliandra Pl" latitude="-27.6354908" longitude="153.0567069"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="338">
+		        <span id="result-name338" class="result-name">Turley Street Park</span><br />
+		        <span id="result-suburb338" class="result-suburb">Fairfield</span><br />
+		        <span id="result-rating338" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta338" easting="502389.86" northing="6957701.73" park-code="D0376" street="Luya St" latitude="-27.50434446" longitude="153.0241965"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="339">
+		        <span id="result-name339" class="result-name">Tyrrell Court Park</span><br />
+		        <span id="result-suburb339" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating339" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta339" easting="493618.18" northing="6965944.51" park-code="D1603" street="Rothbury Pl" latitude="-27.4299158" longitude="152.9354296"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="340">
+		        <span id="result-name340" class="result-name">University Road Park (No.55&59)</span><br />
+		        <span id="result-suburb340" class="result-suburb">Mitchelton</span><br />
+		        <span id="result-rating340" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta340" easting="497386.89" northing="6968156.55" park-code="D0611" street="University Rd" latitude="-27.40995783" longitude="152.9735657"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="341">
+		        <span id="result-name341" class="result-name">Upton Street Park</span><br />
+		        <span id="result-suburb341" class="result-suburb">Nundah</span><br />
+		        <span id="result-rating341" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta341" easting="506204.96" northing="6969635.08" park-code="D0736" street="Upton St" latitude="-27.39659794" longitude="153.0627621"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="342">
+		        <span id="result-name342" class="result-name">Valmar Street Park</span><br />
+		        <span id="result-suburb342" class="result-suburb">Upr Mt Gravatt</span><br />
+		        <span id="result-rating342" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta342" easting="509052.67" northing="6953256.8" park-code="D0714" street="Valmar St" latitude="-27.54444478" longitude="153.0916885"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="343">
+		        <span id="result-name343" class="result-name">Vera Street Park</span><br />
+		        <span id="result-suburb343" class="result-suburb">Indooroopilly</span><br />
+		        <span id="result-rating343" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta343" easting="496584.51" northing="6957453.29" park-code="D1635" street="Witton Rd" latitude="-27.50658516" longitude="152.9654186"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="344">
+		        <span id="result-name344" class="result-name">Victoria Park</span><br />
+		        <span id="result-suburb344" class="result-suburb">Herston</span><br />
+		        <span id="result-rating344" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta344" easting="501731.49" northing="6963260.49" park-code="D0083" street="Gilchrist Ave" latitude="-27.45416106" longitude="153.0175228"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="345">
+		        <span id="result-name345" class="result-name">W. A. Jolly Park</span><br />
+		        <span id="result-suburb345" class="result-suburb">Lutwyche</span><br />
+		        <span id="result-rating345" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta345" easting="502998.61" northing="6966571.08" park-code="D0020" street="Wesley St" latitude="-27.42427079" longitude="153.0303379"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="346">
+		        <span id="result-name346" class="result-name">Wakerley Park</span><br />
+		        <span id="result-suburb346" class="result-suburb">Runcorn</span><br />
+		        <span id="result-rating346" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta346" easting="506937.52" northing="6948130.37" park-code="D0574" street="Dew St" latitude="-27.59073791" longitude="153.070295"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="347">
+		        <span id="result-name347" class="result-name">Wallum Drive Park</span><br />
+		        <span id="result-suburb347" class="result-suburb">Parkinson</span><br />
+		        <span id="result-rating347" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta347" easting="502726.83" northing="6942685.54" park-code="D2064" street="Wallum Dr" latitude="-27.63990779" longitude="153.0276422"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="348">
+		        <span id="result-name348" class="result-name">Walton Bridge Reserve</span><br />
+		        <span id="result-suburb348" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating348" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta348" easting="495612.45" northing="6964363.02" park-code="D0160" street="Waterworks Rd" latitude="-27.44420143" longitude="152.9556016"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="349">
+		        <span id="result-name349" class="result-name">Warren Ritchie Memorial Complex Park</span><br />
+		        <span id="result-suburb349" class="result-suburb">Carole Park</span><br />
+		        <span id="result-rating349" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta349" easting="493084.6" northing="6946173.83" park-code="D1362" street="Boundary Rd" latitude="-27.60840133" longitude="152.9299179"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="350">
+		        <span id="result-name350" class="result-name">Wattle Street Park</span><br />
+		        <span id="result-suburb350" class="result-suburb">Cannon Hill</span><br />
+		        <span id="result-rating350" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta350" easting="508763.31" northing="6962787.94" park-code="D1857" street="Wattle St" latitude="-27.45840015" longitude="153.0886887"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="351">
+		        <span id="result-name351" class="result-name">Wellington Rd Park West</span><br />
+		        <span id="result-suburb351" class="result-suburb">Kangaroo Point</span><br />
+		        <span id="result-rating351" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta351" easting="504100.25" northing="6960799.47" park-code="D2168" street="Wellington Rd" latitude="-27.47637406" longitude="153.0415032"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="352">
+		        <span id="result-name352" class="result-name">Wendouree Crescent Park</span><br />
+		        <span id="result-suburb352" class="result-suburb">Westlake</span><br />
+		        <span id="result-rating352" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta352" easting="490523.26" northing="6953049.4" park-code="D1544" street="Wendouree Cres" latitude="-27.54631427" longitude="152.9040148"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="353">
+		        <span id="result-name353" class="result-name">West Place Park</span><br />
+		        <span id="result-suburb353" class="result-suburb">Virginia</span><br />
+		        <span id="result-rating353" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta353" easting="506846.09" northing="6971090.51" park-code="D1550" street="West Pl" latitude="-27.38345514" longitude="153.0692388"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="354">
+		        <span id="result-name354" class="result-name">Westlake Bush Park</span><br />
+		        <span id="result-suburb354" class="result-suburb">Westlake</span><br />
+		        <span id="result-rating354" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta354" easting="491981.4" northing="6952598.99" park-code="D2732" street="Horizon Dr" latitude="-27.55038996" longitude="152.9187806"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="355">
+		        <span id="result-name355" class="result-name">Whites Road Park</span><br />
+		        <span id="result-suburb355" class="result-suburb">Chermside West</span><br />
+		        <span id="result-rating355" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta355" easting="500889.6" northing="6971223.45" park-code="D0215" street="Hamilton Rd" latitude="-27.3822718" longitude="153.008997"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="356">
+		        <span id="result-name356" class="result-name">Willard Street Park</span><br />
+		        <span id="result-suburb356" class="result-suburb">Carina Heights</span><br />
+		        <span id="result-rating356" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta356" easting="509229.84" northing="6957604.03" park-code="D0052" street="Willard St" latitude="-27.50519718" longitude="153.0934497"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="357">
+		        <span id="result-name357" class="result-name">Wills Street Park</span><br />
+		        <span id="result-suburb357" class="result-suburb">Coorparoo</span><br />
+		        <span id="result-rating357" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta357" easting="506046.41" northing="6956921.67" park-code="D0115" street="Wills St" latitude="-27.51137537" longitude="153.0612217"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="358">
+		        <span id="result-name358" class="result-name">Windermere Avenue Park (No.82)</span><br />
+		        <span id="result-suburb358" class="result-suburb">Sinnamon Park</span><br />
+		        <span id="result-rating358" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta358" easting="495530.51" northing="6953710.26" park-code="D1823" street="Sinnamon Rd" latitude="-27.53770078" longitude="152.9547232"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="359">
+		        <span id="result-name359" class="result-name">Wirilda Street Park</span><br />
+		        <span id="result-suburb359" class="result-suburb">Middle Park</span><br />
+		        <span id="result-rating359" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta359" easting="491893.5" northing="6952014.18" park-code="D0901" street="Wirilda St" latitude="-27.55566902" longitude="152.9178864"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="360">
+		        <span id="result-name360" class="result-name">Wittonga Park</span><br />
+		        <span id="result-suburb360" class="result-suburb">The Gap</span><br />
+		        <span id="result-rating360" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta360" easting="493365.19" northing="6964964.59" park-code="D0637" street="Hilder Rd" latitude="-27.43876133" longitude="152.9328646"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="361">
+		        <span id="result-name361" class="result-name">Wondall Road Park</span><br />
+		        <span id="result-suburb361" class="result-suburb">Wynnum West</span><br />
+		        <span id="result-rating361" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta361" easting="516230.19" northing="6962983.9" park-code="D0527" street="Wondall Rd" latitude="-27.45656244" longitude="153.1642542"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="362">
+		        <span id="result-name362" class="result-name">Woodland Avenue Park</span><br />
+		        <span id="result-suburb362" class="result-suburb">Forest Lake</span><br />
+		        <span id="result-rating362" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta362" easting="497331.05" northing="6945899.32" park-code="D1567" street="Grasstree Pl" latitude="-27.61089458" longitude="152.9729517"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="363">
+		        <span id="result-name363" class="result-name">Woolcock Park</span><br />
+		        <span id="result-suburb363" class="result-suburb">Red Hill</span><br />
+		        <span id="result-rating363" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta363" easting="499931.78" northing="6963788.46" park-code="D0192" street="Waterworks Rd" latitude="-27.44939569" longitude="152.9993096"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="364">
+		        <span id="result-name364" class="result-name">Wright Street Park</span><br />
+		        <span id="result-suburb364" class="result-suburb">Carindale</span><br />
+		        <span id="result-rating364" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta364" easting="512081.92" northing="6958623.51" park-code="D0598" street="Wright St" latitude="-27.49597101" longitude="153.122316"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="365">
+		        <span id="result-name365" class="result-name">Wynnum North Esplanade Park (Road Reserve)</span><br />
+		        <span id="result-suburb365" class="result-suburb">Wynnum</span><br />
+		        <span id="result-rating365" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta365" easting="517100.75" northing="6965476.32" park-code="D1409" street="Wynnum Nth Esp" latitude="-27.43405025" longitude="153.1730293"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="366">
+		        <span id="result-name366" class="result-name">Yandina Picnic Ground Park</span><br />
+		        <span id="result-suburb366" class="result-suburb">Mansfield</span><br />
+		        <span id="result-rating366" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta366" easting="511049.89" northing="6954030.98" park-code="D0600" street="Wecker Rd" latitude="-27.53744078" longitude="153.1119099"> <!-- temporarily hardcoded-->
+		</div>
+		<div class="result-box" id="367">
+		        <span id="result-name367" class="result-name">Yimbun Park</span><br />
+		        <span id="result-suburb367" class="result-suburb">Sunnybank</span><br />
+		        <span id="result-rating367" class="result-rating">Not yet rated</span><br />
+		        <meta id="meta367" easting="507315.9" northing="6949966.77" park-code="D0664" street="Mccullough St" latitude="-27.57415718" longitude="153.0741178"> <!-- temporarily hardcoded-->
+		</div>
+	</div>
 
 	<script src="js/scripts.js"></script>
 </body>
