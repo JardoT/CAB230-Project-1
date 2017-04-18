@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Sample item</title>
+  <title>Park</title>
   <meta name="description" content="Sample individual item page">
   <meta name="author" content="Joshua Lowe and Jarod Taylor">
 
@@ -17,57 +17,73 @@
 </head>
 
 <body onload="showInformation()">
-	<!-- 	Start navbar -->
+	<!-- Start navbar -->
 	<div class="nav-container">
 		<div class="title-logo">
-			<img id="logo" alt="logo" src="img/placeholder.png" width="150px">
-			<h1 class="title">Placeholder Website Name</h1>
+			<a href ="search.html" class="nav-header"><img id="logo" alt="Park Palace" src="img/treeicon.png">
+				<h1 class="title">Park Palace</h1>
+			</a>
 		</div>
-		<div class="nav-links">
-			<ul class="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="search.html">Search</a></li>
-				<li><a href="javascript:div_show();">Login</a></li>
-			</ul>
-		</div>
+	</div>
+	<div class="nav-links">
+		<ul class="nav">
+			<li><a href="search.html">Search</a></li>
+			<li><a href="javascript:div_show();">Login</a></li>
+			<li><a href="registration.html">Register</a></li>
+		</ul>
 	</div>
 	<!-- End navbar -->
 
 	<span id="no-load-error" class="no-load-error">Please use our <a href="search.html">search form</a> to find individual items</span>
-	<div id="park-information">
-		<h2>this is temporary layout of info- pretty it up and spread it out (maybe add images or icons)</h2><br />
-		<b>Park Name: </b><span id="park-name"></span><br /><br/>
+	<div class="individual-area">	
+		<div id="park-information">
+			<h2><span id="park-name"></span></h2>
+			
+			<b>Location</b><br/><br />
+			<div id="map"></div><br /><br />
 
-		<b>Map</b><br/>
-		<div id="map"></div><br /><br />
-
-		<b>Park Suburb: </b><span id="park-suburb"></span><br />
-		<b>Park Street: </b><span id="park-street"></span><br />
-		<b>Park Code: </b><span id="park-code"></span><br />
-		<b>Park Rating: </b><span id="park-rating"></span><br /><br />
-		<h2>ratings</h2>
-		<div class="rating-box">
-			<div class="rating-1">
-				<b>Rating: </b><span id="rating-1-rate" class="rating-1-rate"></span><br />
-				<span id="rating-1-text" class="rating-1-text"></span>
-			</div>
-			<div class="rating-2">
-				<b>Rating: </b><span id="rating-2-rate" class="rating-2-rate"></span><br />
-				<span id="rating-2-text" class="rating-2-text"></span>
-			</div>
-			<div class="rating-3">
-				<b>Rating: </b><span id="rating-3-rate" class="rating-3-rate"></span><br />
-				<span id="rating-3-text" class="rating-3-text"></span>
-			</div>
+			<b><span class="text-header">Park Suburb: &nbsp;</span></b><span id="park-suburb" class="text-info"></span><br />
+			<b><span class="text-header">Park Street: &nbsp;</span></b><span id="park-street" class="text-info"></span><br />
+			<b><span class="text-header">Park Code: &nbsp;</span></b><span id="park-code" class="text-info"></span><br />
+			<b><span class="text-header">Park Rating: &nbsp;</span></b><span id="park-rating" class="text-info"></span><br /><br /><br />
+			<div class="review-area">
+				<h2>Reviews</h2>
+				<div class="divider">
+				</div>
+				<br />
+				<div class="rating-box">
+					<div class="rating-1">
+						<b><span class="review-name">Alex</span></b>
+							<br />
+						<b>Rating: </b><span id="rating-1-rate" class="rating-1-rate"></span><br />
+						<i><span id="rating-1-text" class="rating-1-text"></span></i>
+						<br /><br />
+					</div>
+					<div class="rating-2">
+						<b><span class="review-name">Hayden</span></b>	
+							<br />
+						<b>Rating: </b><span id="rating-2-rate" class="rating-2-rate"></span><br />
+						<i><span id="rating-2-text" class="rating-2-text"></span></i>
+						<br /><br />
+					</div>
+					<div class="rating-3">
+						<b><span class="review-name">Andrew</span></b>
+							<br />
+						<b>Rating: </b><span id="rating-3-rate" class="rating-3-rate"></span><br />
+						<i><span id="rating-3-text" class="rating-3-text"></span></i>
+						<br /><br />
+					</div>
+				</div>
+			</div>	
 		</div>
 	</div>
-
+	
 	<!-- Start Popup -->
 	<div class="grayed-box" id="grayed-box"></div>
 	<div id="popup-login" class="popup-login">
 		<!-- Login form -->
 		<form action="#" id="form" method="post" name="form" class="login">
-			<img id="close" class="close" src="img/placeholder.png" onclick ="div_hide()" width="40px">
+			<img id="close" class="close" src="img/close.png" onclick ="div_hide()" width="30px">
 			<h2 class="login-title">Welcome</h2>
 			<div class="login-box">
 				<input class="login-input" id="username" name="username" placeholder="Username" type="text">

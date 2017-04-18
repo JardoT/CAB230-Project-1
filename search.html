@@ -17,19 +17,20 @@
 </head>
 
 <body>
-	<!-- 	Start navbar -->
+	<!-- Start navbar -->
 	<div class="nav-container">
 		<div class="title-logo">
-			<img id="logo" alt="logo" src="img/placeholder.png" width="150px">
-			<h1 class="title">Placeholder Website Name</h1>
-		</div><br /><br /><br />
-		<div class="nav-links">
-			<ul class="nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="search.html">Search</a></li>
-				<li><a href="javascript:div_show();">Login</a></li>
-			</ul>
+			<a href ="search.html" class="nav-header"><img id="logo" alt="Park Palace" src="img/treeicon.png">
+				<h1 class="title">Park Palace</h1>
+			</a>
 		</div>
+	</div>
+	<div class="nav-links">
+		<ul class="nav">
+			<li><a href="search.html">Search</a></li>
+			<li><a href="javascript:div_show();">Login</a></li>
+			<li><a href="registration.html">Register</a></li>
+		</ul>
 	</div>
 	<!-- End navbar -->
 
@@ -38,9 +39,10 @@
 	automatically determining the user’s location using HTML5 Geolocation API. -->
 	<div class="search-wrap">
 		<div class="search-banner">
+			<form method="post">
 				<div class="search-container">
 					Suburb<br />
-					<select id="suburb" name="suburb">
+					<select id="suburb" name="suburb" class="suburb-drop">
 						<option value="All Suburbs">All Suburbs</option>
 						<option value="Acacia Ridge">Acacia Ridge</option>
 						<option value="Albion">Albion</option>
@@ -232,11 +234,11 @@
 				</div>
 				<div class="search-container">
 					Name<br />
-					<input type="text" id="keyword" placeholder="keywords"><br /><br />
+					<input type="text" id="keyword" placeholder="keywords" class="keyword-field"><br /><br />
 				</div>
 				<div class="search-container">
 					<br />Minimum Rating&nbsp;&nbsp;
-					<select id="rating">
+					<select id="rating" class="suburb-drop">
 							<option value="Any">Any</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -245,22 +247,24 @@
 							<option value="5">5</option>
 					</select>
 				</div>
-				<div class="search-container">
-					<br />Minimum Distance&nbsp;&nbsp;
-					<select id="distance" onchange="getLocation()">
-							<option value="Any">Any</option>
-							<option value="750">< <span id="distance750">750</span>km</option>
-							<option value="100">< <span id="distance100">100</span>km</option>
-							<option value="75">< <span id="distance75">75</span>km</option>
-							<option value="50">< <span id="distance50">50</span>km</option>
-							<option value="10">< <span id="distance10">10</span>km</option>
-							<option value="5">< <span id="distance5">5</span>km</option>
-					</select>
-				</div>
 				<div class="button-wrap">
-					<br /><button type="button" class="search-button" onclick="searchData()">Search</button>
+					<div class="search-container">
+						<br />Minimum Distance&nbsp;&nbsp;
+						<select id="distance" onchange="getLocation()" class="suburb-drop">
+                            <option value="Any">Any</option>
+                            <option value="750">< <span id="distance750">750</span>km</option>
+                            <option value="100">< <span id="distance100">100</span>km</option>
+                            <option value="75">< <span id="distance75">75</span>km</option>
+                            <option value="50">< <span id="distance50">50</span>km</option>
+                            <option value="10">< <span id="distance10">10</span>km</option>
+                            <option value="5">< <span id="distance5">5</span>km</option>
+						</select>
+					</div>
+					<div class="button-wrap">
+						<br /><button type="button" class="search-button" onclick="searchData()">Search</button>
+					</div>
 				</div>
-			<br />
+			</form><br />
 		</div><br /><br />
 	</div>
 	<div class="content-container" id="content-container">
@@ -308,7 +312,7 @@
             <meta id="meta6" easting="501698.44" northing="6961197.25" park-code="D1039" street="Grey St" latitude="-27.47278807" longitude="153.0171912"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="7"><span class="result-dist" id="dist7"></span>
-            <span id="result-name7" class="result-name" onclick="getItem(7)">Alice Street Park (Road Reserve)</span><br />
+            <span id="result-name7" class="result-name" onclick="getItem(7)">Alice Street Park</span><br />
             <span id="result-suburb7" class="result-suburb">Kedron</span><br />
             <span id="result-rating7" class="result-rating">Average Rating: <span id="7rating">5</span>/5</span><br />
             <meta id="meta7" easting="502931.02" northing="6969850.34" park-code="D1391" street="Alice St" latitude="-27.39466557" longitude="153.0296463"> <!-- temporarily hardcoded-->
@@ -326,7 +330,7 @@
             <meta id="meta9" easting="515597.18" northing="6962952.79" park-code="D0734" street="Plaza St" latitude="-27.45685065" longitude="153.1578484"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="10"><span class="result-dist" id="dist10"></span>
-            <span id="result-name10" class="result-name" onclick="getItem(10)">Amarina Avenue Park (Road Reserve)</span><br />
+            <span id="result-name10" class="result-name" onclick="getItem(10)">Amarina Avenue Park</span><br />
             <span id="result-suburb10" class="result-suburb">Ashgrove</span><br />
             <span id="result-rating10" class="result-rating">Average Rating: <span id="10rating">3</span>/5</span><br />
             <meta id="meta10" easting="499018.7" northing="6964592.1" park-code="D1303" street="Amarina Ave" latitude="-27.44214005" longitude="152.9900702"> <!-- temporarily hardcoded-->
@@ -1430,7 +1434,7 @@
             <meta id="meta193" easting="501757.61" northing="6966487.17" park-code="D0498" street="Sellheim St" latitude="-27.42503053" longitude="153.0177824"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="194"><span class="result-dist" id="dist194"></span>
-            <span id="result-name194" class="result-name" onclick="getItem(194)">Laurence St Pocket Park (Road Reserve)</span><br />
+            <span id="result-name194" class="result-name" onclick="getItem(194)">Laurence St Pocket Park </span><br />
             <span id="result-suburb194" class="result-suburb">St Lucia</span><br />
             <span id="result-rating194" class="result-rating">Average Rating: <span id="194rating">4</span>/5</span><br />
             <meta id="meta194" easting="500297.6" northing="6959000.19" park-code="D2191" street="Laurence Street St Lucia" latitude="-27.49262407" longitude="153.0030128"> <!-- temporarily hardcoded-->
@@ -1472,13 +1476,13 @@
             <meta id="meta200" easting="504107.01" northing="6946667.09" park-code="D0848" street="Woodland St" latitude="-27.60395967" longitude="153.0416197"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="201"><span class="result-dist" id="dist201"></span>
-            <span id="result-name201" class="result-name" onclick="getItem(201)">Lota Point Park (Road Reserve)</span><br />
+            <span id="result-name201" class="result-name" onclick="getItem(201)">Lota Point Park</span><br />
             <span id="result-suburb201" class="result-suburb">Lota</span><br />
             <span id="result-rating201" class="result-rating">Average Rating: <span id="201rating">2</span>/5</span><br />
             <meta id="meta201" easting="519074.14" northing="6961094.68" park-code="D1398" street="Esplanade" latitude="-27.47358127" longitude="153.1930653"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="202"><span class="result-dist" id="dist202"></span>
-            <span id="result-name202" class="result-name" onclick="getItem(202)">Luxworth Place (Road Reserve)</span><br />
+            <span id="result-name202" class="result-name" onclick="getItem(202)">Luxworth Place </span><br />
             <span id="result-suburb202" class="result-suburb">Moorooka</span><br />
             <span id="result-rating202" class="result-rating">Average Rating: <span id="202rating">1</span>/5</span><br />
             <meta id="meta202" easting="502358.75" northing="6954643.73" park-code="D1790" street="Beaudesert Rd" latitude="-27.5319519" longitude="153.0238875"> <!-- temporarily hardcoded-->
@@ -1544,7 +1548,7 @@
             <meta id="meta212" easting="492592.41" northing="6968433.17" park-code="D1305" street="Mcalroy Rd" latitude="-27.40744288" longitude="152.9250662"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="213"><span class="result-dist" id="dist213"></span>
-            <span id="result-name213" class="result-name" onclick="getItem(213)">Mccormack Avenue Park (Road Reserve)</span><br />
+            <span id="result-name213" class="result-name" onclick="getItem(213)">Mccormack Avenue Park </span><br />
             <span id="result-suburb213" class="result-suburb">Ashgrove</span><br />
             <span id="result-rating213" class="result-rating">Average Rating: <span id="213rating">1</span>/5</span><br />
             <meta id="meta213" easting="499254.93" northing="6965382.86" park-code="D1403" street="Mccormack Ave" latitude="-27.43500117" longitude="152.9924611"> <!-- temporarily hardcoded-->
@@ -1562,7 +1566,7 @@
             <meta id="meta215" easting="510527.86" northing="6957266.61" park-code="D0879" street="Meadowbank St" latitude="-27.50823393" longitude="153.1065947"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="216"><span class="result-dist" id="dist216"></span>
-            <span id="result-name216" class="result-name" onclick="getItem(216)">Meiers Road Park (Road Reserve)</span><br />
+            <span id="result-name216" class="result-name" onclick="getItem(216)">Meiers Road Park </span><br />
             <span id="result-suburb216" class="result-suburb">Indooroopilly</span><br />
             <span id="result-rating216" class="result-rating">Average Rating: <span id="216rating">4</span>/5</span><br />
             <meta id="meta216" easting="500095.05" northing="6956310.29" park-code="D1682" street="Meiers Rd" latitude="-27.51602988" longitude="153.0000225"> <!-- temporarily hardcoded-->
@@ -1670,7 +1674,7 @@
             <meta id="meta233" easting="511213.93" northing="6961394.53" park-code="D1441" street="Murarrie Rd" latitude="-27.47096185" longitude="153.113503"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="234"><span class="result-dist" id="dist234"></span>
-            <span id="result-name234" class="result-name" onclick="getItem(234)">Murton Avenue Park (Road Reserve)</span><br />
+            <span id="result-name234" class="result-name" onclick="getItem(234)">Murton Avenue Park )</span><br />
             <span id="result-suburb234" class="result-suburb">Holland Park</span><br />
             <span id="result-rating234" class="result-rating">Average Rating: <span id="234rating">4</span>/5</span><br />
             <meta id="meta234" easting="506796.68" northing="6956161.33" park-code="D0925" street="Murton Ave" latitude="-27.51823617" longitude="153.0688227"> <!-- temporarily hardcoded-->
@@ -1754,7 +1758,7 @@
             <meta id="meta247" easting="505700.82" northing="6966014.48" park-code="D0172" street="Reeve St" latitude="-27.42928717" longitude="153.0576798"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="248"><span class="result-dist" id="dist248"></span>
-            <span id="result-name248" class="result-name" onclick="getItem(248)">Orsova Road Pocket Park (Road Reserve)</span><br />
+            <span id="result-name248" class="result-name" onclick="getItem(248)">Orsova Road Pocket Park </span><br />
             <span id="result-suburb248" class="result-suburb">Yeronga</span><br />
             <span id="result-rating248" class="result-rating">Average Rating: <span id="248rating">2</span>/5</span><br />
             <meta id="meta248" easting="500527.59" northing="6957495.26" park-code="D2162" street="Brisbane Corso" latitude="-27.50621041" longitude="153.0053417"> <!-- temporarily hardcoded-->
@@ -2120,7 +2124,7 @@
             <meta id="meta308" easting="499885.38" northing="6958456.52" park-code="D0411" street="Carmody Rd" latitude="-27.4975323" longitude="152.9988395"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="309"><span class="result-dist" id="dist309"></span>
-            <span id="result-name309" class="result-name" onclick="getItem(309)">Stanley Richardson Place Park (Road Reserve)</span><br />
+            <span id="result-name309" class="result-name" onclick="getItem(309)">Stanley Richardson Place Park </span><br />
             <span id="result-suburb309" class="result-suburb">Northgate</span><br />
             <span id="result-rating309" class="result-rating">Average Rating: <span id="309rating">3</span>/5</span><br />
             <meta id="meta309" easting="507305" northing="6970057.89" park-code="D1408" street="Day Rd" latitude="-27.39277538" longitude="153.0738862"> <!-- temporarily hardcoded-->
@@ -2456,7 +2460,7 @@
             <meta id="meta364" easting="512081.92" northing="6958623.51" park-code="D0598" street="Wright St" latitude="-27.49597101" longitude="153.122316"> <!-- temporarily hardcoded-->
         </div>
         <div class="result-box" id="365"><span class="result-dist" id="dist365"></span>
-            <span id="result-name365" class="result-name" onclick="getItem(365)">Wynnum North Esplanade Park (Road Reserve)</span><br />
+            <span id="result-name365" class="result-name" onclick="getItem(365)">Wynnum North Esplanade Park </span><br />
             <span id="result-suburb365" class="result-suburb">Wynnum</span><br />
             <span id="result-rating365" class="result-rating">Average Rating: <span id="365rating">3</span>/5</span><br />
             <meta id="meta365" easting="517100.75" northing="6965476.32" park-code="D1409" street="Wynnum Nth Esp" latitude="-27.43405025" longitude="153.1730293"> <!-- temporarily hardcoded-->
@@ -2480,7 +2484,7 @@
 	<div id="popup-login" class="popup-login">
 		<!-- Login form -->
 		<form action="#" id="form" method="post" name="form" class="login">
-			<img id="close" class="close" src="img/placeholder.png" onclick ="div_hide()" width="40px">
+			<img id="close" class="close" src="img/close.png" onclick ="div_hide()" width="30px">
 			<h2 class="login-title">Welcome</h2>
 			<div class="login-box">
 				<input class="login-input" id="username" name="username" placeholder="Username" type="text">

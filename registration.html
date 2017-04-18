@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Create an account</title>
-  <meta name="description" content="User registration page">
+  <title>Register</title>
+  <link rel="icon" href="img/treeicon.png">
+  <meta name="description" content="Website home">
   <meta name="author" content="Joshua Lowe and Jarod Taylor">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,59 +18,77 @@
 </head>
 
 <body>
-	<!-- 	Start navbar -->
+	<!-- Start navbar -->
 	<div class="nav-container">
 		<div class="title-logo">
-			<img id="logo" alt="logo" src="img/placeholder.png" width="150px">
-			<h1 class="title">Placeholder Website Name</h1>
+			<a href ="search.html" class="nav-header"><img id="logo" alt="Park Palace" src="img/treeicon.png">
+				<h1 class="title">Park Palace</h1>
+			</a>
 		</div>
-		<div class="nav-links">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="search.html">Search</a></li>
-				<li><a href="#">Login</a></li> <!-- //going to add a popup for login -->
-			</ul>
-		</div>
+	</div>
+	<div class="nav-links">
+		<ul class="nav">
+			<li><a href="search.html">Search</a></li>
+			<li><a href="javascript:div_show();">Login</a></li>
+			<li><a href="registration.html">Register</a></li>
+		</ul>
 	</div>
 	<!-- End navbar -->
-
-	TEMPORARY NAVBAR<br />
-	FINISH INDEX TEMPLATE BEFORE CHANGING THIS<br />
-	WILL MAKE THINGS EASIER THAN CONSTANTLY UPDATING ALL OF THEM AT ONCE<br />
-
-	<div id="create-account">
-		<h2>Create a new account</h2>
-		<form method="post" onsubmit="return validateAll()">
-			Username *<br /><input type="text" id="username"></input>
-				<span id="username-missing" class="error-message">Username is a required field</span>
-				<span id="username-short" class="error-message">Username must be a minimum of 4 characters</span>
-			<br /><br />
-			Email Address *<br /><input type="text" id="email"></input>
-				<span id="email-missing" class="error-message">Email is a required field</span>
-				<span id="email-invalid" class="error-message">Please enter a valid email address <i>(eg. email@example.com)</i></span>
-			<br /><br />
-			Phone Number <br /><input type="text" id="phone"></input>
-				<span id="phone-invalid" class="error-message">Please enter a valid phone number <i>(must be 10 digits)</i></span>
-			<br /><br />
-			Date of Birth <br /><input type="text" id="dob" placeholder="dd/mm/yyyy"></input>
-				<span id="dob-invalid" class="error-message">Please enter your date of birth in the correct format <i>(dd/mm/yyyy)</i></span>
-			<br /><br />
-			Gender	  <br /><input type="radio" name="gender">Male
-							<input type="radio" name="gender">Female
-							<input type="radio" name="gender">Apache Attack Helicopter<br /><br />
-			Password *<br /><input type="password" id="password"></input>
-				<span id="password-missing" class="error-message">Password is a required field</span>
-				<span id="password-short" class="error-message">Password must be a minimum of 6 characters</span>
-			<br /><br />
-			Confirm Password *<br /><input type="password" id="confirm-password"></input>
-				<span id="confirm-password-missing" class="error-message">Confirm Password is a required field</span>
-				<span id="password-mismatch" class="error-message">Passwords must match</span>
-			<br /><br />
-			Subscribe to our annual newsletter? <input type="checkbox"></input><br /><br />
-			<input type="submit" value="Sign Up"></input>
-		</form>
+	
+	<div class="create-container">
+		<div id="create-account">
+			<h2>Create a new account</h2>
+			<h5>fields with * are required</h5>
+			<form method="post" onsubmit="return validateAll()">
+				<span class="register-headings">Username *</span><br /><input type="text" id="username" placeholder="username" class="text-field"></input>
+					<span id="username-missing" class="error-message">Username is a required field</span>
+					<span id="username-short" class="error-message">Username must be a minimum of 4 characters</span>
+				<br /><br />
+				<span class="register-headings">Email Address *</span><br /><input type="text" id="email" placeholder="email" class="text-field"></input>
+					<span id="email-missing" class="error-message">Email is a required field</span>
+					<span id="email-invalid" class="error-message">Please enter a valid email address <i>(eg. email@example.com)</i></span>
+				<br /><br />
+				<span class="register-headings">Phone Number </span><br /><input type="text" id="phone" placeholder= "phone" class="text-field"></input>
+					<span id="phone-invalid" class="error-message">Please enter a valid phone number <i>(must be 10 digits)</i></span>
+				<br /><br />
+				<span class="register-headings">Date of Birth </span><br /><input type="text" id="dob" placeholder="dd/mm/yyyy" class="text-field"></input>
+					<span id="dob-invalid" class="error-message">Please enter your date of birth in the correct format <i>(dd/mm/yyyy)</i></span>
+				<br /><br />
+				<span class="register-headings">Gender </span><br /><input type="radio" name="gender" class="radio-margin-first"><span class="register-headings">Male</span>
+								<input type="radio" name="gender" class="radio-margin"><span class="register-headings">Female</span>
+								<input type="radio" name="gender" class="radio-margin"><span class="register-headings">Other</span><br /><br />
+				<span class="register-headings">Password *</span><br /><input type="password" id="password" class="text-field"></input>
+					<span id="password-missing" class="error-message">Password is a required field</span>
+					<span id="password-short" class="error-message">Password must be a minimum of 6 characters</span>
+				<br /><br />
+				<span class="register-headings">Confirm Password *</span><br /><input type="password" id="confirm-password" class="text-field"></input>
+					<span id="confirm-password-missing" class="error-message">Confirm Password is a required field</span>
+					<span id="password-mismatch" class="error-message">Passwords must match</span>
+				<br /><br />
+				<span class="register-headings">Subscribe to our annual newsletter? </span><input type="checkbox"></input><br /><br />
+				<input type="submit" value="Submit" class="submit-button"></input>
+			</form>
+		</div>
 	</div>
-
+		
+	<!-- Start Popup -->
+	<div class="grayed-box" id="grayed-box"></div>
+	<div id="popup-login" class="popup-login">
+		<!-- Login form -->
+		<form action="#" id="form" method="post" name="form" class="login">
+			<img id="close" class="close" src="img/close.png" onclick ="div_hide()" width="30px">
+			<h2 class="login-title">Welcome</h2>
+			<div class="login-box">
+				<input class="login-input" id="username" name="username" placeholder="Username" type="text"><br />
+				<input class="login-input" name="password" type="password" size="14" placeholder="Password" /><br /><br />
+				<center><a href="#" id="submit" class="login-button">Sign In</a></center><br />
+				Not registered? <a href="registration.html" id="submit">Create an account.</a>
+			</div>
+		</form>
+		<!-- End Login form -->
+	</div>
+	<!-- End Popup -->
+	
 	<script src="js/scripts.js"></script>
 </body>
 </html>
