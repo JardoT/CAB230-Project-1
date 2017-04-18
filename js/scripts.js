@@ -1,3 +1,7 @@
+//global vars
+var distArray = [];
+
+
 //Function To Display Popup
 function div_show() {
 document.getElementById('grayed-box').style.display = "block";
@@ -13,26 +17,215 @@ document.getElementById('popup-login').style.visibility = "hidden";
 //START SEARCH
 function searchData() {
   var suburb = document.getElementById('suburb');
-  selectedSuburb = suburb.options[suburb.selectedIndex];
-    
+  selectedSuburb = suburb.options[suburb.selectedIndex].innerHTML;
+
+  var counter = 0;
+
+  var keyword = document.getElementById('keyword').value;
+  var keywordRegex = new RegExp(keyword,"i");
+
+  var ratingOption = document.getElementById('rating');
+  var selectedRating = ratingOption.options[ratingOption.selectedIndex].innerHTML;
+
+  var distanceOption = document.getElementById('distance');
+  var selectedDistance = distanceOption.options[distanceOption.selectedIndex].value;
+
     //Clear previously selected data
     for (var i = 0; i < 367; i++) {
-      document.getElementById(i).style.display = "none";
-    }
-
-    if (selectedSuburb.innerHTML == "All Suburbs") {
-      for (var i = 0; i < 367; i++) {
-        document.getElementById(i).style.display = "block";
+      document.getElementById(i).style.display = "none"; 
+      if (selectedDistance == 'Any') {
+        document.getElementById('dist' + i).style.display = "none";
       }
     }
 
     //Show selected data
-    for (var i = 0; i < 192; i++) {
-      var suburbCheck = document.getElementById('result-suburb' + i.toString());
-      if (selectedSuburb.innerHTML == suburbCheck.innerHTML) {
+    for (var i = 0; i < 367; i++) {
+      var suburbCheck = document.getElementById('result-suburb' + i.toString()).innerHTML;
+      var rating = document.getElementById(i + 'rating').innerHTML;
+      var name = document.getElementById('result-name' + i).innerHTML;
+      
+      //all data
+        //I could have nested these, to make it cleaner- which I will do later, but for now it is pretty much brute-force checking all combinations
+      if (selectedSuburb == 'All Suburbs' && selectedRating == 'Any' && keyword == '' && selectedDistance == 'Any') {  //all data
         document.getElementById(i).style.display = "block";
+
+      } else if (selectedSuburb == suburbCheck && selectedRating == 'Any' && keyword == '' && selectedDistance == 'Any') { //only suburb
+          document.getElementById(i).style.display = "block";
+
+       } else if (selectedSuburb == 'All Suburbs' && selectedRating == 'Any' && keyword != '' && selectedDistance == 'Any' ) { //only keyword
+        if (keywordRegex.test(name)) {
+          document.getElementById(i).style.display = "block";
+        }
+
+      } else if (selectedSuburb == 'All Suburbs' && selectedRating != 'Any' && keyword == '' && selectedDistance == 'Any') { //only rating
+        if (selectedRating <= rating) {
+          document.getElementById(i).style.display = "block";
+        }
+
+      } else if (selectedSuburb == 'All Suburbs' && selectedRating == 'Any' && keyword == '' && selectedDistance != 'Any') { //only distance
+        var distance = document.getElementById('dist' + i);
+        document.getElementById(i).style.display = "none";
+        if (distance.value < selectedDistance) {
+          distance.style.display = "block";
+          document.getElementById(i).style.display = "block";
+        } 
+
+      } else if (selectedSuburb == 'All Suburbs' && selectedRating != 'Any' && keyword != '' && selectedDistance == 'Any') { //only rating and keyword
+        if (selectedRating <= rating) {
+          if (keywordRegex.test(name)) {
+            document.getElementById(i).style.display = "block";
+          }
+        }
+
+      } else if (selectedSuburb == suburbCheck && selectedRating != 'Any' && keyword == '' && selectedDistance == 'Any') { //only suburb and rating
+        if (selectedRating <= rating) {
+          document.getElementById(i).style.display = "block";
+        }
+
+      } else if (selectedSuburb == suburbCheck && selectedRating == 'Any' && keyword != '' && selectedDistance == 'Any') { //only suburb and keyword
+        if (keywordRegex.test(name)) {
+          document.getElementById(i).style.display = "block";
+        }
+
+      } else if (selectedSuburb == suburbCheck && selectedRating != 'Any' && keyword != '' && selectedDistance == 'Any') { //suburb, keyword and rating
+        if (selectedRating <= rating) {
+          if (keywordRegex.test(name)) {
+            document.getElementById(i).style.display = "block";
+          }
+        }  
+      } else if (selectedSuburb != 'All Suburbs' && selectedRating == 'Any' && keyword == '' && selectedDistance != 'Any') { //only suburb and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedSuburb == suburbCheck) {
+          var distance = document.getElementById('dist' + i);
+          if (distance.value < selectedDistance) {
+            distance.style.display = "block";
+            document.getElementById(i).style.display = "block";
+          } 
+        }
+       } else if (selectedSuburb == 'All Suburbs' && selectedRating == 'Any' && keyword != '' && selectedDistance != 'Any' ) { //only keyword and distance
+        document.getElementById(i).style.display = "none";
+        if (keywordRegex.test(name)) {
+            var distance = document.getElementById('dist' + i);
+            if (distance.value < selectedDistance) {
+              distance.style.display = "block";
+              document.getElementById(i).style.display = "block";
+           } 
+        }
+      } else if (selectedSuburb == 'All Suburbs' && selectedRating != 'Any' && keyword == '' && selectedDistance != 'Any') { //only rating and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedRating <= rating) {
+          var distance = document.getElementById('dist' + i);
+          if (distance.value < selectedDistance) {
+            distance.style.display = "block";
+            document.getElementById(i).style.display = "block";
+          } 
+        }
+      } else if (selectedSuburb == 'All Suburbs' && selectedRating != 'Any' && keyword != '' && selectedDistance != 'Any') { //only rating, keyword and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedRating <= rating) {
+          if (keywordRegex.test(name)) {
+            var distance = document.getElementById('dist' + i);
+            if (distance.value < selectedDistance) {
+              distance.style.display = "block";
+              document.getElementById(i).style.display = "block";
+            } 
+          }
+        }
+      } else if (selectedSuburb != 'All Suburbs' && selectedRating != 'Any' && keyword == '' && selectedDistance != 'Any') { //only suburb, rating and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedSuburb == suburbCheck) {
+          if (selectedRating <= rating) {
+            var distance = document.getElementById('dist' + i);
+            if (distance.value < selectedDistance) {
+              distance.style.display = "block";
+              document.getElementById(i).style.display = "block";
+            } 
+          }
+        }
+      } else if (selectedSuburb != 'All Suburbs' && selectedRating == 'Any' && keyword != '' && selectedDistance != 'Any') { //only suburb, keyword and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedSuburb == suburbCheck) {
+          if (keywordRegex.test(name)) {
+            var distance = document.getElementById('dist' + i);
+            if (distance.value < selectedDistance) {
+              distance.style.display = "block";
+              document.getElementById(i).style.display = "block";
+            } 
+          }
+        }
+      } else if (selectedSuburb != 'All Suburbs' && selectedRating != 'Any' && keyword != '' && selectedDistance != 'Any') { //suburb, keyword, rating and distance
+        document.getElementById(i).style.display = "none";
+        if (selectedSuburb == suburbCheck) {
+          if (selectedRating <= rating) {
+            if (keywordRegex.test(name)) {
+              var distance = document.getElementById('dist' + i);
+              if (distance.value < selectedDistance) {
+                distance.style.display = "block";
+                document.getElementById(i).style.display = "block";
+              } 
+            }
+          }
+        }
       }
     }
+}
+
+if (typeof(Number.prototype.toRad) === "undefined") {
+  Number.prototype.toRad = function() {
+    return this * Math.PI / 180;
+  }
+}
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showDistance, showError);
+  } else {
+    alert("Geolocation is not supported by this browser.");
+  }
+}
+
+function showDistance(position) {
+  var lat1 = position.coords.latitude
+  var lon1 = position.coords.longitude
+  var R = 6371e3; // metres
+  var t1 = lat1.toRad();
+
+  for (var i = 0; i < 367; i++) {
+    var meta = document.getElementById('meta' + i);
+    var lat2 = parseFloat(meta.getAttribute('latitude'));
+    var lon2 = parseFloat(meta.getAttribute('longitude'));
+    var t2 = lat2.toRad();
+    var a1 = (lat2-lat1).toRad();
+    var a2 = (lon2-lon1).toRad();
+
+    var a = Math.sin(a1/2) * Math.sin(a1/2) +
+            Math.cos(t1) * Math.cos(t2) *
+            Math.sin(a2/2) * Math.sin(a2/2);
+    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+
+    d = R * c;
+    distArray[i] = Math.round(d/1000, 6); 
+    var distId = document.getElementById('dist' + i);
+    distId.innerHTML = distArray[i] + "km away";
+    distId.value = distArray[i];
+  }
+}
+
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      alert("User denied the request for Geolocation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      alert("Location information is unavailable.");
+      break;
+    case error.TIMEOUT:
+      alert("The request to get user location timed out.");
+      break;
+    case error.UNKNOWN_ERROR:
+      alert("An unknown error occurred.");
+      break;
+  }
 }
 //END SEARCH
 
@@ -91,64 +284,44 @@ function showInformation() {
       rating1 = "this park is horrible- litter everywhere";
       rating2 = "do not recommend";
       rating3 = "save your time and go somewhere cleaner";
-      document.getElementById('rating-1-text').innerHTML = rating1;
-      document.getElementById('rating-2-text').innerHTML = rating2;
-      document.getElementById('rating-3-text').innerHTML = rating3;
-
-      document.getElementById('rating-1-rate').innerHTML = "1";
-      document.getElementById('rating-2-rate').innerHTML = "1";
-      document.getElementById('rating-3-rate').innerHTML = "1";
+      printRatings(rating1, rating2, rating3, "1");
       break;
     case 2:
       rating1 = "Pretty decent park, fresh air";
       rating2 = "absolutely horrible park";
       rating3 = "Dirty, but could be worse";
-      document.getElementById('rating-1-text').innerHTML = rating1;
-      document.getElementById('rating-2-text').innerHTML = rating2;
-      document.getElementById('rating-3-text').innerHTML = rating3;
-
-      document.getElementById('rating-1-rate').innerHTML = "3";
-      document.getElementById('rating-2-rate').innerHTML = "1";
-      document.getElementById('rating-3-rate').innerHTML = "2";
+      printRatings(rating1, rating2, rating3, "2");
       break;
     case 3:
       rating1 = "Great park!!";
       rating2 = "pretty good park";
       rating3 = "park is somewhat small, other then that, its alright";
-      document.getElementById('rating-1-text').innerHTML = rating1;
-      document.getElementById('rating-2-text').innerHTML = rating2;
-      document.getElementById('rating-3-text').innerHTML = rating3;
-
-      document.getElementById('rating-1-rate').innerHTML = "4";
-      document.getElementById('rating-2-rate').innerHTML = "3";
-      document.getElementById('rating-3-rate').innerHTML = "2";
+      printRatings(rating1, rating2, rating3, "3");
       break;
     case 4:
       rating1 = "Excellent park, lots of fun";
       rating2 = "great park for the family";
       rating3 = "very clean and well maintained";
-      document.getElementById('rating-1-text').innerHTML = rating1;
-      document.getElementById('rating-2-text').innerHTML = rating2;
-      document.getElementById('rating-3-text').innerHTML = rating3;
-
-      document.getElementById('rating-1-rate').innerHTML = "4";
-      document.getElementById('rating-2-rate').innerHTML = "4";
-      document.getElementById('rating-3-rate').innerHTML = "4";
+      printRatings(rating1, rating2, rating3, "4");
       break;
     case 5:
       rating1 = "Best park i've ever been to";
       rating2 = "Absolutely fantastic park";
       rating3 = "it's a very good park- would definitely recommend";
-      document.getElementById('rating-1-text').innerHTML = rating1;
-      document.getElementById('rating-2-text').innerHTML = rating2;
-      document.getElementById('rating-3-text').innerHTML = rating3;
-
-      document.getElementById('rating-1-rate').innerHTML = "5";
-      document.getElementById('rating-2-rate').innerHTML = "5";
-      document.getElementById('rating-3-rate').innerHTML = "5";
+      printRatings(rating1, rating2, rating3, "5");
       break;
   }
 }
+
+function printRatings(rating1, rating2, rating3, rate) {
+  document.getElementById('rating-1-text').innerHTML = rating1;
+  document.getElementById('rating-2-text').innerHTML = rating2;
+  document.getElementById('rating-3-text').innerHTML = rating3;
+
+  document.getElementById('rating-1-rate').innerHTML = rate;
+  document.getElementById('rating-2-rate').innerHTML = rate;
+  document.getElementById('rating-3-rate').innerHTML = rate;
+  }
 
 function initMap() {
 
