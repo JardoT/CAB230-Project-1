@@ -279,48 +279,59 @@ function showInformation() {
   document.getElementById('park-code').innerHTML = parkCode;
   document.getElementById('park-rating').innerHTML = "Average Rating: " + parkRating + "/5";
 
-  switch (parseInt(parkRating)) { //TEMPORARILY HARDCODED RATINGS
+switch (parseInt(parkRating)) { //TEMPORARILY HARDCODED RATINGS
     case 1:
       rating1 = "this park is horrible- litter everywhere";
       rating2 = "do not recommend";
       rating3 = "save your time and go somewhere cleaner";
-      printRatings(rating1, rating2, rating3, "1");
+      printRatings(rating1, rating2, rating3);
+      document.getElementById('rating-1-rate').innerHTML = "1";
+      document.getElementById('rating-2-rate').innerHTML = "1";
+      document.getElementById('rating-3-rate').innerHTML = "1";
       break;
     case 2:
       rating1 = "Pretty decent park, fresh air";
       rating2 = "absolutely horrible park";
       rating3 = "Dirty, but could be worse";
-      printRatings(rating1, rating2, rating3, "2");
+      printRatings(rating1, rating2, rating3);
+      document.getElementById('rating-1-rate').innerHTML = "3";
+      document.getElementById('rating-2-rate').innerHTML = "1";
+      document.getElementById('rating-3-rate').innerHTML = "2";
       break;
     case 3:
       rating1 = "Great park!!";
       rating2 = "pretty good park";
       rating3 = "park is somewhat small, other then that, its alright";
-      printRatings(rating1, rating2, rating3, "3");
+      printRatings(rating1, rating2, rating3);
+      document.getElementById('rating-1-rate').innerHTML = "4";
+      document.getElementById('rating-2-rate').innerHTML = "3";
+      document.getElementById('rating-3-rate').innerHTML = "2";
       break;
     case 4:
       rating1 = "Excellent park, lots of fun";
       rating2 = "great park for the family";
       rating3 = "very clean and well maintained";
-      printRatings(rating1, rating2, rating3, "4");
+      printRatings(rating1, rating2, rating3);
+      document.getElementById('rating-1-rate').innerHTML = "5";
+      document.getElementById('rating-2-rate').innerHTML = "3";
+      document.getElementById('rating-3-rate').innerHTML = "4";
       break;
     case 5:
       rating1 = "Best park i've ever been to";
       rating2 = "Absolutely fantastic park";
       rating3 = "it's a very good park- would definitely recommend";
-      printRatings(rating1, rating2, rating3, "5");
+      document.getElementById('rating-1-rate').innerHTML = "5";
+      document.getElementById('rating-2-rate').innerHTML = "5";
+      document.getElementById('rating-3-rate').innerHTML = "5";
+      printRatings(rating1, rating2, rating3);
       break;
   }
 }
 
-function printRatings(rating1, rating2, rating3, rate) {
+function printRatings(rating1, rating2, rating3) {
   document.getElementById('rating-1-text').innerHTML = rating1;
   document.getElementById('rating-2-text').innerHTML = rating2;
   document.getElementById('rating-3-text').innerHTML = rating3;
-
-  document.getElementById('rating-1-rate').innerHTML = rate;
-  document.getElementById('rating-2-rate').innerHTML = rate;
-  document.getElementById('rating-3-rate').innerHTML = rate;
   }
 
 function initMap() {
