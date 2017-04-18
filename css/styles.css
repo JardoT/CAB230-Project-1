@@ -1,20 +1,316 @@
-html {
+html, body {
 	font-family: 'Montserrat', sans-serif;
 	margin-bottom: 15%;
-	min-width: 250px;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	min-width: 510px;
 }
 
 .content-container {
 	background-color: #FFFFFF;
-	padding-top: 15px;
 	padding-right: 2%;
 	height: 768px;
 	margin: 0 auto;
 }
 
 .nav-container {
-	background-color: #E1FFE1;
+	background-color: #E5E5E5;
+	height:80px;
+	padding-bottom:0.5%;
 }
+
+.nav-container a {
+	text-decoration: none;	
+}
+
+.nav-header {
+	color: inherit;
+	overflow: hidden;
+}
+.title-logo {
+	padding-left:20px;	
+}
+
+.title-logo img {
+	float: left;
+}
+
+.title-logo h1 {
+	position: relative;
+	top: 25px;
+	left: 40px;
+}
+
+.title-logo li a {
+	position: relative;
+	bottom: 20px;
+	left: 600px;
+}
+
+ul.nav-links {
+	list-style-type: none;
+}
+
+/*Start NavBar*/
+#logo {
+    float: left;
+	margin:0;
+	height:75px; 
+	padding-top:5px;
+}
+
+.title {
+    position: relative;
+    top: 50px;
+    left: 10px;
+	margin:0;
+}
+
+ul.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding: 1em;
+    padding-right:1.5em;
+    line-height: 1em;
+    height: 1em;
+}
+
+ul.nav li {
+    padding-right: 1.2em;
+    float:left;
+}
+
+ul.nav li a {
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links {
+    background-color: #1EB852;
+}
+/*End NavBar*/
+
+.create-container {
+	margin-right: 18.5%;
+	margin-left: 20px;
+	background-color: #ffffff;
+	padding-top: 0.05px;
+	padding-bottom:20px;
+	margin-top:2px;
+}
+
+.text-field {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width:400px;
+	font-size: 14px;
+	padding-top:7.5px;
+	padding-left:7.5px;
+	padding-bottom:7.5px;
+	padding-left:7.5px;
+	margin-top: 5px;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow:inset 0 0 2px 2px #A2A2A2;
+	background: #fff;
+}
+
+.radio-margin {
+	margin-top: 7.5px;
+	margin-left: 20px;
+	margin-right: 7.5px;
+}
+
+.radio-margin-first {
+	margin-top: 10px;
+	margin-right: 7.5px;
+}
+
+.submit-button {
+	padding:10px 20px; 
+    background-color:#1EB852; 
+	color: #ffffff;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.submit-button:hover {
+	background-color: #197538;
+	transition: 0.3s;
+}
+
+.register-headings {
+	color: #1EB852;
+}
+
+.footer {
+	position: absolute;
+	color:#000000;
+	background-color: #1EB852;
+	width: 100%;
+	padding: 15px;
+	
+}
+
+/*Start Search Bar*/
+.search-wrap {
+	background-color: #E5E5E5;
+	margin-bottom:15px;
+	border-bottom: solid 2px #000000;
+	border-top: solid 2px #000000;
+}
+
+.search-banner {
+	background-color: #E5E5E5;
+	padding-top: 2em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.search-container {
+	text-align: center;
+}
+
+.button-wrap {
+	text-align: center;
+}
+
+.search-button {
+	text-decoration: none;
+	color: white;
+	background-color: #1EB852;
+	height: 2.5em;
+	border: solid 1px #577F57;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+.search-button:hover {
+	background-color: #197538;
+	transition: 0.3s;
+}
+
+.suburb-drop {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width:150px;
+	font-size: 14px;
+	padding-top:7.5px;
+	padding-left:7.5px;
+	padding-bottom:7.5px;
+	padding-left:7.5px;
+	margin-top: 5px;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow:inset 0 0 2px 2px #A2A2A2;
+	background: #fff;
+}
+
+.keyword-field {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width:200px;
+	font-size: 14px;
+	padding-top:7.5px;
+	padding-left:7.5px;
+	padding-bottom:7.5px;
+	padding-left:7.5px;
+	margin-top: 5px;
+	font-family: 'Montserrat', sans-serif;
+	box-shadow:inset 0 0 2px 2px #A2A2A2;
+	background: #fff;
+}
+
+@media screen and (min-width: 1070px) {
+	.search-banner {
+		width:100%;
+	}
+
+	.search-button {
+		margin-left: 30px;
+		margin-right: 30px;
+		width: 160px;
+		margin-top: 0;
+	}
+
+	.button-wrap {
+		display: inline;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.search-container {
+		float:left;
+		margin-left: 30px;
+		width: auto;
+		text-align: left;
+	}
+}
+/*End Search Bar*/
+
+/*Start Individual Items Page*/
+.park-information {
+    display: none;
+}
+
+.individual-area {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.review-area {
+	
+}
+
+.text-info {
+	color: #1EB852;
+}
+
+.text-header {
+	font-size:18px;
+	color: #196834;
+}
+
+.review-name {
+	font-size:20px;
+	color: #196834;
+}
+
+.divider {
+	width:100%;
+	height: 1px;
+	background-color: #000000;
+}
+
+.result-dist {
+    display: none;
+	font-style:italic;
+	font-size: 12px;
+	color: #000000;
+}
+
+.no-load-error {
+    display: none;
+}
+
+#map {
+    min-width: 250px;
+    height: 400px;
+}
+/*End Individual Items Page*/
+
 
 .color1 {
 	background-color: #E1FFE1;
@@ -77,7 +373,7 @@ img.close {
 }
 
 h2.login-title {
-	background-color: #B4CCB4;
+	background-color: #81c381;
 	border-top-left-radius: 6px;
 	border-top-right-radius: 6px;
 	border-bottom: 1px solid;
@@ -105,7 +401,7 @@ a.login-button {
 	text-decoration: none;
 	color: white;
 	padding: 10px;
-	background-color: #81c381;
+	background-color: #1EB852;
 }
 /*End Sign In Popup*/
 
@@ -118,13 +414,43 @@ a.login-button {
 
 /*Start Results Grid*/
 .result-box {
-	background-color: #E1FFE1;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #ffffff;
+	color:#1EB852;
 	margin-bottom: 15px;
 	margin-left: 2%;
 	float:left;
 	width: 98%;
-	display: none;
-}	
+	display: block;
+	-webkit-border-radius: 5px;
+    border-radius: 5px;
+	box-shadow:inset 0 0 1px 1px #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align:center;
+	
+}
+
+.result-name {
+	font-size: 18px;
+	color: #197538;
+}
+
+.result-name:hover {
+	color: #0B6BF5;
+	transition: 0.2s;
+	cursor:pointer;
+}
+
+.result-suburb {
+	font-size: 12px;
+	color: #1EB852;
+}
+
+.result-rating {
+	font-size: 12px;
+	color: #1EB852;
+}
 
 @media screen and (min-width: 500px) {
 	.content-container {
